@@ -1,0 +1,44 @@
+Titulo: similaritats i diferencies.
+Nombre: Angelo Montenegro
+Introduccion:
+Este ejerciio pretende la comparacion de los diferentes lenguajes de programacion , con el objetivo de comparar la escritura de la codificacion de los distintos lenguajes desarrollado para el mismo tipo de programa pero con con distitnto codigo con el mismo fin 
+
+
+Preguntes
+
+Intenta contestar les següents preguntes el millor que et sigui possible.
+
+PREGUNTA 1. QUÈ FA EL PROGRAMA?
+independientemenete del tipo de lenguaje en el que esta escrito el programa tiene como fin resover la incognita sobre el calculo del area de un circulo.
+
+
+PREGUNTA 2. ELEMENTS COMUNS
+Entre los elementos comunes se encuentre el que se usa para escribri que es en los diferentes programas como  (escriu, system.ou.println, printf, print), tomando en cuenta que aunque se escriba distinto el proposito es el mismo , tambien podemos encontrar los elementos que son los que van a proceder a realizar el calculo  como lo son area, radio, valor de Pi que se presentan en todo los codigos propuestos, tambien podemos encontrar un elemento similar entre el lenguaje kotlin y java que es el BufferedReader, cuya funcion es leer el texto como archivo en un bufer de caracteres. 
+
+
+PREGUNTA 3. ENTRADA/SORTIDA
+Pseudocodico::
+Entrada: llegix radi
+salida: escriu "l´area es", area
+
+Vercion C::
+Entrada: scanf("%f",&radi);
+salida: printf ("l´area es %f\n", area)
+
+Version phyton::
+entrada: linia= input("introduiu el radi:")
+salida:  print(f "L`area es {area}")
+
+Version java::
+Entrada: BufferedReader reader= new BufferdReader(new inputStreamRreader(System.in));
+salida:system.out.println("l`area es area)
+
+
+PREGUNTA 4. VARIABLES
+las variables que se usan en los lenguajes de progrmaacion propuestos son repetitivos , tales como, valor de pi, radio, area, linia.
+
+
+PREGUNTA 5. PREFERÈNCIA
+el que mas me llamo la atencion fue el lenguaje de programacion Phyton ya ademas de tener una forma de estructura de programacion distnta(refiriendome al codigo), su cantidad de codigo en comparacion a los otros es menor y llega a la misma conclusion que el resto.
+
+
