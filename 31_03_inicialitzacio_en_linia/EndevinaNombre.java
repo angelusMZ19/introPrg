@@ -33,7 +33,7 @@
             System.out.print("Quan li sumes 6 arriba a ");
             System.out.println(numero);
 
-            // divideix-ho tot per 3
+            // divideix-ho tot per 3gi
 
             numero = numero / 3;
             System.out.print("Un cop dividit per 3 queda ");
