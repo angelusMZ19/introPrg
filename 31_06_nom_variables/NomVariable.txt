@@ -1,0 +1,27 @@
+titutlo: Nombre de Variables
+Autor: Angelo Montengro
+Intro: el objetivo de esta actividad es aprender a escribir los nombres de las variables correctamente segun las leera java.
+
+
+    LA TEVA TALLA DE SABATES
+   =  sizeSabat
+
+    LA DATA DEL TEU ANIVERSARI
+   =  dataAniversari
+
+    EL TEU NOM
+   = nom
+
+    EL COLOR DE FONS DEL TEU ESCRIPTORI
+   = colorFonsEscritori
+
+    SI T'AGRADA O NO EL GUST DE LA LLIMONA
+   = gustLlimonada
+
+    LA LLETRA DE LA TEVA CANÇÓ PREFERIDA
+   = SongFavLyrinch
+
+    LA LLISTA DE PEL·LÍCULES I LLIBRES QUE MÉS T'HAN MARCAT
+   = MovieBookMatch
+   
+
