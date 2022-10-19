@@ -1,0 +1,45 @@
+titutlo: Expresiones Booleanas 
+Autor: Angelo Montenegro
+
+intro: el objetivo de este ejercicio es aprender a transformar las oraciones expuestas en expresiones booleanas utilizables para codigo.
+
+
+
+    LA TEVA EDAT ÉS SUPERIOR ALS 18 ANYS
+    edad>=18
+    
+
+    TENS MENYS DE 5 GERMANS
+    germans<5
+    
+
+    LA SUMA DE 2 MÉS 5 ÉS IGUAL A 7
+     2 + 5 == 7
+    
+
+    LA SUMA DE 2 MÉS 5 ÉS DIFERENT DE 7
+    2 + 5 != 7
+    
+
+    L'ANY QUE VE SERÀS MAJOR D'EDAT
+    anyPresent + 1 == (edad==18)
+    
+
+    L'ANY PASSAT ENCARA NO ERES MAJOR D'EDAT
+    any-1  != (edad == 18)
+    
+
+    TENS COM A MOLT 35 COMPANYS A CLASSE
+    companys =< 35
+    
+
+    TENS TANTS COMPANYS A CLASSE COM ANYS
+    anys == companys
+    
+
+    EL RENAT TÉ QUATRE POTES
+     renat == 4
+    
+
+    ESTEM A MÉS DE 28 GRAUS
+    temperature > 28
