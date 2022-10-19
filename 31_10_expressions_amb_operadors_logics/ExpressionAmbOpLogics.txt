@@ -1,0 +1,37 @@
+Titol: Expresiones booleanas con operadores logicos
+Autor: Angelo Montenegro 
+intro: usar las expresiones booleanas aplicando los operadores logicos 
+
+
+
+
+    LA CLARA ÉS MÉS JOVE QUE TU
+        edadClara < edadTeva
+    
+
+    LA CLARA I EL MARC SÓN MÉS JOVES QUE TU
+        edadClara == edadMarc < edadTeva
+    
+    
+    LA CLARA ÉS MÉS JOVE QUE TU I TU ETS MÉS JOVE QUE EL MARC
+        edadClara < MevaEdad && MevaEdad < edadMarc
+
+
+    LA CLARA NO ÉS MÉS JOVE QUE EL MARC
+        !(edadClara < edadMarc)
+
+
+    NO ÉS CERT QUE EL MARC SIGUI MÉS JOVE QUE LA CLARA
+        !(edadMarc < edadClara)
+
+
+    NI EL MARC ÉS MÉS JOVE QUE LA CLARA NI TU ETS MÉS JOVE QUE EL MARC
+        !(edadMarc < edadClara) && !(MevaEdad < edadMarc)
+
+
+
+    TU ETS MÉS GRAN QUE LA CLARA I EL MARC JUNTS O BÉ LA CLARA I EL MARC TENEN LA MATEIXA EDAT
+        edadTeva > edadClara + edadMarc || edadClara = edadMarc
+        
+        
+
