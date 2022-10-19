@@ -1,0 +1,33 @@
+titutlo: Tipos de Variables
+Autor: Angelo Montengro
+Intro: el objetivo de esta actividad es aprender a escribir los nombres de las variables correctamente segun las leera java y a clasificarlas su tipo de variable correctamente :v.
+
+
+    LA TEVA TALLA DE SABATES
+        int sizeSabat = 30;
+
+
+    LA DATA DEL TEU ANIVERSARI
+        String dataAniversari = 06.03.2003;
+     
+     
+    EL TEU NOM
+        String nom = "Angelo";
+
+
+    EL COLOR DE FONS DEL TEU ESCRIPTORI
+        String colorFonsEscritori = "Red";
+
+
+    SI T'AGRADA O NO EL GUST DE LA LLIMONA
+        Boolean gustLlimonada = True;
+
+
+    LA LLETRA DE LA TEVA CANÇÓ PREFERIDA
+        String SongFavLyrinch = "ShapeOfYou";
+
+
+    LA LLISTA DE PEL·LÍCULES I LLIBRES QUE MÉS T'HAN MARCAT
+        String MovieBookMatch = "";
+   
+
