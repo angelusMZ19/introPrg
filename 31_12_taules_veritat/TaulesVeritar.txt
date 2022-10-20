@@ -1,0 +1,43 @@
+titol: taules d veritar
+autor angelo montenegro 
+ intro: Composa una taula de veritat per cadascuna de les següents afirmacions
+
+
+
+
+ 
+LA CLARA ÉS MAJOR D'EDAT O BÉ LA CLARA ÉS MÉS JOVE QUE EL MARC
+
+    edadClara =>18 || edadClara < edadMarc
+        true    || true 
+                true
+
+
+
+
+AL MENYS UN DE VOSALTRES, LA CLARA, EL MARC O TU, ÉS MAJOR D'EDAT
+
+    edadClara >= 18 || edadMarc >= 18|| edadMeva >= 18 
+        true        ||  true         ||         true
+                    true     || true            
+                            true
+                            
+    
+                
+    
+
+
+
+
+LA CLARA ÉS MAJOR D'EDAT, I TU ETS MAJOR QUE EL MARC PERÒ NO MAJOR QUE LA CLARA
+
+    edadClara >= 18 &&  edadMeva > edadMarc && !(edadMeva > edadClara)
+        true        &&        true           &&      false
+        true        &&          false
+                false
+                
+        
+
+
+
+
