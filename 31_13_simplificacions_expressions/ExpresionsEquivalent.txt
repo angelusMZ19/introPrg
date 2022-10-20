@@ -1,0 +1,63 @@
+titutlo: expresiones equivalentes
+autor: angelo montenegro 
+intro. usar tablas de verdad para saber si las expresiones expuestas son equivalentes 
+
+
+    true && A, A
+     true   A   true && A                                    Equivalents 
+       v    v       v
+       v    f       f
+
+
+    A && A, A
+       A    A && A                                           Equivalentes
+       v       v
+       F       f
+
+
+    A || false, A
+       A     False   A || false                              Equivalentes
+       v       f        v
+       F       f        f
+
+
+    A || A, A
+       A    A || A                                           Equivalentes
+       v       v
+       F       f
+
+
+    A && false, false
+       A     false     A && false                            Equivalentes
+       v       f            f
+       F       f            f
+
+
+    A || true, true
+    true   A   A || true                                     Equivalents 
+      v    v       v
+      v    f       v   
+    
+
+    ! (A && B), !A || !B
+      A    B     (A && B), !A || !B                          Equivalents 
+      v    v         f         f
+      f    v         v         v
+      v    f         v         v
+      f    f         v         v
+
+
+
+    !(A || B), !A && !B
+      A    B     !(A || B),  !A && !B                          Equivalents 
+      v    v         f         f
+      f    v         f         f
+      v    f         f         f
+      f    f         v         v
+    
+    
+    
+    
+    
+    
+
