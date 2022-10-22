@@ -21,10 +21,10 @@ public class DiasSetmana {
                             System.out.println("El numero seleccionado corresponde al dia Sabado");
                             }else if (diaSemana == 7){
                                 System.out.println("El numero seleccionado corresponde al dia Domingo");
-                                } else if (diaSemana > 7){
+                                } else if (diaSemana < 1 || diaSemana> 7){
                                 System.out.println("ERROR");
                                 }
    }
 }
         
-          
+           
