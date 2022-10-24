@@ -6,8 +6,8 @@
 public class ParellSenar {
     public static void main(String[] args) {
     int numero = Integer.parseInt(args[0]);
-    String resultat = (numero % 2 == 0) ?  "par" : "impar"; 
-       System.out.println("el resultado es :"  +  resultat);
+    String resultat = (numero % 2 == 0) ?  "parell" : "senar"; 
+       System.out.println("el numero" + numero + " és " +  resultat);
     }
            
 }
