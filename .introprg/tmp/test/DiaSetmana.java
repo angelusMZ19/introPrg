@@ -17,7 +17,7 @@ public class DiaSetmana {
                     }else if (diaSemana == 5){
                         System.out.println("Divendres");
                         }else if (diaSemana == 6){
-                            System.out.println("Disabta");
+                            System.out.println("Dissabte");
                             }else if (diaSemana == 7){
                                 System.out.println("Diumenge");
                                 } else if (diaSemana < 1 || diaSemana> 7){
