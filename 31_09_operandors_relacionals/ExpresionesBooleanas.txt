@@ -43,3 +43,4 @@ intro: el objetivo de este ejercicio es aprender a transformar las oraciones exp
 
     ESTEM A MÉS DE 28 GRAUS
     temperature > 28
+    

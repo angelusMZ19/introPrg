@@ -2,7 +2,7 @@
  * Programa que recorda que els majors d'edat són responsables davant la
  * llei
  */
-public class PodeuPreso {
+public class Preso {
     public static void main(String[] args) {
         System.out.println("Com us dieu?");
         String nom = Entrada.readLine();
