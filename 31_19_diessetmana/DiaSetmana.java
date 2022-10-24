@@ -3,7 +3,7 @@
 */
 public class DiaSetmana {
     public static void main(String[]args){
-    
+    System.out.println("numero de dia");
     int diaSemana = Integer.parseInt(Entrada.readLine());
     
     if (diaSemana == 1){
