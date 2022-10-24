@@ -21,7 +21,7 @@ public class DiaSetmana {
                             }else if (diaSemana == 7){
                                 System.out.println("Diumenge");
                                 } else if (diaSemana < 1 || diaSemana> 7){
-                                System.out.println("ERROR");
+                                System.out.println("Error");
                                 }
    }
 }
