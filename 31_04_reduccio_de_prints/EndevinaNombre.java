@@ -11,7 +11,7 @@
      */
 
 
-    public class reduimprints {
+    public class EndevinaNombre {
 
         public static void main(String[] args) {
 
