@@ -4,8 +4,7 @@
 public class DiaSetmana {
     public static void main(String[]args){
     
-    int diaSemana; 
-    diaSemana = Integer.parseInt(Entrada.readLine());
+    int diaSemana = Integer.parseInt(Entrada.readLine());
     
     if (diaSemana == 1){
         System.out.println("Dilluns");
