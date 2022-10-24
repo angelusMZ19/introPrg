@@ -1,7 +1,7 @@
 /*angelo
 *tenga fe poco a poc voy avanzando 
 */
-public class DiasSetmana {
+public class DiaSetmana {
     public static void main(String[]args){
     System.out.println("Inserte Nº dia de la setmana:");
     
