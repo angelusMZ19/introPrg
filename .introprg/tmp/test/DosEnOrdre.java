@@ -11,8 +11,8 @@ public class DosEnOrdre {
             int segon = Integer.parseInt(Entrada.readLine());
 
         if (primer < segon) {
-            System.out.println( primer + "  i  " + segon);}
+            System.out.println( primer + " i " + segon);}
          else {
-           System.out.println( segon + "  i  " + primer);}
+           System.out.println( segon + " i " + primer);}
         }
 }         
