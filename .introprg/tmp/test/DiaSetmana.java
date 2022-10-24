@@ -9,7 +9,7 @@ public class DiaSetmana {
     if (diaSemana == 1){
         System.out.println("Dilluns");
         }else if (diaSemana == 2){
-            System.out.println("Dimars");
+            System.out.println("Dimarts");
             }else if (diaSemana == 3){
                 System.out.println("Dimecres");
                 }else if (diaSemana == 4){
