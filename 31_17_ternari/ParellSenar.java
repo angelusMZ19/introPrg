@@ -3,7 +3,7 @@
  * és parell o senar.
  * Si no s'especifica cap número, el resultat és indeterminat.
  */
-public class TernariParImp {
+public class ParellSenar {
     public static void main(String[] args) {
     int numero = Integer.parseInt(args[0]);
     String resultat = (numero % 2 == 0) ?  "par" : "impar"; 
