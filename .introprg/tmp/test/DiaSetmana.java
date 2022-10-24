@@ -3,28 +3,28 @@
 */
 public class DiaSetmana {
     public static void main(String[]args){
-    System.out.println("Inserte Nº dia de la setmana:");
     
-    int diaSemana = Integer.parseInt(Entrada.readLine());
+    int diaSemana; 
+    diaSemana = Integer.parseInt(Entrada.readLine());
     
     if (diaSemana == 1){
-        System.out.println("El numero seleccionado corresponde al dia Lunes");
+        System.out.println("Dilluns");
         }else if (diaSemana == 2){
-            System.out.println("El numero seleccionado corresponde al dia Martes");
+            System.out.println("Dimars");
             }else if (diaSemana == 3){
-                System.out.println("El numero seleccionado corresponde al dia Miercoles");
+                System.out.println("Dimecres");
                 }else if (diaSemana == 4){
-                    System.out.println("El numero seleccionado corresponde al dia Jueves");
+                    System.out.println("Dijous");
                     }else if (diaSemana == 5){
-                        System.out.println("El numero seleccionado corresponde al dia Viernes");
+                        System.out.println("Divendres");
                         }else if (diaSemana == 6){
-                            System.out.println("El numero seleccionado corresponde al dia Sabado");
+                            System.out.println("Disabta");
                             }else if (diaSemana == 7){
-                                System.out.println("El numero seleccionado corresponde al dia Domingo");
+                                System.out.println("Diumenge");
                                 } else if (diaSemana < 1 || diaSemana> 7){
                                 System.out.println("ERROR");
                                 }
    }
 }
         
-           
+          
