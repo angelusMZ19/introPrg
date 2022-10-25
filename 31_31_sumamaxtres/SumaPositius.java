@@ -29,3 +29,4 @@ public class SumaPositius {
         System.out.println("La suma és " + suma);
     }
 }
+}
