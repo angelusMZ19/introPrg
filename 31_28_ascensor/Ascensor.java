@@ -11,7 +11,10 @@ public class Ascensor{
         String botó = Entrada.readLine();
        
         
-        if(pis.equals("planta baixa") && botó.equals("pujar un")) {
+        if(!pis.equals("planta baixa")||!pis.equals("primer pis") || !pis.equals("segon pis") ) {
+                    System.out.println("error");}
+                    
+        else if(pis.equals("planta baixa") && botó.equals("pujar un")) {
             System.out.println("primer pis");
         }else if(pis.equals("planta baixa") && botó.equals("pujar dos")) {
                 System.out.println("segon pis");}
@@ -38,7 +41,6 @@ public class Ascensor{
                     else if(pis.equals("segon pis") && botó.equals("baixar dos")) {
                     System.out.println("planta baixa");}
                     
-         if(!pis.equals("planta baixa")||!pis.equals("primer pis") || !pis.equals("segon pis") ) {
-                    System.out.println("error");}
+       
      }
 }
