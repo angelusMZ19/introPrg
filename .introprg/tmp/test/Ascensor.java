@@ -12,15 +12,15 @@ public class Ascensor{
        
         
         
-        if(pis.equals("planta baixa") & !(botó.equals("pujar un"))|| !(botó.equals("pujar dos"))) {
-            System.out.println("error");}            
+        /*if(pis.equals("planta baixa") & !(botó.equals("pujar un"))|| !(botó.equals("pujar dos"))) {
+            System.out.println("error");}   */         
         if(pis.equals("planta baixa") && botó.equals("pujar un")) {
             System.out.println("primer pis");
         }else if(pis.equals("planta baixa") && botó.equals("pujar dos")) {
                 System.out.println("segon pis");}
-                    /*else if(pis.equals("planta baixa") && botó.equals("baixar un")) {
+                    else if(pis.equals("planta baixa") && botó.equals("baixar un")||botó.equals("baixar dos") || botó.equals("baixar tres")) {
                     System.out.println("error");}
-                        else if(pis.equals("planta baixa") && botó.equals("baixar dos")) {
+                        /*else if(pis.equals("planta baixa") && botó.equals("baixar dos")) {
                         System.out.println("error");}*/
                 
         if(pis.equals("primer pis") && !(botó.equals("baixar un"))|| !(botó.equals("pujar dos"))) {
