@@ -23,19 +23,25 @@ public class TresEnOrdre {
                  }
                  else {
                     if (segon < tercer){
-                        if (primer < tercer){
+                        if (segon< primer){
+                            if (primer < tercer){
                          System.out.println( segon + ", " + primer + " i " + tercer);}
                         else {
                          System.out.println( segon + ", " + tercer + " i " + primer);}
                       }
                     }
+                   }
                             
                              if (tercer < primer){
-                                 if (segon < primer){
-                                  System.out.println( tercer + ", " + segon + " i " + primer);
-                                  } else if (primer < segon){
-                                     System.out.println( tercer + ", " + primer + " i " + segon);}
+                                    if (tercer< segon){
+                                        if (segon < primer){
+                                    System.out.println( tercer + ", " + segon + " i " + primer);}
+                                   else {
+                                     System.out.println( tercer + ", " + primer + " i " + segon );}
+
+
                                  }
                               }
             }
+           }
 
