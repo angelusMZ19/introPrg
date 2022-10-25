@@ -3,10 +3,10 @@
  */
 public class Semafor {
     public static void main(String[] args) {
-        System.out.println("color?");
+        System.out.println("Color?");
        
         String color = Entrada.readLine();
-        if (color.equals("rojo")) {
+        if (color.equals("vermell")) {
             System.out.println("Detente");
                 } else if (color.equals("amarillo")) {
                     System.out.println("Corre!");
