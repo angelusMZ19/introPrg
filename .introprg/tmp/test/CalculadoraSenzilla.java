@@ -24,7 +24,7 @@ public class CalculadoraSenzilla {
                     double resultat = operand1 / operand2;
                     System.out.println(operand1 + " / " + operand2 + " = " + resultat);
                     }else if (operand2 == 0 );{
-                        System.out.println ("no es pot dividir entre " + operand2);}
+                        System.out.println ("no es pot dividir entre 0");}
            } 
            
     } 
