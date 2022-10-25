@@ -23,8 +23,10 @@ public class CalculadoraSenzilla {
                 } else if (operador == '/') {
                     double resultat = operand1 / operand2;
                     System.out.println(operand1 + " / " + operand2 + " = " + resultat);
-                    }else if (operand2 == 0 );{
-                        System.out.println ("no es pot dividir entre 0");}
+                    }
+                    else if (operador == '^') {
+                    System.out.println("LOperador"+ operador + "no està disponible");}
+                   
            } 
            
     } 
