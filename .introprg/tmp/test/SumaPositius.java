@@ -23,9 +23,7 @@ public class SumaPositius {
                 valor = Integer.parseInt(Entrada.readLine());
                 if (valor >= 0) {
                 suma = suma + valor;
-                 }
-                  if (valor < 0){
-                 System.out.println("la suma és 0");
+                 
             }
         }
         // mostrem el resultat
