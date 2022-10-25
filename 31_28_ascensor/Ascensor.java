@@ -1,6 +1,6 @@
 /*
 */
-public class ascensor{
+public class Ascensor{
     public static void main (String []args){
         
         System.out.println("pis?");
@@ -11,10 +11,9 @@ public class ascensor{
         String botó = Entrada.readLine();
         
         if(pis.equals("planta baixa") && botó.equals("pujar un")) {
-        System.out.println ("primer pis");
+            System.out.println("primer pis");
             }else if(pis.equals("planta baixa") && botó.equals("pujar dos")) {
-             System.out.println ("segon pis");
-             }
+                System.out.println("segon pis");}
                 
         if(pis.equals("primer pis") && botó.equals("pujar un")) {
             System.out.println("segon pis");}
