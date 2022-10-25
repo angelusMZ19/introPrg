@@ -13,7 +13,7 @@ public class Ascensor{
         
         if(pis.equals("planta baixa") && botó.equals("pujar un")) {
             System.out.println("primer pis");
-            }else if(pis.equals("planta baixa") && botó.equals("pujar dos")) {
+        }else if(pis.equals("planta baixa") && botó.equals("pujar dos")) {
                 System.out.println("segon pis");}
                 
         if(pis.equals("primer pis") && botó.equals("pujar un")) {
