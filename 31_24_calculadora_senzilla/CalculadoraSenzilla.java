@@ -8,7 +8,7 @@ public class CalculadoraSenzilla {
         double operand1 = Double.parseDouble(Entrada.readLine());
         System.out.println("Operador?");
         char operador = Entrada.readLine().charAt(0);
-        System.out.println("Operand2");
+        System.out.println("Operand2?");
         double operand2 = Double.parseDouble(Entrada.readLine());
 
         if (operador == '+') {
