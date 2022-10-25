@@ -10,7 +10,9 @@ public class CalculadoraSenzilla {
         char operador = Entrada.readLine().charAt(0);
         System.out.println("Operand2?");
         double operand2 = Double.parseDouble(Entrada.readLine());
-
+        
+        if (operand2 == 0 && operador == '/') {
+            System.out.println( "no es pot dividir entre 0");}
         if (operador == '+') {
             double resultat = operand1 + operand2;
             System.out.println(operand1 + " + " + operand2 + " = " + resultat);
@@ -20,13 +22,11 @@ public class CalculadoraSenzilla {
             } else if (operador == '*') {
                 double resultat = operand1 * operand2;
                     System.out.println(operand1 + " * " + operand2 + " = " + resultat);
-                } else if (operador == '/') {
+                }  else if (operador == '/') {
                     double resultat = operand1 / operand2;
                     System.out.println(operand1 + " / " + operand2 + " = " + resultat);
                     } else if (operador == '^') {
-                    System.out.println("LOperador"+ operador + "no està disponible");
-                        } else if (operand2 == 0){
-                            System.out.println ("no es pot dividir entre 0");}
+                    System.out.println("LOperador"+ operador + "no està disponible");} 
                    
            } 
            
