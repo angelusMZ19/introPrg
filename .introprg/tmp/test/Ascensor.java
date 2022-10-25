@@ -5,10 +5,11 @@ public class Ascensor{
         
         System.out.println("pis?");
         String pis = Entrada.readLine();
-        
+     
         
         System.out.println("botó?");
         String botó = Entrada.readLine();
+       
         
         if(pis.equals("planta baixa") && botó.equals("pujar un")) {
             System.out.println("primer pis");
