@@ -12,6 +12,9 @@ public class SumaPositius {
         valor = Integer.parseInt(Entrada.readLine());
         if (valor >= 0) {
             suma = suma + valor;
+            
+            }if (valor < 0) {
+                System.out.println("la suma es 0");}
 
             // processem el segon valor
             System.out.println("Introdueix el segon valor");
@@ -30,4 +33,4 @@ public class SumaPositius {
         System.out.println("La suma és " + suma);
     }
 }
-}
+
