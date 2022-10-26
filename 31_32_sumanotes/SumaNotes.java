@@ -7,14 +7,14 @@ public class SumaNotes {
         int suma = 0;   // inicialment no hem sumat res i per tant és 0
 
         // demana el primer valor
-        System.out.println("Introdueix valor");
+        System.out.println("Introdueix una nota");
         int valor = Integer.parseInt(Entrada.readLine());
 
         // ves sumant mentre el valor sigui positiu
         while (valor >= 0 && valor <= 100) {
             suma = suma + valor;
             // demana un nou valor
-            System.out.println("Introdueix valor");
+            System.out.println("Introdueix una nota");
             valor = Integer.parseInt(Entrada.readLine());
         }
 
