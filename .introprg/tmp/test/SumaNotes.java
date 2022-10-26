@@ -19,6 +19,6 @@ public class SumaNotes {
         }
 
         // mostrem el resultat
-        System.out.println("La suma és " + suma);
+        System.out.println("La suma de les notes vàlides és " + suma);
     }
 }
