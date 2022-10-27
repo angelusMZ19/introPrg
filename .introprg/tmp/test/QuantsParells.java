@@ -7,6 +7,9 @@ public class QuantsParells {
             valor = Integer.parseInt(Entrada.readLine());
             if (valor % 2 == 0) {
                 parell++ ;
+                if (valor % 2 != 0) {
+                parell--;
+                }
             }
         }
         System.out.println("Nombre de parells introduïts: " + parell);
