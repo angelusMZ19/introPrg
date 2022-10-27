@@ -36,7 +36,6 @@ public class DiaSetmanaSwitch {
                 System.out.println("Error");
             }
              
-            System.out.println(diaSemana);
          
         }
         
