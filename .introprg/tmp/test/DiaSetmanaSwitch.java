@@ -5,14 +5,13 @@
 
 public class DiaSetmanaSwitch {
     public static void main(String[]args){
+  
     System.out.println("Inserte Nº dia de la setmana:");
-    
     int diaSemana = Integer.parseInt(Entrada.readLine());
-     if ( diaSemana < 1 || diaSemana> 7){ 
-            System.out.println("Error");
+    
    
         switch (diaSemana){
-       
+              
             case 1 : 
                 System.out.println("Dilluns");
                 break;
@@ -34,10 +33,13 @@ public class DiaSetmanaSwitch {
             case 7 : 
                 System.out.println("Diumenge");
                 break;
-                
+            default:
+                System.out.println("Error");
             }
+         
         }
+        
    }
-}
+
         
           
