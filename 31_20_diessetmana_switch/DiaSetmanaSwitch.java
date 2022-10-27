@@ -3,7 +3,7 @@
 *voy avanzando
 */
 
-public class DiaSetmana {
+public class DiaSetmanaSwitch {
     public static void main(String[]args){
     System.out.println("Inserte Nº dia de la setmana:");
     
