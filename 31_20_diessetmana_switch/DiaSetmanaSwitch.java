@@ -6,8 +6,8 @@
 public class DiaSetmanaSwitch {
     public static void main(String[]args){
   
-    System.out.println("Inserte Nº dia de la setmana:");
-    int diaSemana = Integer.parseInt(Entrada.readLine());
+    //System.out.println("Inserte Nº dia de la setmana:");*/
+    int diaSemana = Integer.parseInt(args[0]);
     
    
         switch (diaSemana){
