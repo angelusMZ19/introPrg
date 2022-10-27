@@ -13,6 +13,6 @@ public class Lloro {
             
            }          
         }
-     System.out.println ("Adeu");
+     System.out.println ("Adéu");
     }
 }
