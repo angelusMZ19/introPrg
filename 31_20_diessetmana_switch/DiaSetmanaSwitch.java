@@ -9,34 +9,34 @@ public class DiaSetmanaSwitch {
     
     int diaSemana = Integer.parseInt(Entrada.readLine());
      if ( diaSemana < 1 || diaSemana> 7){ 
-            System.out.println("Error");}
+            System.out.println("Error");
    
-    switch (diaSemana){
-   
-        case 1 : 
-            System.out.println("Dilluns");
-            break;
-        case 2 : 
-            System.out.println("Dimarts");
-            break;
-        case 3 : 
-            System.out.println("Dimecres");
-            break;
-        case 4 : 
-            System.out.println("Dijous");
-            break;
-        case 5 : 
-            System.out.println("Divendres");
-            break;
-        case 6 : 
-            System.out.println("Dissabte");
-            break;
-        case 7 : 
-            System.out.println("Diumenge");
-            break;
-            
+        switch (diaSemana){
+       
+            case 1 : 
+                System.out.println("Dilluns");
+                break;
+            case 2 : 
+                System.out.println("Dimarts");
+                break;
+            case 3 : 
+                System.out.println("Dimecres");
+                break;
+            case 4 : 
+                System.out.println("Dijous");
+                break;
+            case 5 : 
+                System.out.println("Divendres");
+                break;
+            case 6 : 
+                System.out.println("Dissabte");
+                break;
+            case 7 : 
+                System.out.println("Diumenge");
+                break;
+                
+            }
         }
-        
    }
 }
         
