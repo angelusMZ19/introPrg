@@ -7,7 +7,7 @@ public class QuantsParells {
             valor = Integer.parseInt(Entrada.readLine());
             if (valor % 2 == 0) {
                 parell++ ;
-                if (valor % 2 != 0) {
+                if (valor < 0) {
                 parell--;
                 }
             }
