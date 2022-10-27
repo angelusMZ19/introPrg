@@ -9,7 +9,7 @@ public class Lloro {
         paraula= Entrada.readLine();
 
            if(!(paraula.isEmpty()) && !(paraula.isBlank())){
-            System.out.println("El LLoro repeteix: " + paraula);
+            System.out.println("El lloro repeteix: " + paraula);
             
            }          
         }
