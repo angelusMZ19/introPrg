@@ -11,7 +11,6 @@ public class DiaSetmanaSwitch {
     
    
         switch (diaSemana){
-              
             case 1 : 
                 System.out.println("Dilluns");
                 break;
@@ -36,6 +35,8 @@ public class DiaSetmanaSwitch {
             default:
                 System.out.println("Error");
             }
+             
+            System.out.println(diaSemana);
          
         }
         
