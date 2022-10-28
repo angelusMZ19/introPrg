@@ -11,7 +11,7 @@ public class TrobaMaxim{
                 
                 }
             }
-            System.out.println("El màxim valor és " + maxim);
+            System.out.println("El màxim és " + maxim);
         }
         
     }
