@@ -19,13 +19,16 @@ public class NotaMitja {
             // demana un nou valor
             System.out.println("Introdueix un valor");
             valor = Double.parseDouble(Entrada.readLine());
+            
+            if (valor < 0 && valor > 100){
+            System.out.println("Cap nota vàlida introduïda");}
         }
 
         // mostrem el resultat
-        if (valor < 0 && valor > 100){
-            System.out.println("Cap nota vàlida introduïda");}
+        
+            
             if (valor >= 0 && valor <= 100){
-        System.out.println(" La mitja de les notes vàlides és " + promedio);}
+                System.out.println(" La mitja de les notes vàlides és " + promedio);}
         
     }
 }
