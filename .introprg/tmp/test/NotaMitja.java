@@ -9,6 +9,8 @@ public class NotaMitja {
         // demana el primer valor
         System.out.println("Introdueix un valor");
         double valor = Double.parseDouble(Entrada.readLine());
+         if (valor < 0 && valor > 100){
+            System.out.println("Cap nota vàlida introduïda");} 
 
         // ves sumant mentre el valor sigui positiu
         while (valor >= 0 && valor <= 100) {
@@ -17,17 +19,17 @@ public class NotaMitja {
             promedio= suma / n;
             secuencia += 1;
             // demana un nou valor
+           
             System.out.println("Introdueix un valor");
             valor = Double.parseDouble(Entrada.readLine());
-              if (valor >= 0 && valor <= 100){
-                System.out.println(" La mitja de les notes vàlides és " + promedio);}
-           
+              
         }
- if (valor < 0 && valor > 100){
-            System.out.println("Cap nota vàlida introduïda");}
+ 
         // mostrem el resultat
         
-            
+            if (valor >= 0 && valor <= 100){
+                System.out.println(" La mitja de les notes vàlides és " + promedio);}
+           
           
         
     }
