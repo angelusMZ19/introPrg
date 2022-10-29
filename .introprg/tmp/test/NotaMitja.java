@@ -20,10 +20,10 @@ public class NotaMitja {
             System.out.println("Introdueix un valor");
             valor = Double.parseDouble(Entrada.readLine());
             
-            if (valor < 0 && valor > 100){
-            System.out.println("Cap nota vàlida introduïda");}
+           
         }
-
+ if (valor < 0 && valor > 100){
+            System.out.println("Cap nota vàlida introduïda");}
         // mostrem el resultat
         
             
