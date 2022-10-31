@@ -28,7 +28,7 @@ public class EndevinaNombre {
                     
                  }
                  if (valor == numPensado) 
-                         System.out.println("Has encertar!") ;        
+                         System.out.println("Has encertat!") ;        
                  
        }
 }
