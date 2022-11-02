@@ -7,8 +7,9 @@ public class EndevinaNombre{
     System.out.println("Introdueix un valor");
     valor = Integer.parseInt(Entrada.readLine());
     
-    while(valor >= 0 && valor <= 100){
+    
         while(valor != 42){ 
+        
          if(valor <= 0){
          System.out.println("Com minim 1");
             
@@ -30,13 +31,9 @@ public class EndevinaNombre{
                             System.out.println("Introdueix un valor");
                             valor = Integer.parseInt(Entrada.readLine());
                             }
+                            
                           }
-                         }
-                 if(valor == 42){
-                 System.out.println("Has encertat");                          
-                     }
-                     
-             }
-             
+                          System.out.println("Has encertat");
+              }                          
 }
             
