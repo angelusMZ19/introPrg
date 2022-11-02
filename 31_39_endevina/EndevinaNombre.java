@@ -34,7 +34,7 @@ public class EndevinaNombre{
                             }
                             
                           }
-                          System.out.println("Has encertat");
+                          System.out.println("Has encertat!");
               }                          
 }
             
