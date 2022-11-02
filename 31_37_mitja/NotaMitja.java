@@ -4,7 +4,7 @@ public class NotaMitja {
         double suma = 0;   // inicialment no hem sumat res i per tant és 0
         double promedio =  0.0  ;
         double n = 0;
-        double secuencia= 1;
+        double contador= 1;
         
         // demana el primer valor
         System.out.println("Introdueix un valor");       
@@ -15,9 +15,9 @@ public class NotaMitja {
         
             if (valor >= 0 && valor <= 100){
             suma = suma + valor;
-            n= Math.abs (secuencia);
+            n= Math.abs (contador);
             promedio= suma / n;
-            secuencia += 1;
+            contador += 1;
             // demana un nou valor
              System.out.println("Introdueix un valor");
              valor = Double.parseDouble(Entrada.readLine());           
