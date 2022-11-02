@@ -25,7 +25,7 @@ public class NotaMitja {
           }
             if (contador > 0){
             System.out.println("La mitja de les notes vàlides és " + promedio);
-                }else if(valor < 0 || valor > 100){
+                }else if(contador < 0 || contador > 100){
                 System.out.println("Cap nota vàlida introduïda");
          }
     }
