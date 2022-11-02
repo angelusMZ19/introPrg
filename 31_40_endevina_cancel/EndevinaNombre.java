@@ -7,15 +7,21 @@ public class EndevinaNombre{
     public static void main (String[]args){
     
     int valor = 0;
+    String numCadena= String.valueOf(valor);
     int numPensado = 42;
+    
     
     System.out.println("Ves introduint enters entre 1 i 100 fins que encertis el que jo he pensat");
     System.out.println("Introdueix un valor");
     valor = Integer.parseInt(Entrada.readLine());
     
     
-        while(valor != 42){ 
+       
         
+                
+        while(valor != 42){ 
+         while (!(numCadena.isEmpty()) && !(numCadena.isBlank())){
+         
          if(valor <= 0){
          System.out.println("Com a mínim 1");
             
@@ -39,7 +45,8 @@ public class EndevinaNombre{
                             }
                             
                           }
-                          System.out.println("Has encertat!");
-              }                          
-}
-            
+                  System.out.println("Cancelat");        
+              }  
+               System.out.println("Has encertat!");                       
+    }
+}        
