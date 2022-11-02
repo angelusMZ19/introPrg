@@ -12,12 +12,12 @@ public class EndevinaNombre{
         while(valor != 42){ 
         
          if(valor <= 0){
-         System.out.println("Com mínim 1");
+         System.out.println("Com a mínim 1");
             
             System.out.println("Introdueix un valor");
             valor = Integer.parseInt(Entrada.readLine());
             }else if(valor > 100){
-            System.out.println("Com màxim 100");
+            System.out.println("Com a màxim 100");
                     
                     System.out.println("Introdueix un valor");
                     valor = Integer.parseInt(Entrada.readLine());
