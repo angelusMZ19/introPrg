@@ -18,12 +18,12 @@ public class EntersIniciFi{
     System.out.println(v1);
     while(v1 <= v2 && v3 > 0){
     
-    while (!(v1 > v2)){
-            v1= v1 + v3;
+    if(v1 <= v2){
+            v1= v1 + v3 ;
             
-     System.out.println(v1);
+     
             }
-            
+            System.out.println(v1);
         }
         
     }
