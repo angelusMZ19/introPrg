@@ -3,25 +3,22 @@
 public class EntersIniciFi{
     public static void main (String[]args){
     
-    int v1 = 0;
-    int v2 = 0;
-    int v3 = 0;
     
-    int contador = 0; 
+ 
     
     System.out.println("Valor inicial?");
-    v1 = Integer.parseInt(Entrada.readLine());
+    int v1 = Integer.parseInt(Entrada.readLine());
     
     System.out.println("Valor final?");
-    v2 = Integer.parseInt(Entrada.readLine());
+    int v2 = Integer.parseInt(Entrada.readLine());
     
     System.out.println("Salt?");
-    v3 = Integer.parseInt(Entrada.readLine());
+    int v3 = Integer.parseInt(Entrada.readLine());
     
+    System.out.println(v1);
     while(v1 < v2 && v2 > v3 && v3 > 0){
-            v1= v1;
-            v1 = v1 + v3;
-    
+            v1= v1 + v3;
+            
      System.out.println(v1);
             }
         }
