@@ -15,29 +15,19 @@ public class EntersIniciFi{
     System.out.println("Salt?");
     int v3 = Integer.parseInt(Entrada.readLine());
     
-    System.out.println(v1);
+  
     while(v1 <= v2 && v3 > 0){
-    
-    if(v1 <= v2){
+    System.out.println(v1);
             v1= v1 + v3 ;
             
      
             }
-            System.out.println(v1);
+           
         }
         
-    }
  }
+
 
      
      
-     /*int numero = 1;         // esta es la variable de recorrido asignandole un valor 
-        while (numero <= 10) {  // la condicion que al cumplorse eejcutara los valores hasta llegar al limite que es el 10 
-            System.out.println(numero); //impresion de los numeros 
-            numero = numero + 1;    // imprimira los numeros de un en uno debido a que se le suma uno 
-        }
-    }
-}
-     */
-    
-    
+     
