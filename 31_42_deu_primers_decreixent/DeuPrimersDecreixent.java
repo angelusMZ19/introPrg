@@ -1,4 +1,4 @@
-public class DeuPrimerDecreixent{
+public class DeuPrimersDecreixent{
     public static void main (String[]args){
     
         int numero = 10;         // esta es la variable de recorrido asignandole un valor 
