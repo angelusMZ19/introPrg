@@ -23,8 +23,13 @@ public class SumaInterval{
                 acumulador = acumulador + i;
                 }
                 System.out.println( acumulador );
+                }else if (v1 == v2)
+                    for (int i = v1; i == v2; i++){
+                    acumulador = acumulador + i;
+                    }
+                    System.out.println( acumulador );
              
          }
  }
-}
+
  
