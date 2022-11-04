@@ -4,10 +4,10 @@ public class SumaInterval{
     public static void main (String[]args){
         
     
-     System.out.println( "Valor inicial?" ) ;
+     System.out.println( "inici?" ) ;
      int n1 = Integer.parseInt(Entrada.readLine());
                  
-     System.out.println( "Valor Final? " ) ;
+     System.out.println( "final? " ) ;
      int n2 =  Integer.parseInt(Entrada.readLine());
         
          
@@ -17,9 +17,8 @@ public class SumaInterval{
         for(int i = n1; i <= n2; i++) {
         acumulador = acumulador + i;
             }
-            System.out.println("La suma total és " + acumulador + ".");
-            } else {
-              System.out.println("n2 no es mayor que n1!");
+            System.out.println( acumulador );
+            } 
          }
-    }
  }
+ 
