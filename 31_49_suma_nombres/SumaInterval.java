@@ -7,7 +7,7 @@ public class SumaInterval{
      System.out.println( "inici?" ) ;
      int n1 = Integer.parseInt(Entrada.readLine());
                  
-     System.out.println( "final? " ) ;
+     System.out.println( "final?" ) ;
      int n2 =  Integer.parseInt(Entrada.readLine());
         
          
