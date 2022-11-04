@@ -17,7 +17,8 @@ public class EndevinaNombre{
     
     
        
-       if(!(numCadena.isEmpty()) && !(numCadena.isBlank())){ 
+     if(!(numCadena.isEmpty()) && !(numCadena.isBlank())){ 
+        
                 
         while(valor != 42){ 
          
@@ -46,7 +47,9 @@ public class EndevinaNombre{
                             
                           }
                          System.out.println("Has encertat!");
-              }  
-               System.out.println("Cancelat");                        
-    }
-}        
+              }
+              System.out.println("Cancelat");
+         }  
+     }                      
+
+        
