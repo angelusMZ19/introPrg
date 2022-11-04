@@ -4,19 +4,20 @@
 */
 public class EntersIniciFi{
     public static void main (String[]args){    
-  
-    for ( System.out.println("Valor inicial?");
-          int v1 = Integer.parseInt(Entrada.readLine());
-          System.out.println("Valor final?");
-          int v2 = Integer.parseInt(Entrada.readLine());
-          System.out.println("Salt?");
-          int v3 = Integer.parseInt(Entrada.readLine());
-          v1 <= v2 && v3 > 0; 
-          v1= v1 + v3 ){
-          System.out.println(v1);     
-            }
-           
-        }
-        
- }
-
+     
+      
+    System.out.println("Valor inicial?");
+    int v1 = Integer.parseInt(Entrada.readLine());
+    
+    System.out.println("Valor final?");
+    int v2 = Integer.parseInt(Entrada.readLine());
+    
+    System.out.println("Salt?");
+    int v3 = Integer.parseInt(Entrada.readLine());
+    
+          
+        for ( v1 = v1; v1 <= v2; v1= v1 + v3){
+         System.out.println(v1);     
+         }
+    }  
+}
