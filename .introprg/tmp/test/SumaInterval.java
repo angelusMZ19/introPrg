@@ -5,20 +5,26 @@ public class SumaInterval{
         
     
      System.out.println( "inici?" ) ;
-     int n1 = Integer.parseInt(Entrada.readLine());
+     int v1 = Integer.parseInt(Entrada.readLine());
                  
      System.out.println( "final?" ) ;
-     int n2 =  Integer.parseInt(Entrada.readLine());
+     int v2 =  Integer.parseInt(Entrada.readLine());
         
          
      int acumulador = 0;
          
-        if (n1 < n2) {
-        for(int i = n1; i <= n2; i++) {
+        if (v1 < v2) {
+        for(int i = v1; i <= v2 ; i++) {
         acumulador = acumulador + i;
             }
             System.out.println( acumulador );
-            } 
+            }else if (v1 > v2){
+                for(int i = v1; i >= v2 ; i--) {
+                acumulador = acumulador + i;
+                }
+                System.out.println( acumulador );
+             
          }
  }
+}
  
