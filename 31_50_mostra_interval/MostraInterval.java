@@ -17,8 +17,13 @@ public class MostraInterval{
             for ( int numero = v1;     
                   numero >= v2;
                   numero = numero - 1) {   
-                System.out.println(numero); 
+                System.out.println(numero); }
+                
+                for (int numero = v1;
+                     numero == v2;
+                     numero = numero){
+                     System.out.println(numero);}
+                
                 
         }
-    }
 }
