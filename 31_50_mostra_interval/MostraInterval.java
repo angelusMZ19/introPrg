@@ -9,21 +9,17 @@ public class MostraInterval{
      System.out.println( "final?" ) ;
      int v2 =  Integer.parseInt(Entrada.readLine());
                 
+        if (v1 < v2){
         for (int numero = v1;
              numero <= v2;
              numero = numero + 1) {  
              System.out.println(numero);}
-             
+           }else if (v1 > v2){ 
             for ( int numero = v1;     
                   numero >= v2;
                   numero = numero - 1) {   
                 System.out.println(numero); }
-                
-                for (int numero = v1;
-                     numero == v2;
-                     numero = numero){
-                     System.out.println(numero);}
-                
-                
-        }
-}
+                }else if (v1 == v2){
+                     System.out.println(v1);}
+                }      
+  }
