@@ -14,15 +14,15 @@ public class HistoricEdats{
     int edad= 1;
     if (edat > 0){
         System.out.println("El " + anyNacer + " vau néixer");
-        System.out.println("El " + (anyNacer + 1) + " tenieu 1 any");
+        System.out.println("El " + (anyNacer + 1) + " teníeu 1 any");
     
        for (int anySecuencia = anyNacer +2 ;
             anySecuencia < any;
             anySecuencia = anySecuencia + 1){
             edad= edad +1; 
       
-                System.out.println("El " + anySecuencia + " tenieu " + (edad) + " anys ");}
+                System.out.println("El " + anySecuencia + " teníeu " + (edad) + " anys ");}
         }else{
-        System.out.println("Adeu " + nombre);}
+        System.out.println("Adéu " + nombre);}
     }
  }
