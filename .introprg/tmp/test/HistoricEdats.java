@@ -13,7 +13,7 @@ public class HistoricEdats{
     int anyNacer= any - edat;
     int edad= 1;
     if (edat > 0){
-        System.out.println("El " + anyNacer + " vay néixer");
+        System.out.println("El " + anyNacer + " vau néixer");
         System.out.println("El " + (anyNacer + 1) + " tenieu 1 any");
     
        for (int anySecuencia = anyNacer +2 ;
