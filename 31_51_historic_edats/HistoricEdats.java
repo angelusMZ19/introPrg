@@ -22,7 +22,8 @@ public class HistoricEdats{
             edad= edad +1; 
       
                 System.out.println("El " + anySecuencia + " teníeu " + (edad) + " anys");
-                System.out.println("Adéu " + nombre);}
+                }
+                System.out.println("Adéu " + nombre);
         }else{
         System.out.println("Adéu " + nombre);}
     }
