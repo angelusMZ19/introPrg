@@ -13,7 +13,10 @@ public class HistoricEdats{
     int anyNacer= any - edat;
     int edad= 1;
     
-    if (edat == 0){
+    if (edat <0){
+        System.out.println("Entrada incorrecta");}
+    
+    else if (edat == 0){
     } 
          else if (edat > 1){
             System.out.println("El " + anyNacer + " vau néixer");
