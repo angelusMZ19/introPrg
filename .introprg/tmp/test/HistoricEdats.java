@@ -14,11 +14,10 @@ public class HistoricEdats{
     int edad= 1;
     
     if (edat <0){
-        System.out.println("Entrada incorrecta");}
-    
-    else if (edat == 0){
-    } 
-         else if (edat > 1){
+        System.out.println("Entrada incorrecta");
+        } else if (edat == 0){
+     
+          if (edat > 1){
             System.out.println("El " + anyNacer + " vau néixer");
             System.out.println("El " + (anyNacer + 1) + " teníeu 1 any");}
             
@@ -35,4 +34,5 @@ public class HistoricEdats{
                 }
           System.out.println("Adéu " + nombre);
         }
+    }
  }
