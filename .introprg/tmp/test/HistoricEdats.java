@@ -18,6 +18,7 @@ public class HistoricEdats{
         
         else {
             System.out.println("El " + anyNacer + " vau néixer");}
+           
     
        for (int anySecuencia = anyNacer +2 ;
             anySecuencia < any;
@@ -26,9 +27,7 @@ public class HistoricEdats{
       
                 System.out.println("El " + anySecuencia + " teníeu " + (edad) + " anys");
                 }
-                System.out.println("Adéu " + nombre);
-       // } //else {
-       // System.out.println("Adéu " + nombre);
+          System.out.println("Adéu " + nombre);
         }
-    }
- 
+    
+ }
