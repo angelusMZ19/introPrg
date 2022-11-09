@@ -12,12 +12,15 @@ public class HistoricEdats{
    
     int anyNacer= any - edat;
     int edad= 1;
-    if (edat > 1){
-        System.out.println("El " + anyNacer + " vau néixer");
-        System.out.println("El " + (anyNacer + 1) + " teníeu 1 any");}
-        
-        else {
-            System.out.println("El " + anyNacer + " vau néixer");}
+    
+    if (edat == 0){
+    } 
+         else if (edat > 1){
+            System.out.println("El " + anyNacer + " vau néixer");
+            System.out.println("El " + (anyNacer + 1) + " teníeu 1 any");}
+            
+            else {
+                System.out.println("El " + anyNacer + " vau néixer");}
            
     
        for (int anySecuencia = anyNacer +2 ;
@@ -29,5 +32,4 @@ public class HistoricEdats{
                 }
           System.out.println("Adéu " + nombre);
         }
-    
  }
