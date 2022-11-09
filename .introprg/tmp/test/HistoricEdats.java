@@ -15,7 +15,7 @@ public class HistoricEdats{
     
     if (edat == 0){
     } 
-         else if (edat > 1){
+         else if (edat >= 1){
             System.out.println("El " + anyNacer + " vau néixer");
             System.out.println("El " + (anyNacer + 1) + " teníeu 1 any");}
             
