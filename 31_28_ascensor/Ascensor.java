@@ -1,4 +1,4 @@
-/*
+/*programam que simula la funcionalidad de un ascensor 
 */
 public class Ascensor{
     public static void main (String []args){

@@ -1,3 +1,5 @@
+/*programa que pide que introduzcas 3 valores y los suma al final 
+*/
 public class SumaPositius {
     public static void main(String[] args) {
 

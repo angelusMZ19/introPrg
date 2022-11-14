@@ -1,3 +1,5 @@
+/*
+Programa que suma como maximo tres numeros que sean solamente positivos, es decir no negativos */
 public class SumaPositius {
     public static void main(String[] args) {
 
