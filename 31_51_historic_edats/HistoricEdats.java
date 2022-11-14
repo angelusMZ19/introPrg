@@ -1,3 +1,5 @@
+/*Desarrolla un programa que pida el nombre de una persona, su edad y el año actual, y escriba la edad que tenía esa persona cada año desde su nacimiento.
+*/
 public class HistoricEdats{
     public static void main (String[]args){
     
