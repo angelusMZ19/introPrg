@@ -9,17 +9,16 @@ public class QuadratNombres{
     System.out.println("Valor final?");
     int valor = Integer.parseInt(Entrada.readLine());
     
-    if (valor <= 0){
-        System.out.println("Valor inadequat");
-        }else if (valor >= 1){
+    if (!(valor <= 0) && !(valor >= 10)){
 
             for (int fila = 1; fila <= valor; fila = fila + 1) {
                 for (int columna = 1; columna <= valor; columna= columna + 1)
                     System.out.print(" " + columna);
                     
                     System.out.println( );}
-     }
+     }else{
+        System.out.println("Valor inadequat");}
   }
 }
 
-
+ //}else if (valor >= 1 && valor <= 9){
