@@ -1,4 +1,5 @@
-
+/*El programa anirà demanant notes mentre les que rebi siguin valors entre el 0 i el 100. Un cop rebi un valor fora del rang, deixarà de demanar més i mostrarà el valor resultant.
+*/
 
 public class SumaNotes {
     public static void main(String[] args) {
