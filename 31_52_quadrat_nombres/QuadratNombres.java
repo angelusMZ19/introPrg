@@ -21,4 +21,3 @@ public class QuadratNombres{
   }
 }
 
- //}else if (valor >= 1 && valor <= 9){
