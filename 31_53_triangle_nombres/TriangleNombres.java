@@ -9,11 +9,11 @@ public class TriangleNombres{
     
     if (!(valor <= 0) && !(valor >= 10)){
 
-            for (int fila = 1; fila <= valor; fila = fila + 1) {
-                for (int columna = 1; columna <= valor; columna= columna - 1)
-                    System.out.print(" " + columna);
+            for (int fila = 1; fila <= valor; fila++) { //fila ++
+                for (int columna = fila; columna <= 1; columna--) //col--
+                    System.out.print(" " + fila);
                     
-                    System.out.println( );}
+                    System.out.println();}
      }else{
         System.out.println("Valor inadequat");}
   }
