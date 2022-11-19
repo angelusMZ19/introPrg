@@ -3,7 +3,7 @@
 public class TriangleNombres{
     public static void main (String[]args){
     
-        System.out.println("Valor?");
+        System.out.println("Nombre?");
             int valor = Integer.parseInt(Entrada.readLine());
         for( int fila = 1; fila <= valor; fila++){
             for (int columna = fila; columna >= 1; columna--){
