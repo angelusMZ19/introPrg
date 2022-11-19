@@ -10,7 +10,7 @@ public class TriangleNombres{
             }else{
                 for( int fila = 1; fila <= valor; fila++){
                     for (int columna = fila; columna >= 1; columna--){
-                System.out.print(" " + columna);
+                System.out.print("" + columna);
                     }
                     System.out.println(" ");
                 }
