@@ -6,7 +6,7 @@ public class TriangleNombres{
         System.out.println("Nombre?");
             int valor = Integer.parseInt(Entrada.readLine());
         if (valor <= 1){
-            System.out.println("Valor inadecuat");
+            System.out.println("");
             }else{
                 for( int fila = 1; fila <= valor; fila++){
                     for (int columna = fila; columna >= 1; columna--){
