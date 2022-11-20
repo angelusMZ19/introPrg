@@ -1,3 +1,5 @@
+/*Programa que da la la media de los valorres ingresado es decir la nota promedio
+*/
 public class NotaMitja {
     public static void main(String[]args){
      // creem la variable on guardarem el resultat de sumar
@@ -21,8 +23,8 @@ public class NotaMitja {
                 // demana un nou valor
                  System.out.println("Introdueix un valor");
                  valor = Double.parseDouble(Entrada.readLine());           
-                }
-              }
+            }
+        }
             if (valor >= 0 && valor <= 100){
             System.out.println("La mitja de les notes vàlides és " + promedio);
                 }else if(valor < 0 || valor > 100){

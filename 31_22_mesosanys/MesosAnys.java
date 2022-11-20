@@ -1,4 +1,4 @@
-/*
+/*programa que da segun el numero de mes que se introduzca , el numero del mes que sigue y del anteriror con el año al que corresponde
 */
 
 
