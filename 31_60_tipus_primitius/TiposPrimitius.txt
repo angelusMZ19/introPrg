@@ -1,0 +1,13 @@
+    TIPOS           BITS            MINIMO          MÁXIMO          EJEMPLO
+*   int             32              -2^31           (2^31)-1          42
+*   boolean       indefinida            true y false                true
+*   long            64              2^63            (2^63)-1        Long=40
+*   float           32                    Indefinido                15,43325
+*   double          64                    Indefinido                23,7
+*   char            16          '\u0000'(o 0)   '\uffff'(65.535)     &
+*   byte            8               -128            127             0..255
+
+
+
+
+angelo montenegro

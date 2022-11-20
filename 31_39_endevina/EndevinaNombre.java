@@ -1,3 +1,5 @@
+/*Programa que propone que adivines el numero pensado diciendo si el numero ingreado en menor o mayor al pensado
+*/
 public class EndevinaNombre{
     public static void main (String[]args){
     
@@ -35,6 +37,6 @@ public class EndevinaNombre{
                             
                           }
                           System.out.println("Has encertat!");
-              }                          
+              }
 }
-            
+
