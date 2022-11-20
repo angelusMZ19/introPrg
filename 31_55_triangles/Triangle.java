@@ -2,6 +2,8 @@
 */
 public class Triangle {
     public static void main (String[]args){
+    System.out.println("Quants?");
+    int quant= Integer.parseInt(Entrada.readLine());
     
     
         for(int lin=9; lin >= 0; lin--){
@@ -14,9 +16,12 @@ public class Triangle {
             }
             System.out.print(9);
                 
-                for (int col=lin; col<=8; col++){
+                for (int col=8; !(col<lin); col--){
                     System.out.print(col);
                 }
+                for(int col=lin; col<=0; col++){
+                System.out.print(col);
+            }
                 System.out.println();
         }
     }
