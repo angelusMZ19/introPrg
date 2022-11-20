@@ -17,9 +17,7 @@ public class Triangle {
                 for (int col=lin; col<=8; col++){
                     System.out.print(col);
                 }
-                for (int col=0; col<=lin; col++){
-                System.out.print('.');
-                }
+                System.out.println();
         }
     }
 }
