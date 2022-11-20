@@ -1,3 +1,5 @@
+/*programa que busca el numero pensado dentro de los numeros ingresados y te menciona si el numero pensado es mayor o menor al numero ingresado
+*/
 public class Endevina {
      public static void main(String[]args){
      

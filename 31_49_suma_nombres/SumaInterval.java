@@ -1,4 +1,4 @@
-/*
+/*En este ejercicio pedirás dos valores enteros y sumarás todos los números que hayan entre el menor y el mayor de ellos.
 */
 public class SumaInterval{
     public static void main (String[]args){

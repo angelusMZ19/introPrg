@@ -1,3 +1,5 @@
+/*programa que imprime los diez primeros numeros de manera decreciente
+*/
 public class DeuPrimersDecreixent{
     public static void main (String[]args){
     

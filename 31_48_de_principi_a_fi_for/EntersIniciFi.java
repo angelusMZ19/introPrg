@@ -1,5 +1,3 @@
-/*
-*/
 /*Desarrolla un programa que solicite tres números enteros, y escriba los valores entre el primero y el segundo saltando de uno al siguiente con el tercero.
 */
 public class EntersIniciFi{

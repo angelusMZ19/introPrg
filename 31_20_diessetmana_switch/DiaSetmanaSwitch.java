@@ -1,6 +1,4 @@
-/*
-*angelo montenegro
-*voy avanzando
+/*programam que imprime el dia de la semna aal que corresponde el numero ingresado
 */
 
 public class DiaSetmanaSwitch {
