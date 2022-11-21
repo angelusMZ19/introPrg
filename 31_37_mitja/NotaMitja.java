@@ -26,7 +26,7 @@ public class NotaMitja {
             }
         }
         promedio= suma / contador;
-        System.out.println("La mitja de les notes vàlides es " + promedio);
+        System.out.println("La mitja de les notes vàlides és " + promedio);
          }
     }
 }
