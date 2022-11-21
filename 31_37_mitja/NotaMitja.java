@@ -5,37 +5,29 @@ public class NotaMitja {
      // creem la variable on guardarem el resultat de sumar
         double suma = 0;   // inicialment no hem sumat res i per tant és 0
         double promedio =  0.0  ;
-        double n = 0;
+        double valor = 0;
         double contador= 1;
         
         // demana el primer valor
         System.out.println("Introdueix un valor");       
-        double valor = Double.parseDouble(Entrada.readLine());             
-                       
+        valor = Double.parseDouble(Entrada.readLine());   
+        
+       if(valor < 0 || valor > 100){
+                System.out.println("Cap nota vàlida introduïda");  
+        }else {
+         suma= suma +valor;
         // ves sumant mentre el valor sigui positiu
         while (valor >= 0 && valor <= 100) {
-        
+            System.out.println("Introdueix un valor");
+                valor = Double.parseDouble(Entrada.readLine());
             if (valor >= 0 && valor <= 100){
                 suma = suma + valor;
-                n= Math.abs (contador);
-                promedio= suma / n;
-                contador += 1;
-                // demana un nou valor
-                 System.out.println("Introdueix un valor");
-                 valor = Double.parseDouble(Entrada.readLine());           
+                contador= contador + 1;
             }
         }
-            if (valor >= 0 && valor <= 100){
-            System.out.println("La mitja de les notes vàlides és " + promedio);
-                }else if(valor < 0 || valor > 100){
-                System.out.println("Cap nota vàlida introduïda");
+        promedio= suma / contador;
+        System.out.println("La mitja de les notes valides es " + promedio);
          }
     }
 }
-           // mostrem el resultat
-           
-
-     
-         
-
 
