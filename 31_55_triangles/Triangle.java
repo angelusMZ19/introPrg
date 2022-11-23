@@ -2,7 +2,7 @@
 */
 public class Triangle {
     public static void main (String[]args){
-        System.out.println("quants?");
+        System.out.println("quants?");61
         int quant= Integer.parseInt(Entrada.readLine());
     
             for(int i= 1; i <= quant; i++){
