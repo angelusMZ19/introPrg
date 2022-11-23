@@ -15,7 +15,7 @@ public class AnalitzaCaracter{
         int num= Integer.parseInt(Entrada.readLine());
     
         if (num > text.length() - 1 || Math.abs(num) > text.length()){
-            System.out.println("Fora de Rang");
+            System.out.println("Fora de rang");
         }   else{
                 if (num < 0){
                     num = text.length() + num;
