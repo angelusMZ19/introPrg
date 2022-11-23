@@ -10,7 +10,7 @@ public class InformeString{
         System.out.println("Número positiu?");
         int numero= Integer.parseInt(Entrada.readLine());
         
-        System.out.println("\"" + text + "\".length():" + text.length());
+        System.out.println("\"" + text + "\".length(): " + text.length());
         
         boolean es1= text.startsWith(textSec);
         System.out.println("\"" + text + "\".startsWith(\""  + textSec + "\"):"  + es1);
