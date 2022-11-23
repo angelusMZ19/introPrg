@@ -34,7 +34,7 @@ public class InformeString{
         
         System.out.println("\"" + text + "\".concat(\"" + textSec + "\"): " + text.concat(textSec));
         
-        System.out.println("\"" + text + "\".repeat(\"" + numero + "\"): " + text.repeat(numero));
+        System.out.println("\"" + text + "\".repeat(" + numero + "): " + text.repeat(numero));
         
         System.out.println("\"" + text + "\".toUpperCase(): " + text.toUpperCase());
         
