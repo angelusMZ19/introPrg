@@ -11,7 +11,7 @@ public class AnalitzaCaracter{
         System.out.println("Text?");
         String text= Entrada.readLine();
         
-        System.out.println("Posicio?");
+        System.out.println("Posició?");
         int num= Integer.parseInt(Entrada.readLine());
     
         if (num > text.length() - 1 || Math.abs(num) > text.length()){
@@ -22,13 +22,13 @@ public class AnalitzaCaracter{
                 }
                 char numText = text.charAt(num);
                 if (Character.isLetter(numText)){
-                    String isLetter = String.format("\'%c\' es una lletra", numText);
+                    String isLetter = String.format("\'%c\' és una lletra", numText);
                     System.out.println(isLetter);
                 } else if(Character.isDigit(numText)){
-                    String isDigit = String.format("\'%c\' es una nombre", numText);
+                    String isDigit = String.format("\'%c\' és una nombre", numText);
                     System.out.println(isDigit);
                 } else if(!Character.isLetter(numText) && !Character.isDigit(numText)){
-                    String altraCosa = String.format("\'%c\' es un altra cosa", numText);
+                    String altraCosa = String.format("\'%c\' és un altra cosa", numText);
                     System.out.println(altraCosa);
                 }
             }
