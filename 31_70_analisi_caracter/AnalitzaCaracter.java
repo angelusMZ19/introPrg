@@ -25,7 +25,7 @@ public class AnalitzaCaracter{
                     String isLetter = String.format("\'%c\' és una lletra", numText);
                     System.out.println(isLetter);
                 } else if(Character.isDigit(numText)){
-                    String isDigit = String.format("\'%c\' és una nombre", numText);
+                    String isDigit = String.format("\'%c\' és un nombre", numText);
                     System.out.println(isDigit);
                 } else if(!Character.isLetter(numText) && !Character.isDigit(numText)){
                     String altraCosa = String.format("\'%c\' és un altra cosa", numText);
