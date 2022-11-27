@@ -17,39 +17,38 @@ public class EndevinaNombre{
     
     
        
-     if(!(numCadena.isEmpty()) && !(numCadena.isBlank())){ 
+        if(!(numCadena.isEmpty()) && !(numCadena.isBlank())){ 
         
                 
-        while(valor != 42){ 
+         while(valor != 42){ 
          
          
-         if(valor <= 0){
-         System.out.println("Com a mínim 1");
-            
-            System.out.println("Introdueix un valor");
-            valor = Integer.parseInt(Entrada.readLine());
-            }else if(valor > 100){
-            System.out.println("Com a màxim 100");
-                    
+             if(valor <= 0){
+             System.out.println("Com a mínim 1");
+                
+                System.out.println("Introdueix un valor");
+                valor = Integer.parseInt(Entrada.readLine());
+            }   else if(valor > 100){
+                    System.out.println("Com a màxim 100");
+
                     System.out.println("Introdueix un valor");
                     valor = Integer.parseInt(Entrada.readLine());
-                    }else if(valor < numPensado){
-                    System.out.println("És més gran que " + valor);
-                        
-                        System.out.println("Introdueix un valor");
-                        valor = Integer.parseInt(Entrada.readLine());
-                        }else if(valor > numPensado){
-                         System.out.println("És més petit que " + valor);
+                }       else if(valor < numPensado){
+                            System.out.println("És més gran que " + valor);
                             
                             System.out.println("Introdueix un valor");
                             valor = Integer.parseInt(Entrada.readLine());
+                        }   else if(valor > numPensado){
+                                System.out.println("És més petit que " + valor);
+                                
+                                System.out.println("Introdueix un valor");
+                                valor = Integer.parseInt(Entrada.readLine());
                             }
-                            
-                          }
-                         System.out.println("Has encertat!");
-              }
-              System.out.println("Cancelat");
-         }  
-     }                      
-
+                                
+            }
+             System.out.println("Has encertat!");
+         }
+         System.out.println("Cancelat");
+    }
+}
         
