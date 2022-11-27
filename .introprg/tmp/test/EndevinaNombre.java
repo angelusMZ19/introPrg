@@ -11,7 +11,7 @@
 
 
             int numeroPensat= Integer.parseInt(args[0]);   // guardarà el número pensat
-            int numero;         // guardarà els càlculs intermitjos
+            int numero=0;         // guardarà els càlculs intermitjos
 
 
             // pensa un número
