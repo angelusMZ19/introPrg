@@ -2,9 +2,10 @@
 
 public class Quadrats {
     public static void main(String[] args) {
-        dibuixaQuadrat();
+        dibuixaQuadrats();
     }
-    public static void dibuixaQuadrat() {
+    public static void dibuixaQuadrats() {
+
         System.out.println("Quants?");
         int quant = Integer.parseInt(Entrada.readLine());
         for(int i= 1; i <= quant; i++){
