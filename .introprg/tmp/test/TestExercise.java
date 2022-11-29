@@ -12,9 +12,60 @@ public class TestExercise {
 
     @Test
     @DisplayName("Test hi és mòdul dibuixaQuadrats()")
-    public void prgtestX1dibuixaQuadrat() {
+    public void prgtestX1dibuixaQuadrats() {
         Class classe = Quadrats.class;
         String modulObjectiu = "dibuixaQuadrats";
+        Method[] methods = classe.getDeclaredMethods();
+        boolean foundTarget = false;
+        for (Method method: methods) {
+            if (modulObjectiu.equals(method.getName())) {
+                foundTarget=true;
+                Type[] types = method.getGenericParameterTypes();
+                assertEquals(
+                        0, 
+                        types.length, 
+                        "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
+                );
+                assertEquals(
+                        "void",
+                        method.getGenericReturnType().getTypeName(),
+                        "S'esperava " + modulObjectiu + "() d'un tipus diferent"
+                );
+            }
+        }
+        assertTrue(foundTarget, "No es troba el mòdul " + modulObjectiu + "(). Revisa enunciat.");
+    }
+
+    @Test
+    @DisplayName("Test hi és mòdul dibuixaQuadrat()")
+    public void prgtestX1dibuixaQuadrat() {
+        Class classe = Quadrats.class;
+        String modulObjectiu = "dibuixaQuadrat";
+        Method[] methods = classe.getDeclaredMethods();
+        boolean foundTarget = false;
+        for (Method method: methods) {
+            if (modulObjectiu.equals(method.getName())) {
+                foundTarget=true;
+                Type[] types = method.getGenericParameterTypes();
+                assertEquals(
+                        0, 
+                        types.length, 
+                        "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
+                );
+                assertEquals(
+                        "void",
+                        method.getGenericReturnType().getTypeName(),
+                        "S'esperava " + modulObjectiu + "() d'un tipus diferent"
+                );
+            }
+        }
+        assertTrue(foundTarget, "No es troba el mòdul " + modulObjectiu + "(). Revisa enunciat.");
+    }
+    @Test
+    @DisplayName("Test hi és mòdul dibuixaLinia()")
+    public void prgtestX1dibuixaLinia() {
+        Class classe = Quadrats.class;
+        String modulObjectiu = "dibuixaLinia";
         Method[] methods = classe.getDeclaredMethods();
         boolean foundTarget = false;
         for (Method method: methods) {
