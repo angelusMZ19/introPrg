@@ -13,7 +13,7 @@ public class Quadrats{
                     System.out.print(" X");
                 }
                 // dibuixa un salt de línia
-                System.out.println(" ");
+                System.out.println("");
             }
             System.out.println("");
         }
