@@ -5,12 +5,12 @@ public class Quadrats {
         System.out.println("Quants?");
         int quant = Integer.parseInt(Entrada.readLine());
         for(int i= 1; i <= quant; i++){
-            dibuixaQuadrats();
+            dibuixaQuadrat();
         }
         System.out.println("");
     }
 
-    public static void dibuixaQuadrats() {
+    public static void dibuixaQuadrat() {
         for (int linia=1; linia <= 5; linia++) {
             dibuixaLinia();
         }
