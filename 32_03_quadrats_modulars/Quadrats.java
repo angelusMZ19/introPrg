@@ -12,12 +12,13 @@ public class Quadrats {
     public static void dibuixaQuadrats() {
         for (int linia=1; linia <= 5; linia++) {
             dibuixaLinia();
+            
         }
         dibuixaQuadrat();
      }
 
     public static void dibuixaQuadrat() {
-        
+        System.out.println();
     }
     public static void dibuixaLinia() {
         for (int columna=1; columna <= 5; columna++) {
