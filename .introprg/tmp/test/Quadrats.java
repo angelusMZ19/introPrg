@@ -7,7 +7,7 @@ public class Quadrats {
         for(int i= 1; i <= quant; i++){
             dibuixaQuadrats();
         }
-        System.out.println("");
+        
     }
 
     public static void dibuixaQuadrats() {
