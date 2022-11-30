@@ -14,9 +14,12 @@ public class Quadrats {
         for (int linia=1; linia <= 5; linia++) {
             dibuixaLinia();
         }
-        System.out.println("");
-    }
+        dibuixaQuadrat();
+     }
 
+    public static void dibuixaQuadrat() {
+        System.out.println(" ");
+    }
     public static void dibuixaLinia() {
         for (int columna=1; columna <= 5; columna++) {
             // dibuixa un element de la línia
