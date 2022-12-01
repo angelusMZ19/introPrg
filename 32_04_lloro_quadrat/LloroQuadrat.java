@@ -12,12 +12,12 @@ public class LloroQuadrat{
                     dibuixaQuadrats();
                 }   else if(paraula.equals("dibuixa rectangle")){
                         dibuixaRectangle();
-                    }
-                    System.out.println("El lloro repeteix: " + paraula);
+                    }else{
+                        System.out.println("El lloro repeteix: " + paraula);
+                        }
+                }
             }
-        }
      System.out.println ("Adéu");
-        
     }
 
     public static void dibuixaQuadrats() {
