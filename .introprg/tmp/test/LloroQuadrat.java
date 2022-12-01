@@ -8,12 +8,12 @@ public class LloroQuadrat{
         System.out.println("El lloro espera paraula:");
         paraula= Entrada.readLine();
             if(!(paraula.isEmpty()) && !(paraula.isBlank())){
-                System.out.println("El lloro repeteix: " + paraula);
                 if(paraula.equals("dibuixa quadrat")){
                     dibuixaQuadrats();
                 }   else if(paraula.equals("dibuixa rectangle")){
                         dibuixaRectangle();
                     }
+                    System.out.println("El lloro repeteix: " + paraula);
             }
         }
      System.out.println ("Adéu");
