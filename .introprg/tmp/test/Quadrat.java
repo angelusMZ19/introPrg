@@ -2,8 +2,10 @@
 */
 public class Quadrat {
     public static void main (String[]args){
-    
         int numero = Integer.parseInt(args[0]);
+        dibuixaQuadrat(numero);
+    }
+    public static void dibuixaQuadrat(int numero) {
         // dibuixa un quadrat
             for (int linia=1; linia <= numero; linia++) {
                 // dibuixa una línia
