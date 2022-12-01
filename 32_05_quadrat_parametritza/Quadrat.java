@@ -1,3 +1,5 @@
+/*Programa que imprime la cantidad de columnas y filas dependiendo de la cantidad de numero que se introduzca en el args()
+*/
 public class Quadrat {
     public static void main (String[]args){
     
