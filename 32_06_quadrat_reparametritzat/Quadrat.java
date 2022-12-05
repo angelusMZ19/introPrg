@@ -13,13 +13,13 @@ public class Quadrat {
     public static void dibuixaQuadrat(int costat, char caracter) {
         for (int linia=1; linia <= costat; linia++) {
             dibuixaLinia(costat, caracter);
-            System.out.println(" ");
+            System.out.println("");
         }
     }
 
     public static void dibuixaLinia(int costat, char caracter) {
         for (int columna=1; columna <= costat; columna++) { 
-            System.out.print("" + caracter);
+            System.out.print(" " + caracter);
         }
     }
 }
