@@ -1,6 +1,6 @@
 /*
-    Unit testing methods for exercise 02_01_quadrat_parametritzat
-*/
+ * Unit testing methods for an exercise
+ */
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
@@ -13,7 +13,7 @@ public class TestExercise {
     @Test
     @DisplayName("Test hi és mòdul dibuixaQuadrat()")
     public void prgtestX1dibuixaQuadrat() {
-        Class classe = LloroQuadrat.class;
+        Class classe = Quadrat.class;
         String modulObjectiu = "dibuixaQuadrat";
         Method[] methods = classe.getDeclaredMethods();
         boolean foundTarget = false;
@@ -22,9 +22,19 @@ public class TestExercise {
                 foundTarget=true;
                 Type[] types = method.getGenericParameterTypes();
                 assertEquals(
-                        0, 
+                        2, 
                         types.length, 
                         "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
+                );
+                assertEquals(
+                    "int",
+                    types[0].getTypeName(),
+                    "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
+                );
+                assertEquals(
+                    "char",
+                    types[1].getTypeName(),
+                    "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
                 );
                 assertEquals(
                         "void",
@@ -36,10 +46,10 @@ public class TestExercise {
         assertTrue(foundTarget, "No es troba el mòdul " + modulObjectiu + "(). Revisa enunciat.");
     }
     @Test
-    @DisplayName("Test hi és mòdul dibuixaRectangle()")
-    public void prgtestX2dibuixaRectangle() {
-        Class classe = LloroQuadrat.class;
-        String modulObjectiu = "dibuixaRectangle";
+    @DisplayName("Test hi és mòdul dibuixaLinia()")
+    public void prgtestX2dibuixaLinia() {
+        Class classe = Quadrat.class;
+        String modulObjectiu = "dibuixaLinia";
         Method[] methods = classe.getDeclaredMethods();
         boolean foundTarget = false;
         for (Method method: methods) {
@@ -47,9 +57,19 @@ public class TestExercise {
                 foundTarget=true;
                 Type[] types = method.getGenericParameterTypes();
                 assertEquals(
-                        0, 
+                        2, 
                         types.length, 
                         "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
+                );
+                assertEquals(
+                    "int",
+                    types[0].getTypeName(),
+                    "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
+                );
+                assertEquals(
+                    "char",
+                    types[1].getTypeName(),
+                    "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
                 );
                 assertEquals(
                         "void",
