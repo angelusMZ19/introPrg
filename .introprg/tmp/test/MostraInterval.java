@@ -23,18 +23,26 @@ public class MostraInterval{
         /*if (v1 >= 0 || v2 >= text.length() || v2<= text.length())
                for (int i = v1; i <= v2; i++){
                     System.out.println(text.charAt(i));*/
-        if (v1>=0 || v2>= text.length()){
+        //if (v1<=0 || v1<=0 || v2 <= text.length() || v2 > text.length())
+        //if (v1>=0 || v2>= text.length()){
             if (v1 < v2){
                    for (int i = v1; i <= v2; i++){
                         System.out.println(text.charAt(i));
                    }
-            }else{
+            }else if (v2< v1){
                 for (int i= v1; i >= v2; i--){
                     System.out.println(text.charAt(i));
                 }
+            }else if (v1 < 0 && v1 < v2){
+                for (int a= 0; a <= v2; a++){
+                    System.out.println(text.charAt(a));
+                }
+            } else if( v1 <= 0 || v1 >=0 && v2 >= text.length()){
+                for (int j=v1; j <= text.length(); j++){
+                    System.out.println(text.charAt(j));
+                }
             }
-            
-        }
     }
+
 }
 
