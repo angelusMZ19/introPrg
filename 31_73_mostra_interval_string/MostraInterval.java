@@ -18,13 +18,23 @@ public class MostraInterval{
         System.out.println( "final?" ) ;
         int v2 =  Integer.parseInt(Entrada.readLine());
         
-        text= text.length();
+        text.length();
         
-        if (v1 >= 0 || v2 > texto)
-               for (int i = v1; i <= texto; i = i + 1){  
-                 char act= valor.charAt(i);
-                    System.out.println(i);
+        /*if (v1 >= 0 || v2 >= text.length() || v2<= text.length())
+               for (int i = v1; i <= v2; i++){
+                    System.out.println(text.charAt(i));*/
+        if (v1>=0 || v2>= text.length()){
+            if (v1 < v2){
+                   for (int i = v1; i <= v2; i++){
+                        System.out.println(text.charAt(i));
+                   }
+            }else{
+                for (int i= v1; i >= v2; i--){
+                    System.out.println(text.charAt(i));
                 }
+            }
+            
         }
+    }
 }
 
