@@ -1,43 +1,42 @@
 /*
-En aquella ocasió el programa demanava els valors límit entre dos enters. Amb unes petites modificacions podríem crear un nou programa que ens permetés veure una secció d'un String
-
-Doncs això és el que ens demana aquest exercici. En concret, l'enunciat és el següent: desenvolupa un programa que demani un text i dos valors enters, i que mostri tots els caràcters que hi ha entre el primer i el segon, en l'ordre marcat per l'entrada.
-
-En cas que els valors enters quedin fora de les posicions del text introduït, el programa mostrarà tot el que es pugui sense queixar-se.
+La nueva versión tendrá la misma salida que la original, pero el código del programa será más modular. En concreto, el módulo main() se encargará de obtener los datos de entrada, y nombrará un nuevo módulo llamado muestraInterval() que será quien realice realmente el trabajo de mostrar el intervalo.
 */
-
 public class MostraInterval{
     public static void main (String[]args){
 
         System.out.println("text?");
-        String text= Entrada.readLine();
+        String text = Entrada.readLine();
 
         System.out.println( "inici?" ) ;
         int v1 = Integer.parseInt(Entrada.readLine());
                      
         System.out.println( "final?" ) ;
-        int v2 =  Integer.parseInt(Entrada.readLine());
+        int v2 =Integer.parseInt(Entrada.readLine());
         
-        if (v1 < 0){
-            v1 = 0;
+        mostraInterval(text, v1, v2);
+    }
+    public static void mostraInterval(String text, int inici, int fi){
+    
+        if (inici < 0){
+            inici = 0;
         }
-        if (v2 < 0){
-            v2 = 0;
+        if (fi < 0){
+            fi = 0;
         }
-        if (v2 > text.length()-1){
-            v2 = text.length()-1;
+        if (fi > text.length()-1){
+            fi = text.length()-1;
         }
-        if (v1 > text.length()-1){
-            v1 = text.length()-1;
+        if (inici > text.length()-1){
+            inici = text.length()-1;
         }
-            if (v1< v2){
-                for (int i= v1; i <= v2; i++){
+            if (inici< fi){
+                for (int i= inici; i <= fi; i++){
                     System.out.println(text.charAt(i));
                 }
             }else {
-                for(int i= v1; i >= v2; i--){
+                for(int i= inici; i >= fi; i--){
                     System.out.println(text.charAt(i));
                 }
             }
-    }
+    }   
 }
