@@ -25,35 +25,39 @@ public class MostraInterval{
                     System.out.println(text.charAt(i));*/
         //if (v1<=0 || v1<=0 || v2 <= text.length() || v2 > text.length())
         //if (v1>=0 || v2>= text.length()){
-            if (v1 < v2){
-                   for (int i = v1; i <= v2; i++){
-                        System.out.println(text.charAt(i));
-                   }
+           /* if (v1 < v2){
+                for (int i = v1; i <= v2; i++){
+                    System.out.println(text.charAt(i));
+               }
             }else if (v2< v1){
                 for (int i= v1; i >= v2; i--){
                     System.out.println(text.charAt(i));
                 }
-            }else if (v1 < 0 && v1<v2){
+            }else if (v1 < 0 && v1< v2){
                 for (int i= 0; i <= v2; i++){
                     System.out.println(text.charAt(i));
                 }
-            } else if(v1 >=0 && v2 >= text.length()){
-                for (int i=v1; i <= v2; i++){
+            } else if(v2 > text.length()-1){
+                for (int i=v1; i <= text.length(); i++){
                     System.out.println(text.charAt(i));
                 }
-            }
-            /*if (v1 < 0 || v1>=0){
-                if (v1 < v2){
-                       for (int i = v1; i <= v2; i++){
-                            System.out.println(text.charAt(i));
-                       }
+            } */
+            if(v2 > text.length()){
+                for (int i=v1; i <= text.length(); i++){
+                    System.out.println(text.charAt(i));
                 }
-            if (v2<= text.length() || v2> text.length()){
-                if (v2< v1){
-                    for (int i= v1; i >= v2; i--){
-                        System.out.println(text.charAt(i));
-                    }
+            } else if (v1 < 0 && v1< v2){
+                for (int i= 0; i <= v2; i++){
+                    System.out.println(text.charAt(i));
                 }
-            }*/
+            }else if (v1 < v2){
+                for (int i = v1; i <= v2; i++){
+                    System.out.println(text.charAt(i));
+               }
+            }else if (v2< v1){
+                for (int i= v1; i >= v2; i--){
+                    System.out.println(text.charAt(i));
+                }
+            } 
     }
 }
