@@ -13,7 +13,7 @@ public class TriangleInvertit{
                     if(col ==1){
                         System.out.print(col);
                     }else{
-                        System.out.print("," + col);
+                        System.out.print(", " + col);
                     }
                 }
             }
