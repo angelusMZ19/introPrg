@@ -11,10 +11,10 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TestExercise {
 
     @Test
-    @DisplayName("Test hi és mòdul analitzaCaracter()")
-    public void prgtestX1analitzaCaracter() {
-        Class classe = AnalitzaCaracter.class;
-        String modulObjectiu = "analitzaCaracter";
+    @DisplayName("Test hi és mòdul mostraInterval()")
+    public void prgtestX1mostraInterval() {
+        Class classe = MostraInterval.class;
+        String modulObjectiu = "mostraInterval";
         Method[] methods = classe.getDeclaredMethods();
         boolean foundTarget = false;
         for (Method method: methods) {
@@ -22,13 +22,23 @@ public class TestExercise {
                 foundTarget=true;
                 Type[] types = method.getGenericParameterTypes();
                 assertEquals(
-                        1, 
+                        3, 
                         types.length, 
                         "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
                 );
                 assertEquals(
-                    "char",
+                    "java.lang.String",
                     types[0].getTypeName(),
+                    "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
+                );
+                assertEquals(
+                    "int",
+                    types[1].getTypeName(),
+                    "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
+                );
+                assertEquals(
+                    "int",
+                    types[2].getTypeName(),
                     "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
                 );
                 assertEquals(
