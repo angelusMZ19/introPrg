@@ -11,9 +11,9 @@ public class CadenaContinua{
 
         
         System.out.println("Nombre?");
-        int n = Integer.parseInt(Entrada.readLine());
+        int longitud = Integer.parseInt(Entrada.readLine());
 
-        mostraCadenaContinua(text, n);
+        mostraCadenaContinua(text, longitud);
     }
     public static void mostraCadenaContinua(String text, int longitud){
         int dif= 0;
@@ -24,11 +24,11 @@ public class CadenaContinua{
                 dif= longitud-(text.length() * resultado);
                 System.out.println(text.repeat(resultado) + text.substring(0, dif));
             } else if(longitud == 1){
-            longitud = 0;
+                longitud = 0;
                 for (int i= 0; i<= longitud; i = i +1){
                     System.out.print(text.charAt(i));
                 }
-            } else if (longitud >1){
+            } else if (longitud > 1){
                 for (int i= 0; i<= longitud-1; i = i +1){
                     System.out.print(text.charAt(i));
                 }
