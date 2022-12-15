@@ -5,20 +5,21 @@ En cas que se li demani menys d'un caràcter, simplement no mostrarà res. En ca
 */
 public class CadenaContinua{
     public static void main(String[]args){
-
         System.out.println("Text?");
         String text = Entrada.readLine();
-
-        
-        System.out.println("Nombre?");
-        int longitud = Integer.parseInt(Entrada.readLine());
-
+        if(!(text.isEmpty())|| !(text.isBlank())){
+            System.out.println("Nombre?");
+            int longitud = Integer.parseInt(Entrada.readLine());
         mostraCadenaContinua(text, longitud);
+        }else{
+            System.out.println("error");
+        }
     }
     public static void mostraCadenaContinua(String text, int longitud){
         int dif= 0;
         int resultado= 0;
-        if(!(text.isEmpty())|| !(text.isBlank())){
+        String numCadena= String.valueOf(longitud);
+        if(!(numCadena.isEmpty())|| !(numCadena.isBlank())){
             if(!(longitud<= 0) && longitud > text.length()){
                 resultado =  longitud/text.length();
                 dif= longitud-(text.length() * resultado);
