@@ -5,27 +5,41 @@ En cas que se li demani menys d'un caràcter, simplement no mostrarà res. En ca
 */
 public class CadenaContinua{
     public static void main(String[]args){
-    
+
         System.out.println("Text?");
         String text = Entrada.readLine();
+
         
         System.out.println("Nombre?");
         int n = Integer.parseInt(Entrada.readLine());
-            
-            if(n > text.length()){
-                n= text.lenght
-            if(n <= text.length()){
-                for (int i = n; i >= text.length(); i++){
-                    System.out.println(text.charAt(i));
+
+        mostraCadenaContinua(text, n);
+    }
+    public static void mostraCadenaContinua(String text, int longitud){
+        int dif= 0;
+        int resultado= 0;
+        if(!(text.isEmpty())|| !(text.isBlank())){
+            if(!(longitud<= 0) && longitud > text.length()){
+                resultado =  longitud/text.length();
+                dif= longitud-(text.length() * resultado);
+                System.out.println(text.repeat(resultado) + text.substring(0, dif));
+            } else if(longitud == 1){
+            longitud = 0;
+                for (int i= 0; i<= longitud; i = i +1){
+                    System.out.print(text.charAt(i));
+                }
+            } else if (longitud >1){
+                for (int i= 0; i<= longitud-1; i = i +1){
+                    System.out.print(text.charAt(i));
+                }
+            } else{
+                for (int i= 1; i<= longitud; i = i +1){
+                    System.out.print(text.charAt(i));
                 }
             }
-            if (n > text.length()){
-                for(int i = n; i <= n; i++){
-                    System.out.println(text.charAt(i));
-                }
-            }
-            if (text.isEmpty() && text.isBlank()){
-                System.out.println("Error");
-            }
+        }else{
+           System.out.println("error");
+        }
     }
 }
+
