@@ -5,17 +5,24 @@ public class TriangleLletres{
     public static void main (String[]args){
         System.out.println("Text?");
         String text = Entrada.readLine();
-        public static void dibuixaTriangle(String text)
-public static void dibuixaLinia(String text, int linia)
-            for( int fila = 0; fila < text.length(); fila++){
-                for (int col = 0; col <= fila ; col++){
-                    System.out.print(text.charAt(col));
-                    if(col != fila){
-                        System.out.print(", ");
-                    }
+        dibuixaTriangle(text);
+    }
+    public static void dibuixaTriangle(String text){
+            
+            int linia= 0;
+            dibuixaLinia(text, linia);
+    }
+    public static void dibuixaLinia(String text, int linia){
+        linia = text.length();
+        for( int fila = 0; fila < linia; fila++){
+            for (int col = 0; col <= fila ; col++){
+                System.out.print(text.charAt(col));
+                if(col != fila){
+                    System.out.print(", ");
                 }
-                System.out.println();
             }
+            System.out.println();
+        }
     }
 }
 
