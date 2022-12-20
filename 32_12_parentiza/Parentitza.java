@@ -7,8 +7,12 @@ public class Parentitza{
         System.out.println("Text?");
         String text= Entrada.readLine();
         
-        for(int i = 0; i >= text.length(); i++){
-            System.out.println("(" + text.charAt(i) + ")");
+        parentitza(text);
+    }
+    public static void parentitza(String text){ 
+        for(int i = 0; i < text.length(); i++){
+            System.out.print("(" + text.charAt(i) + ")");
         }
+        System.out.println();
     }
 }
