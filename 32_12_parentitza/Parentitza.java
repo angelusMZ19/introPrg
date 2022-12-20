@@ -11,7 +11,7 @@ public class Parentitza{
     }
     public static void parentitza(String text){ 
         for(int i = 0; i < text.length(); i++){
-            if (text.charAt(i) == ' '){
+            if (text.charAt(i) == ' ' && text.charAt(i) == '.'){
                 System.out.print(" ");
             }else{
                 System.out.print("(" + text.charAt(i) + ")");
