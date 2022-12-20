@@ -1,6 +1,6 @@
 /*
-    Unit testing methods for exercise 02_07_triangle_lletres
-*/
+ * Unit testing methods for an exercise
+ */
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
@@ -11,10 +11,10 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TestExercise {
 
     @Test
-    @DisplayName("Test hi és mòdul dibuixaTriangle()")
-    public void prgtestX1dibuixaTriangle() {
-        Class classe = TriangleLletres.class;
-        String modulObjectiu = "dibuixaTriangle";
+    @DisplayName("Test hi és mòdul dibuixaTriangleInvertit()")
+    public void prgtestX1dibuixaTriangleInvertit() {
+        Class classe = TriangleLletresInvertit.class;
+        String modulObjectiu = "dibuixaTriangleInvertit";
         Method[] methods = classe.getDeclaredMethods();
         boolean foundTarget = false;
         for (Method method: methods) {
@@ -41,10 +41,10 @@ public class TestExercise {
         assertTrue(foundTarget, "No es troba el mòdul " + modulObjectiu + "(). Revisa enunciat.");
     }
     @Test
-    @DisplayName("Test hi és mòdul dibuixaLinia()")
-    public void prgtestX2dibuixaLinia() {
-        Class classe = TriangleLletres.class;
-        String modulObjectiu = "dibuixaLinia";
+    @DisplayName("Test hi és mòdul dibuixaLiniaInvertida()")
+    public void prgtestX2dibuixaLiniaInvertida() {
+        Class classe = TriangleLletresInvertit.class;
+        String modulObjectiu = "dibuixaLiniaInvertida";
         Method[] methods = classe.getDeclaredMethods();
         boolean foundTarget = false;
         for (Method method: methods) {
