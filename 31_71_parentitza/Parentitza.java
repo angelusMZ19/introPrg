@@ -1,5 +1,5 @@
 /*
-La nova versió tindrà la mateixa sortida que l'original però el codi del programa serà més modular. En concret, el mòdul main() se n'encarregarà d'obtenir les dades d'entrada, i cridarà un nou mòdul que serà qui realitzi realment la feina.
+ poner la condicicon que no me ponga entre parentiesis todoa quello que no sea letras 
 */
 public class Parentitza{
     public static void main (String[]args){
@@ -7,9 +7,6 @@ public class Parentitza{
         System.out.println("Text?");
         String text= Entrada.readLine();
         
-        parentitza(text);
-    }
-    public static void parentitza(String text){ 
         for(int i = 0; i < text.length(); i++){
                     if (Character.isLetter(text.charAt(i))){
                             System.out.print("(" + text.charAt(i) + ")");
@@ -20,6 +17,5 @@ public class Parentitza{
         System.out.println();
     }
 }
-
 
 
