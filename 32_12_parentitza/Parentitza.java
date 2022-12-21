@@ -16,7 +16,7 @@ public class Parentitza{
             }else if(text.charAt(i) == '.'){
                     System.out.print(".");
                 }else if(text.charAt(i) == '"'){
-                    System.out.print("\" ");
+                    System.out.print("\"");
                     }else if(text.charAt(i) == '?'){
                     System.out.print("?");
                     }else if(text.charAt(i) == '\''){
