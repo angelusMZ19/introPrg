@@ -10,6 +10,10 @@ public class NomesLletres{
     }
     public static void parentitza(String text){ 
         for(int i = 0; i < text.length(); i++){
+        char ultimo = text.charAt(text.length() - 1);
+            if (Character.isLetter(ultimo)){
+                System.out.print("");
+            }
             if (Character.isLetter(text.charAt(i))){
                 System.out.print( text.charAt(i) + ", ");
             }
