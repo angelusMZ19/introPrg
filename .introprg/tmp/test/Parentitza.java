@@ -15,6 +15,8 @@ public class Parentitza{
                 System.out.print(" ");
             }else if(text.charAt(i) == '.'){
                     System.out.print(".");
+                }else if(text.charAt(i) == '"'){
+                    System.out.print("\" ");
                         }else{
                             System.out.print("(" + text.charAt(i) + ")");
             }
@@ -22,3 +24,6 @@ public class Parentitza{
         System.out.println();
     }
 }
+
+// poner la condicicon que no me ponga entre parentiesis todoa quello que no sea letras 
+
