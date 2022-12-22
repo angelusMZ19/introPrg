@@ -6,16 +6,24 @@ public class NomesLletres{
         
         System.out.println("Text?");
         String text= Entrada.readLine();
-        parentitza(text);
+        filtraLletres(text);
     }
-    public static void parentitza(String text){ 
+    public static void filtraLletres(String text){ 
+        char letra;
+        String cad= "";
+        boolean chequeo= false;
         for(int i = 0; i < text.length(); i++){
-            if (i == text.length() - 1){
-                    System.out.print(text.charAt(i) );
-                }else if (Character.isLetter(text.charAt(i))){
-                    System.out.print( text.charAt(i) + ", ");
+             if (Character.isLetter(text.charAt(i))){
+              letra = text.charAt(i);
+              cad = cad + letra;
+                if(chequeo == false){
+                    System.out.print(letra);
+                    chequeo = true;
+                }else{
+                    System.out.print(", " + letra);
                 } 
             }
+        }
         System.out.println();
     }
 }
