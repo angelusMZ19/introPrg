@@ -1,14 +1,12 @@
 /*
-La nova versió tindrà la mateixa sortida que l'original però el codi del programa serà més modular. En concret, el mòdul main() se n'encarregarà d'obtenir les dades d'entrada, i cridarà un nou mòdul que serà qui realitzi realment la feina.
+Desenvolupa un programa que demani un text i mostri només les lletres que conté. Cada lletra apareixerà separada per una coma en l'ordre en que apareixia al text original. La resta de caràcters no es mostraran.
 */
 public class NomesLletres{
     public static void main (String[]args){
         
         System.out.println("Text?");
         String text= Entrada.readLine();
-        filtraLletres(text);
-    }
-    public static void filtraLletres(String text){ 
+        
         char letra;
         String cad= "";
         boolean chequeo= false;
