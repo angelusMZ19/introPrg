@@ -28,6 +28,3 @@ public class NomesLletres{
     }
 }
 
-/*if (Character.isLetter(text.charAt(i))){
-     System.out.print( text.charAt(i) + ", ");
- }*/
