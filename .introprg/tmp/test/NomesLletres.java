@@ -10,7 +10,7 @@ public class NomesLletres{
     }
     public static void parentitza(String text){ 
         for(int i = 0; i < text.length(); i++){
-            if (i == text.length() - 2){
+            if (i == text.length() - 1){
                     System.out.print(text.charAt(i) );
                 }else if (Character.isLetter(text.charAt(i))){
                     System.out.print( text.charAt(i) + ", ");
