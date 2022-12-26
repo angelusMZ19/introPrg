@@ -1,4 +1,5 @@
 /*
+Desenvolupa un programa que demani un text i el torni a mostrar però invertint l'ordre dels caràcters que el composen. Els caracters resultants apareixeran separats per comes
 */
 public class TextReves{
     public static void main (String[]args){
