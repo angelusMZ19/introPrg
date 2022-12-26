@@ -7,6 +7,9 @@ public class TextReves{
         System.out.println("Text?");
         String text= Entrada.readLine();
         
+        mostraReves(text);
+    }
+    public static void mostraReves(String text){
         int inverso = text.length()-1;
         String cad= "";
         boolean chequeo= false;
