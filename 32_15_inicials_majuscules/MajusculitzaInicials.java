@@ -8,11 +8,10 @@ public class MajusculitzaInicials{
         System.out.println("Text?");
         String cadena= Entrada.readLine();
         String text = cadena.toLowerCase();
-        String buit= "";
         char[] caracteres = text.toCharArray();
         caracteres[0] = Character.toUpperCase(caracteres[0]);
 
-        if(!(text.isBlank()) || !(text.isEmpty())){
+        if(!(cadena.isBlank()) || !(cadena.isEmpty())){
         //if(!(caracteres.isBlank()) || !(caracteres.isEmpty())){
         for (int i = 0; i <text.length()- 1; i++)
             if (!(Character.isLetter(text.charAt(i)))|| caracteres[i] == '^')
