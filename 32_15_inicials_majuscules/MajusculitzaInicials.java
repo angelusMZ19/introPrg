@@ -17,6 +17,5 @@ public class MajusculitzaInicials{
             }
         }
         System.out.println();
-        return;
     }
 }
