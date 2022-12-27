@@ -27,15 +27,17 @@ public class MajusculitzaInicials{
         char[] caracteres = cadena.toCharArray();
         caracteres[0] = Character.toUpperCase(caracteres[0]);
       
-        for (int i = 0; i < cadena.length()- 2; i++) 
+        for (int i = 0; i < cadena.length()- 2; i++) {
         // Es 'palabra'
-        if (caracteres[i] == ' ' || caracteres[i] == '.' || caracteres[i] == ','|| caracteres[i] == '-')
+        if (caracteres[i] == ' ' || caracteres[i] == '.' || caracteres[i] == ','|| caracteres[i] == '-'|| caracteres[i] == '!'|| caracteres[i] == '&'|| caracteres[i] == '%'|| caracteres[i] == '^'|| caracteres[i] == '$'){
         // Reemplazamos
         caracteres[i + 1] = Character.toUpperCase(caracteres[i + 1]);
    
         System.out.print(caracteres);
+        }
         System.out.println();
         return;
+    }
     }
 }
 
