@@ -29,7 +29,7 @@ public class MajusculitzaInicials{
       
         for (int i = 0; i < cadena.length()- 2; i++) 
         // Es 'palabra'
-        if (!(Character.isLetter(cadena.charAt(i))))
+        if (!(Character.isLetter(cadena.charAt(i)))|| caracteres[i] == '^')
         //if (Character.isLetter(cadena.charAt(i)))
         // Reemplazamos
         caracteres[i + 1] = Character.toUpperCase(caracteres[i + 1]);
