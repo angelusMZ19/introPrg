@@ -29,7 +29,8 @@ public class MajusculitzaInicials{
       
         for (int i = 0; i < cadena.length()- 2; i++) 
         // Es 'palabra'
-        if (caracteres[i] == ' ' || caracteres[i] == '.' || caracteres[i] == ','|| caracteres[i] == '-'|| caracteres[i] == '!'|| caracteres[i] == '&'|| caracteres[i] == '%'|| caracteres[i] == '^'|| caracteres[i] == '$')
+        if (!(Character.isLetter(cadena.charAt(i))))
+        //if (Character.isLetter(cadena.charAt(i)))
         // Reemplazamos
         caracteres[i + 1] = Character.toUpperCase(caracteres[i + 1]);
    
@@ -41,3 +42,5 @@ public class MajusculitzaInicials{
     }
 }
 
+/*(caracteres[i] == ' ' && caracteres[i] == '^'|| caracteres[i] == '.' || caracteres[i] == ','|| caracteres[i] == '-'|| caracteres[i] == '!'|| caracteres[i] == '&'|| caracteres[i] == '%'|| caracteres[i] == '$')
+*/
