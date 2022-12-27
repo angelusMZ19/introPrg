@@ -27,7 +27,7 @@ public class MajusculitzaInicials{
         char[] caracteres = cadena.toCharArray();
         caracteres[0] = Character.toUpperCase(caracteres[0]);
       
-        for (int i = 0; i < cadena.length()- 2; i++) 
+        for (int i = 0; i < cadena.length()- 1; i++) 
         // Es 'palabra'
         if (!(Character.isLetter(cadena.charAt(i)))|| caracteres[i] == '^')
         //if (Character.isLetter(cadena.charAt(i)))
