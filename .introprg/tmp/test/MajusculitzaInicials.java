@@ -20,7 +20,7 @@ public class MajusculitzaInicials{
                     System.out.println();
                     return;
     }else {
-    System.out.println();
+    System.out.println("error");
     }
     }
 }
