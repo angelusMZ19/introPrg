@@ -19,7 +19,8 @@ public class MajusculitzaInicials{
                     System.out.print(caracteres);
                     System.out.println();
                     return;
-    }
+    }else {
     System.out.println();
+    }
     }
 }
