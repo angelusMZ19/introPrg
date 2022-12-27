@@ -4,7 +4,7 @@ public class MajusculitzaInicials{
     public static void main (String[]args){
     
     System.out.println("Text?");
-        String cadena= Entrada.readLine();
+        String text= Entrada.readLine();
 
         /*int inverso = text.length()-1;
         String cad= "";
@@ -23,13 +23,16 @@ public class MajusculitzaInicials{
         }
         }
         System.out.println();*/
+        String cadena = text.toLowerCase();
         char[] caracteres = cadena.toCharArray();
         caracteres[0] = Character.toUpperCase(caracteres[0]);
+      
         for (int i = 0; i < cadena.length()- 2; i++) 
         // Es 'palabra'
         if (caracteres[i] == ' ' || caracteres[i] == '.' || caracteres[i] == ',')
         // Reemplazamos
         caracteres[i + 1] = Character.toUpperCase(caracteres[i + 1]);
+   
         System.out.print(caracteres);
         System.out.println();
         return;
