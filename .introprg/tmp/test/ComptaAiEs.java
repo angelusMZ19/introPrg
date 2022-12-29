@@ -84,6 +84,7 @@ public class ComptaAiEs {
         String entrada = Entrada.readLine();
         char lletra1 = 'a';
         char lletra2 = 'e';
+        comptaLletra(entrada, lletra1, lletra2);
         comparaOcurrencies(entrada, lletra1, lletra2);
     }
     public static void comptaLletra(String text, char lletra1, char lletra2) {
