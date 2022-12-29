@@ -128,7 +128,7 @@ public class ComptaAiEs {
         String entrada = Entrada.readLine();
         char lletra1 = 'a';
         char lletra2 = 'e';
-        comparaOcurrencies(entrada, lletra1, lletra2);
+        
         
         int comptadorlletra1 = 0;
         int comptadorlletra2 = 0;
@@ -141,6 +141,7 @@ public class ComptaAiEs {
         }
         System.out.println("Nombre de '" + lletra1 + "'s: " + comptadorlletra1);
         System.out.println("Nombre de '" + lletra2 + "'s: " + comptadorlletra2);
+        comparaOcurrencies(entrada, lletra1, lletra2);
     }
         public static void comparaOcurrencies(String text, char lletra1, char lletra2) {
         int comptador1 = 0;
