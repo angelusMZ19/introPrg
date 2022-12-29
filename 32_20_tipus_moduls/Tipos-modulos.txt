@@ -1,0 +1,11 @@
+/* Se buscaran tipos de nuevos modulos y comandos en el codigo xpuesto en la orden del trabajo*/
+Nº linea(modulo)                    firma(Nom Mod)                                                      Clasificacion
+58      private static final String EXPLANATION
+64      public MachineTranslateTextArea()
+86      public String getDisplayedTranslation()
+91      protected void onProjectClose()
+97      protected void startSearchThread(final SourceTextEntry newEntry)
+108     protected void setFoundResult(final SourceTextEntry se, final MachineTranslationInfo data)
+123     public FindThread(final IMachineTranslation translator, final SourceTextEntry newEntry)
+130     protected MachineTranslationInfo search() throws Exception
+
