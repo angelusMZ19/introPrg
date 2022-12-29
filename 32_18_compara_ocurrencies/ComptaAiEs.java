@@ -187,9 +187,9 @@ public class ComptaAiEs {
             /*}else if (text.charAt(i) == lletra2){
                 comptadorlletra2 += 1;
             }*/
+            }
         }
         System.out.println("Nombre de '" + lletra + "'s: " + comptadorlletra);
-        }
     }
     public static void comparaOcurrencies(String text, char lletra1, char lletra2) {
         int comptador1 = 0;
