@@ -18,7 +18,7 @@ public class Semafor {
                                 else{
                                 System.out.println("ves a l'oculista");}
         } else {
-            System.out.println("Ho sento. Aquest és un programa per adults.");
+            System.out.println("No pots fer servir aquest programa sense supervisió");
         }
         
     }
