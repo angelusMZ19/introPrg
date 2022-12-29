@@ -108,11 +108,11 @@ public class ComptaAiEs {
             }
         }
         if (comptador1 > comptador2) {
-            System.out.println("Hi ha més " + lletra1 + " que " + lletra2);
+            System.out.println("Hi ha més 'a's que 'e's");
         } else if (comptador1 < comptador2) {
-            System.out.println("Hi ha menys " + lletra1 + " que " + lletra2);
+            System.out.println("Hi ha menys 'a's que 'e's");
         } else {
-            System.out.println("Hi ha tantes " + lletra1 + " com " + lletra2);
+            System.out.println("Hi ha tantes 'a's com 'e's");
         }
     }
 }
