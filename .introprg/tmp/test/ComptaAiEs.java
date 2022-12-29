@@ -78,7 +78,7 @@
 }*/
 
 /* programa que mostra quantes 'a's i 'e's té el text llegit per stdin */
-/*public class ComptaAiEs {
+public class ComptaAiEs {
     public static void main(String[] args) {
         System.out.println("Introdueix un text");
         String entrada = Entrada.readLine();
@@ -87,7 +87,7 @@
         comptaLletra(entrada, lletra1, lletra2);
         comparaOcurrencies(entrada, lletra1, lletra2);
     }
-    public static void comptaLletra(String text, char lletra1, char lletra2) {
+    public static void comptaLletra(String text, char lletra1, char lletra2){
         int comptadorlletra1 = 0;
         int comptadorlletra2 = 0;
         for (int i=0; i < text.length(); i++) {
@@ -118,10 +118,10 @@
             System.out.println("Hi ha tantes 'a's com 'e's");
         }
     }
-}*/
+}
 
 
-
+/*
 public class ComptaAiEs {
     public static void main(String[] args) {
         System.out.println("Introdueix un text");
@@ -163,5 +163,5 @@ public class ComptaAiEs {
     }
 }
 
-
+*/
 
