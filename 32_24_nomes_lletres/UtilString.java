@@ -20,7 +20,7 @@ public class UtilString{
                     if (i== nomesLletres.length() - 1){
                         lletresSeparades = lletresSeparades + nomesLletres.charAt(i);
                     } else {
-                        lletresSeparades = lletresSeparades + nomesLletres.charAt(i) + ",";
+                        lletresSeparades = lletresSeparades + nomesLletres.charAt(i) + ", ";
                 }
             }
         }
