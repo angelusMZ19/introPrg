@@ -1,5 +1,5 @@
 /*
-Programa de manera modular que muestra solo las letras del el texto que se ha introducido.
+Programa de manera modular que muestra solo las letras del el texto que se ha introducido. añadiendo los mdlulos en arcvhivos exteros
  */
 public class NomesLletres{
 
