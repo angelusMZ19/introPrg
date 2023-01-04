@@ -1,78 +1,33 @@
 /*
-    Unit testing methods for exercise 02_07_triangle_lletres
-*/
+ * Unit testing methods for an exercise
+ */
 
-import java.lang.reflect.Method;
-import java.lang.reflect.Type;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.api.DisplayName;
 
 public class TestExercise {
 
-    @Test
-    @DisplayName("Test hi és mòdul dibuixaTriangle()")
-    public void prgtestX1dibuixaTriangle() {
-        Class classe = TriangleLletres.class;
-        String modulObjectiu = "dibuixaTriangle";
-        Method[] methods = classe.getDeclaredMethods();
-        boolean foundTarget = false;
-        for (Method method: methods) {
-            if (modulObjectiu.equals(method.getName())) {
-                foundTarget=true;
-                Type[] types = method.getGenericParameterTypes();
-                assertEquals(
-                        1, 
-                        types.length, 
-                        "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
-                );
-                assertEquals(
-                    "java.lang.String",
-                    types[0].getTypeName(),
-                    "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
-                );
-                assertEquals(
-                        "void",
-                        method.getGenericReturnType().getTypeName(),
-                        "S'esperava " + modulObjectiu + "() d'un tipus diferent"
-                );
-            }
-        }
-        assertTrue(foundTarget, "No es troba el mòdul " + modulObjectiu + "(). Revisa enunciat.");
+    @ParameterizedTest
+    @CsvSource(value={ "'',''", "a,a", "ab,'a, b'","abc,'a, b, c'", "abcdef,'a, b, c, d, e, f'" })
+    @DisplayName("test lletresSeparades()")
+    public void lletresSeparades(String text, String esperat) {
+        String obtingut = UtilString.lletresSeparades(text);
+        assertEquals(esperat, obtingut,
+                "Revisa la crida lletresSeparades(\"" + text + "\")");
     }
-    @Test
-    @DisplayName("Test hi és mòdul dibuixaLinia()")
-    public void prgtestX2dibuixaLinia() {
-        Class classe = TriangleLletres.class;
-        String modulObjectiu = "dibuixaLinia";
-        Method[] methods = classe.getDeclaredMethods();
-        boolean foundTarget = false;
-        for (Method method: methods) {
-            if (modulObjectiu.equals(method.getName())) {
-                foundTarget=true;
-                Type[] types = method.getGenericParameterTypes();
-                assertEquals(
-                        2, 
-                        types.length, 
-                        "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
-                );
-                assertEquals(
-                    "java.lang.String",
-                    types[0].getTypeName(),
-                    "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
-                );
-                assertEquals(
-                    "int",
-                    types[1].getTypeName(),
-                    "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
-                );
-                assertEquals(
-                        "void",
-                        method.getGenericReturnType().getTypeName(),
-                        "S'esperava " + modulObjectiu + "() d'un tipus diferent"
-                );
-            }
-        }
-        assertTrue(foundTarget, "No es troba el mòdul " + modulObjectiu + "(). Revisa enunciat.");
+
+    @ParameterizedTest
+    @CsvSource(value={ 
+        "'',''", "a,a", "ab,ab","aBc,aBc", "aBcDeF,aBcDeF",
+        "1,''", "123,''", "1a1,a", "a1b2c3,abc","*.;:,''"
+    })
+    @DisplayName("test nomesLletres()")
+    public void nomesLletres(String text, String esperat) {
+        String obtingut = UtilString.nomesLletres(text);
+        assertEquals(esperat, obtingut,
+                "Revisa la crida nomesLletres(\"" + text + "\")");
     }
+
 }
