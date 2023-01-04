@@ -1,5 +1,5 @@
 /*
-progrmaa que es usado 
+progrmaa que es usado para implementarse en el programa nomas lletres, ya que etse se usara para reconocer slo las letras y para separa las letras 
 */
 public class UtilString{
     public static String nomesLletres(String text){
