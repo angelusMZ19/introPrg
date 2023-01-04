@@ -5,3 +5,18 @@ Recorda que aquests variants són, a banda de les cinc habituals, à, è, é, í
 */
 public class LloroVocalIniciFi{
 public static void main (String[]args){
+
+       String paraula = "hola";
+
+        while (!(paraula.isEmpty()) && !(paraula.isBlank())) {
+        System.out.println("El lloro demana paraula amb vocal a l'inici o/i final");
+        paraula= Entrada.readLine();
+
+           if(!(paraula.isEmpty()) && !(paraula.isBlank())){
+            System.out.println("El lloro repeteix: " + paraula);
+
+           }
+        }
+     System.out.println ("Adéu");
+    }
+}
