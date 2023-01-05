@@ -4,7 +4,7 @@ public class NotaMesAlta{
     public static void main(String[] args) {
         int valor = 0; 
         int maxim = 0;
-        System.out.println("Introdueix les valor (-1 per finalitzar)");
+        System.out.println("Introdueix les notes (-1 per finalitzar)");
         while (valor >= 0 && valor <=10) {
             int comptador= 0;
             valor = Integer.parseInt(Entrada.readLine());
