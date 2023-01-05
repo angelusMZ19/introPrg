@@ -10,13 +10,12 @@ public class NotaMesAlta{
             valor = Integer.parseInt(Entrada.readLine());
              if (valor > maxim) {
                 maxim = valor;
-            }if(comptador == 2){
-                System.out.println("Com a minim cales dues notes");
-            } else{
                 comptador += 1;
+                }
+               
             }
+            System.out.println("La nota més alta és " + maxim);
         }
-        System.out.println("La nota més alta és " + maxim);
+        
     }
-}
 
