@@ -1,4 +1,4 @@
-/*Desenvolupa un programa que vagi demanant enters positius i que, en el moment que rebi un de negatiu, mostri el valor màxim positiu introduït i finalitzi l'execució.
+/*progrsma que pide inroducir las notas y te mostrara cual nota entre ellas es la mas alta, aun asi se repita el numero te mostrara solo uno que es el que engloba todas las notas del mismo valor.
 */
 public class NotaMesAlta{
     public static void main(String[] args) {
