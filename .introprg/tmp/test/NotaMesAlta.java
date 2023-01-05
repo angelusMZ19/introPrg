@@ -14,7 +14,7 @@ public class NotaMesAlta{
                 }
                
             }
-            if(comptador == 1){
+            if(comptador == 1 || comptador == 0){
                 System.out.println("Com a mínim calen dues notes");
                 }else{
                 System.out.println("La nota més alta és " + maxim);
