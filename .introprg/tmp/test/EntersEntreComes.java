@@ -1,24 +1,31 @@
 /*
-Desenvolupa un programa que mostri tres enters separats per comes tenint en comptes que els tres valors es troben emmagatzemats en un array d'enters.
+En aquesta ocasió, el programa tindrà les següents modificacions:
+
+    inicialment demanarà als usuaris quants valors vol introduir. En cas que demani menys de 1, el programa no donarà cap error però finalitzarà amb el missatge "Res a fer"
+
+    es crea un array amb espai suficient per emmagatzemar el nombre de valors requerit
+
 */
 public class EntersEntreComes {
     public static void main(String[] args) {
-        int[] numeros;
-        numeros = new int[5];
-        System.out.println("Valor 1?");
-        numeros[0] = Integer.parseInt (Entrada.readLine());
-        System.out.println("Valor 2?");
-        numeros[1] = Integer.parseInt (Entrada.readLine());
-        System.out.println("Valor 3?");
-        numeros[2] = Integer.parseInt (Entrada.readLine());
-        System.out.println("Valor 4?");
-        numeros[3] = Integer.parseInt (Entrada.readLine());
-        System.out.println("Valor 5?");
-        numeros[4] = Integer.parseInt (Entrada.readLine());
-        System.out.print(numeros[0]);
+        System.out.println("Quants?");
+        int quant = Integer.parseInt(Entrada.readLine());
+            if(quant <= 0){
+                System.out.println("Res a fer");
+            } else {
+                int[] numeros;
+                numeros = new int[quant];
+            //hora se pedira los valores de 5 que en este caso seria el maximo de cajones que podriamos guardar
+                for(int j= 0; j < numeros.length; j++){
+                    System.out.println("Valor"+(j+1) + "?");
+                    numeros[j]= Integer.parseInt(Entrada.readLine());
+                }
+                System.out.print(numeros[0]);
         for (int i = 1; i < numeros.length; i++) {
             System.out.print(", " + numeros[i]);
-        }
-        System.out.println();
+            }
+            System.out.println();
+            }
+
     }
 }
