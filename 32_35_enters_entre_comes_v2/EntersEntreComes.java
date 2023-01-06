@@ -1,5 +1,5 @@
 /*
-Desenvolupa un programa que mostri tres enters separats per comes tenint en comptes que els tres valors es troben emmagatzemats en un array d'enters.
+Desenvolupa un programa que mostri cinc enters separats per comes tenint en comptes que els cinc valors es troben emmagatzemats en un array d'enters.
 */
 public class EntersEntreComes {
     public static void main(String[] args) {
