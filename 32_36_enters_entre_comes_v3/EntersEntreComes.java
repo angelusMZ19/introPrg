@@ -1,5 +1,10 @@
 /*
-Desenvolupa un programa que mostri cinc enters separats per comes tenint en comptes que els cinc valors es troben emmagatzemats en un array d'enters.
+En aquesta ocasió, el programa tindrà les següents modificacions:
+
+    inicialment demanarà als usuaris quants valors vol introduir. En cas que demani menys de 1, el programa no donarà cap error però finalitzarà amb el missatge "Res a fer"
+
+    es crea un array amb espai suficient per emmagatzemar el nombre de valors requerit
+
 */
 public class EntersEntreComes {
     public static void main(String[] args) {
