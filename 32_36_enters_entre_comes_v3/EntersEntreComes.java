@@ -17,7 +17,7 @@ public class EntersEntreComes {
                 numeros = new int[quant];
             //hora se pedira los valores de 5 que en este caso seria el maximo de cajones que podriamos guardar
                 for(int j= 0; j < numeros.length; j++){
-                    System.out.println("Valor"+(j+1) + "?");
+                    System.out.println("Valor "+(j+1) + "?");
                     numeros[j]= Integer.parseInt(Entrada.readLine());
                 }
                 System.out.print(numeros[0]);
