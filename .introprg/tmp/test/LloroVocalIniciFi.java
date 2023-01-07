@@ -25,7 +25,7 @@ public class LloroVocalIniciFi{
                             System.out.println("El lloro diu: " + paraula);
                             }
                             }else{
-                                System.out.println("El lloro demana confirmacion per finalitzar");
+                                System.out.println("El lloro demana confirmació per finalitzar");
                                 if (confirmacion = UtilitatsConfirmacio.respostaABoolean(Entrada.readLine())){
                                     confirmacion= true;
                                 } else { 
