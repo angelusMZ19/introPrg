@@ -1,23 +1,78 @@
 /*
- * Unit testing methods for an exercise
- */
+    Unit testing methods for exercise 02_07_triangle_lletres
+*/
 
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
+import java.lang.reflect.Method;
+import java.lang.reflect.Type;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestExercise {
 
-    @ParameterizedTest
-    @CsvSource(value={
-    "a, true", "à,true","e,true","è,true","é,true","i,true","í,true","ï,true","o,true","ó,true","ò,true","u,true","ú,true","ü,true",
-    "A, true", "À,true","E,true","È,true","É,true","I,true","Í,true","Ï,true","O,true","Ó,true","Ò,true","U,true","Ú,true","Ü,true",
-    "c,false","d,false","f,false","j,false"})
-    @DisplayName("test trobaOcurrencies()")
-    public void esVocal(char lletra, boolean esperat) {
-        boolean obtingut = UtilString.esVocal(lletra);
-        assertEquals(esperat, obtingut, "Revisa la crida esVocal('" + lletra + "')");
+    @Test
+    @DisplayName("Test hi és mòdul dibuixaTriangle()")
+    public void prgtestX1dibuixaTriangle() {
+        Class classe = TriangleLletres.class;
+        String modulObjectiu = "dibuixaTriangle";
+        Method[] methods = classe.getDeclaredMethods();
+        boolean foundTarget = false;
+        for (Method method: methods) {
+            if (modulObjectiu.equals(method.getName())) {
+                foundTarget=true;
+                Type[] types = method.getGenericParameterTypes();
+                assertEquals(
+                        1, 
+                        types.length, 
+                        "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
+                );
+                assertEquals(
+                    "java.lang.String",
+                    types[0].getTypeName(),
+                    "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
+                );
+                assertEquals(
+                        "void",
+                        method.getGenericReturnType().getTypeName(),
+                        "S'esperava " + modulObjectiu + "() d'un tipus diferent"
+                );
+            }
+        }
+        assertTrue(foundTarget, "No es troba el mòdul " + modulObjectiu + "(). Revisa enunciat.");
     }
-
+    @Test
+    @DisplayName("Test hi és mòdul dibuixaLinia()")
+    public void prgtestX2dibuixaLinia() {
+        Class classe = TriangleLletres.class;
+        String modulObjectiu = "dibuixaLinia";
+        Method[] methods = classe.getDeclaredMethods();
+        boolean foundTarget = false;
+        for (Method method: methods) {
+            if (modulObjectiu.equals(method.getName())) {
+                foundTarget=true;
+                Type[] types = method.getGenericParameterTypes();
+                assertEquals(
+                        2, 
+                        types.length, 
+                        "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
+                );
+                assertEquals(
+                    "java.lang.String",
+                    types[0].getTypeName(),
+                    "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
+                );
+                assertEquals(
+                    "int",
+                    types[1].getTypeName(),
+                    "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
+                );
+                assertEquals(
+                        "void",
+                        method.getGenericReturnType().getTypeName(),
+                        "S'esperava " + modulObjectiu + "() d'un tipus diferent"
+                );
+            }
+        }
+        assertTrue(foundTarget, "No es troba el mòdul " + modulObjectiu + "(). Revisa enunciat.");
+    }
 }
