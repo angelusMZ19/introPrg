@@ -1,4 +1,5 @@
 /*
+programa que valida si el valor introducido es un entero o no, en caso de no serlo , el valor a regresar sera un false por afirmando esta negacion, por lo contrario el valor es entero regresara un true y volvera a evaluar el sigueinte valor
 */
 public class UtilString{
     public static boolean esEnter(String text){
