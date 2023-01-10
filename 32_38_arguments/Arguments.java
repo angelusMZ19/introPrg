@@ -3,12 +3,13 @@ En aquest exercici consisteix en fer un programa que analitzi els arguments que 
 */
 public class Arguments{
     public static void main (String[]args){
-        boolean numero= true;
+        
         
         if (args.length > 0){
             for (int i = 0; i < args.length; i++) {
-                numero= UtilString.esEnter(args);
-                if( args = numero){
+                String text= args[i];
+                boolean numero= UtilString.esEnter(text);
+                if(numero== true){
                     System.out.println("[" + i + " ]: " + "és enter");
                 }else{
                     System.out.println("[" + i + " ]: " + " no és enter");
