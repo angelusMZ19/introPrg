@@ -10,9 +10,9 @@ public class Arguments{
                 String text= args[i];
                 boolean numero= UtilString.esEnter(text);
                 if(numero== true){
-                    System.out.println("[" + i + "] "+ text + ": " + "és enter"); 
+                    System.out.println("[" + i + "] "+ "\""+text +"\""+ ": " + "és enter"); 
                 }else{
-                    System.out.println("[" + i + "] "+ text + ": " + "no és enter");
+                    System.out.println("[" + i + "] "+ "\""+text +"\""+ ": " + "no és enter");
                 }
             }
         }else {
