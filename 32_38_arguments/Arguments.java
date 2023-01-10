@@ -12,7 +12,7 @@ public class Arguments{
                 if(numero== true){
                     System.out.println("[" + i + " ]: " + "és enter");
                 }else{
-                    System.out.println("[" + i + " ]: " + " no és enter");
+                    System.out.println("[" + i + " ]: " + "no és enter");
                 }
             }
         }else {
