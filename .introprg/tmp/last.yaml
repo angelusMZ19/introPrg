@@ -1,7 +1,5 @@
-exercise: 32_38_arguments
-msg: 'finalizado el ejercicio, en este caso para introducir valores desde la linea
-  de comando no se requiere ingresar el args[0 ] si no que mas bien al declarar el
-  String[]args ya esta realizado para ir desde la liena 0
+exercise: 32_40_tresenratlla_files
+msg: 'prova
 
   '
-seq: 2
+seq: 0
