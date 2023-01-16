@@ -1,15 +1,15 @@
 /*
-En aquella ocasió el programa demanava els valors límit entre dos enters. Amb unes petites modificacions podríem crear un nou programa que ens permetés veure una secció d'un String
-
-Doncs això és el que ens demana aquest exercici. En concret, l'enunciat és el següent: desenvolupa un programa que demani un text i dos valors enters, i que mostri tots els caràcters que hi ha entre el primer i el segon, en l'ordre marcat per l'entrada.
-
-En cas que els valors enters quedin fora de les posicions del text introduït, el programa mostrarà tot el que es pugui sense queixar-se.
+--Recuperamos nuevamente el ejercicio que mostraba la sección de un String y hagamos su versión modular
+El programa MostraIntervalhará prácticamente lo mismo que la versión
+Es decir, ahora los caracteres resultantes aparecen en la misma línea.
+-La operación de encontrar los caracteres en el intervalo la realizará una función llamada intervalString()con los parámetros: la cadena de texto correspondiente, el valor inicial y el valor final. La función devolverá la sección correspondiente del texto.
+-intervalString()estará definida dentro de UtilString.javay será una función pura.
 */
 
 public class MostraInterval{
     public static void main (String[]args){
 
-        System.out.println("text?");
+        System.out.println("Text?");
         String text= Entrada.readLine();
 
         System.out.println( "inici?" ) ;
@@ -17,7 +17,7 @@ public class MostraInterval{
                      
         System.out.println( "final?" ) ;
         int v2 =  Integer.parseInt(Entrada.readLine());
-        
+        /*
         if (v1 < 0){
             v1 = 0;
         }
@@ -41,5 +41,8 @@ public class MostraInterval{
                 
             }
             System.out.println("");
+            */
+        String resultat = UtilString.intervalString(text, v1, v2);
+        System.out.println(resultat);
     }
 }
