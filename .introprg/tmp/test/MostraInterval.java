@@ -9,7 +9,7 @@ Es decir, ahora los caracteres resultantes aparecen en la misma línea.
 public class MostraInterval{
     public static void main (String[]args){
 
-        System.out.println("Text?");
+        System.out.println("text?");
         String text= Entrada.readLine();
 
         System.out.println( "inici?" ) ;
