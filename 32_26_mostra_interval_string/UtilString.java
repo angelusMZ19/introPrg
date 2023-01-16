@@ -1,4 +1,6 @@
-/**/
+/*
+Programa en modo de funcion que devuelve un pedazo de string obtenidos de los parametros cadena de texto , valor inciial, y falor final 
+*/
 public class UtilString{
     public static String intervalString (String text, int inici, int fin ){
         String buit= "";
