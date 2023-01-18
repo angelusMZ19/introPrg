@@ -1,32 +1,52 @@
-/*
-Programa en modo de funcion que devuelve un pedazo de string obtenidos de los parametros cadena de texto , valor inciial, y falor final 
+/*en este ejercicio se usara dos funciones que estaran adjuntas dentro de un mismo archivo denominado utilString pero con dos modulos diferentes
+cadena continua retorna un pedazo de string y el es enter retorna un valor booleano para verificar que el valor introducido sea un numero y no una letra
 */
 public class UtilString{
-    public static String intervalString (String text, int inici, int fin ){
-        String buit= "";
-        
-        if (inici < 0){
-            inici = 0;
-        }
-        if (fin < 0){
-            fin = 0;
-        }
-        if (fin > text.length()-1){
-            fin = text.length()-1;
-        }
-        if (inici > text.length()-1){
-            inici = text.length()-1;
-        }
-            if (inici < fin){
-                for (int i= inici; i <= fin; i++){
-                    buit= buit + text.charAt(i);
+    public static String cadenaContinua(String text, int longitud){
+       /**/ String resultat= "";
+        int dif= 0;
+        int resultado= 0;
+        String numCadena= String.valueOf(longitud);
+        if(!(numCadena.isEmpty())|| !(numCadena.isBlank())){
+            if(!(longitud<= 0) && longitud > text.length()){
+                resultado =  longitud/text.length();
+                dif= longitud-(text.length() * resultado);
+                System.out.println(text.repeat(resultado) + text.substring(0, dif));
+            } else if(longitud == 1){
+                longitud = 0;
+                for (int i= 0; i<= longitud; i = i +1){
+                   /**/ resultat= resultat + text.charAt(i);
                 }
-            }else {
-                for(int i= inici; i >= fin; i--){
-                    buit= buit + text.charAt(i);
+            } else if (longitud > 1){
+                for (int i= 0; i<= longitud-1; i = i +1){
+                   /**/ resultat= resultat + text.charAt(i);
                 }
-                
+            } else{
+                for (int i= 1; i<= longitud; i = i +1){
+                   /**/ resultat= resultat + text.charAt(i);
+                }
             }
-            return buit;
+        }
+    return resultat;
+    }
+
+    public static boolean esEnter(String text){
+        char mas ='+';
+        char menos='-';
+        int longitud = text.length();
+        boolean numero= true;
+            if (!text.isEmpty()){
+                for(int i =0; i < longitud-1; i++){
+                    if (!Character.isDigit(text.charAt(i))){
+                        if (!(i==0 && (text.charAt(0)== mas || text.charAt(0)== menos))){
+                         numero = false;
+                        }
+                    }
+            }
+        }else {
+         numero= false;
+        }
+        return numero;
     }
 }
+
