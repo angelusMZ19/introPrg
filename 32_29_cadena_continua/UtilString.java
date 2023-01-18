@@ -36,7 +36,7 @@ public class UtilString{
         text= text.strip();
         int longitud = text.length();
         boolean numero= true;
-            if (!text.isEmpty()|| !text.isBlank()){
+            if (!text.isEmpty()){
                 for(int i =0; i < longitud-1; i++){
                     if (!Character.isDigit(text.charAt(i))){
                         if (!(i==0 && (text.charAt(0)== mas || text.charAt(0)== menos))){
