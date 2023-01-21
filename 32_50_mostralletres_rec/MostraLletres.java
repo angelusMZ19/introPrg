@@ -1,7 +1,7 @@
 /**/
-public class MostraLletres{
+/*public class MostraLletres{
      public static void main(String[] args){
-      /*   String text = Entrada.readLine() ;
+         String text = Entrada.readLine() ;
          int quantes = quantesLletres(text);
          System.out.println("El text:");
          System.out.println("\t\""+ text + "\"");
@@ -24,7 +24,7 @@ public class MostraLletres{
      }
 }*/
 
-
+/*
         System.out.println("Text?");
         String text = Entrada.readLine();
         mostraLletres(text);
@@ -42,13 +42,50 @@ public class MostraLletres{
         // considerem el primer caràcter
         char primer = text.charAt(0);
         if (Character.isLetter(primer)) {
-            // XXX
+            letra = text.charAt(i);
+              cad = cad + letra;
         }
 
         // considerem les lletres que conté la resta del text
-        String restaText = /* XXX */;  // resta del text
+        String restaText =  XXX ;  // resta del text
         mostraLletres(restaText);      // crida recursiva
 
     }
 }
+*/
+
+public class NomesLletres{
+    public static void main (String[]args){
+        
+        System.out.println("Text?");
+        String text= Entrada.readLine();
+        
+        char letra;
+        String cad= "";
+        boolean chequeo= false;
+        for(int i = 0; i < text.length(); i++){
+             if (Character.isLetter(text.charAt(i))){
+              letra = text.charAt(i);
+              cad = cad + letra;
+                if(chequeo == false){
+                    System.out.print(letra);
+                    chequeo = true;
+                }else{
+                    System.out.print(", " + letra);
+                } 
+            }
+        }
+        System.out.println();
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
