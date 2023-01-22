@@ -2,11 +2,30 @@
 cadena continua retorna un pedazo de string y el es enter retorna un valor booleano para verificar que el valor introducido sea un numero y no una letra
 */
 public class UtilString{
+    public static boolean esEnter(String text ){
+        char mas ='+';
+        char menos='-';
+        int longitud = text.length();
+        //text= text.strip();
+        boolean numero= true;
+            if (!text.isEmpty()){
+                for(int i =0; i <= longitud-1; i++){
+                    if (!Character.isDigit(text.charAt(i))){
+                        if (!(i==0 && (text.charAt(0)== mas || text.charAt(0)== menos))){
+                         numero = false;
+                        }
+                    }
+                }
+            }else {
+             numero= false;
+            }
+        return numero;
+    }
+    
     public static String cadenaContinua(String text, int longitud){
-       /**/ String resultat= "";
+       String resultat= "";
         int dif= 0;
         int resultado= 0;
-        
         String numCadena= String.valueOf(longitud);
         if(!(numCadena.isEmpty())){
             if(!(longitud<= 0) && longitud > text.length()){
@@ -29,25 +48,6 @@ public class UtilString{
             }
         }
     return resultat;
-    }
-    public static boolean esEnter(String text ){
-        char mas ='+';
-        char menos='-';
-        int longitud = text.length();
-        //text= text.strip();
-        boolean numero= true;
-            if (!text.isEmpty()){
-                for(int i =0; i <= longitud-1; i++){
-                    if (!Character.isDigit(text.charAt(i))){
-                        if (!(i==0 && (text.charAt(0)== mas || text.charAt(0)== menos))){
-                         numero = false;
-                        }
-                    }
-                }
-            }else {
-             numero= false;
-            }
-        return numero;
     }
 }
 
