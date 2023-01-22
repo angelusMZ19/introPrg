@@ -8,7 +8,7 @@ public class UtilString{
         int resultado= 0;
         
         String numCadena= String.valueOf(longitud);
-        if(!(numCadena.isEmpty())|| !(numCadena.isBlank())){
+        if(!(numCadena.isEmpty())){
             if(!(longitud<= 0) && longitud > text.length()){
                 resultado =  longitud/text.length();
                 dif= longitud-(text.length() * resultado);
