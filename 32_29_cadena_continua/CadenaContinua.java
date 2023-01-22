@@ -27,7 +27,7 @@ public class CadenaContinua{
             String resultat = UtilString.cadenaContinua(text, valor);
             System.out.println(resultat.strip());
             }else{
-                System.out.println("error");
+                System.out.println();
                 }
         }else{
         System.out.println("error");
