@@ -14,21 +14,22 @@ public class CadenaContinua{
         System.out.println("Text?");
         String text = Entrada.readLine();
         /*text = text.strip();*/
-        if(!(text.isEmpty())){
+        if(!(text.isEmpty()) && !(text.isBlank())){
             System.out.println("Nombre?");
             String longitud = Entrada.readLine();
             //longitud = longitud.strip();
              
             boolean enter= UtilString.esEnter(longitud);
-          
-            //String medida= String.valueOf(longitud);
+
             //System.out.println(enter);
             if(enter){
             int valor= Integer.parseInt(longitud);/**/
             String resultat = UtilString.cadenaContinua(text, valor);
-            System.out.println(resultat);
+            System.out.println(resultat.strip());
             }else{
-                System.out.println("error");
+            int valor= Integer.parseInt(longitud);/**/
+            String resultat = UtilString.cadenaContinua(text, valor);
+                System.out.println(resultat);
                 }
         }else{
         System.out.println("error");
