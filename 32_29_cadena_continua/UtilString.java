@@ -6,6 +6,7 @@ public class UtilString{
        /**/ String resultat= "";
         int dif= 0;
         int resultado= 0;
+        /*text= text.strip();*/
         String numCadena= String.valueOf(longitud);
         if(!(numCadena.isEmpty())|| !(numCadena.isBlank())){
             if(!(longitud<= 0) && longitud > text.length()){
@@ -29,11 +30,10 @@ public class UtilString{
         }
     return resultat;
     }
-
-    public static boolean esEnter(String text){
+    public static boolean esEnter(String text ){
         char mas ='+';
         char menos='-';
-        /*text.strip(' ');*/
+        /*text= text.strip();*/
         int longitud = text.length();
         boolean numero= true;
             if (!text.isEmpty()){
