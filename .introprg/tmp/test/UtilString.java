@@ -35,7 +35,7 @@ public class UtilString{
         char menos='-';
         int longitud = text.length();
         text= text.strip();
-        boolean numero= true;
+        boolean numero= false;
             if (!text.isEmpty()){
                 for(int i =0; i < longitud-1; i++){
                     if (!Character.isDigit(text.charAt(i))){
