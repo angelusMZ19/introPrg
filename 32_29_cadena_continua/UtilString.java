@@ -33,12 +33,12 @@ public class UtilString{
     public static boolean esEnter(String text ){
         char mas ='+';
         char menos='-';
-        int longitud = text.length();
-        
+        int longitud = text.length()-1;
+        String longitudes = String.valueOf(longitud);
         text= text.strip();
         boolean numero= true;
             if (!text.isEmpty()){
-                for(int i =0; i < longitud-1; i++){
+                for(int i =0; i <= longitudes.length(); i++){
                     if (!Character.isDigit(text.charAt(i))){
                         if (!(i==0 && (text.charAt(0)== mas || text.charAt(0)== menos))){
                          numero = false;
