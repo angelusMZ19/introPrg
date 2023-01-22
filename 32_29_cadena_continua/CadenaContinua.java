@@ -17,10 +17,10 @@ public class CadenaContinua{
         if(!(text.isEmpty())){
             System.out.println("Nombre?");
             String longitud = Entrada.readLine();
-            
+            longitud = longitud.strip();
              
             boolean enter= UtilString.esEnter(longitud);
-           longitud = longitud.strip();
+          
             //String medida= String.valueOf(longitud);
             //System.out.println(enter);
             if(enter){
