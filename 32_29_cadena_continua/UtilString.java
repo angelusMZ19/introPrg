@@ -34,6 +34,7 @@ public class UtilString{
         char mas ='+';
         char menos='-';
         int longitud = text.length();
+        text= text.strip();
         boolean numero= true;
             if (!text.isEmpty()){
                 for(int i =0; i < longitud-1; i++){
@@ -44,7 +45,7 @@ public class UtilString{
                     }
                 }
             }else {
-             numero= true;
+             numero= false;
             }
         return numero;
     }
