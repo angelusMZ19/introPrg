@@ -13,7 +13,8 @@ public class CadenaContinua{
     
         System.out.println("Text?");
         String text = Entrada.readLine();
-        if(!(text.isEmpty())|| !(text.isBlank())){
+        /*text.strip();*/
+        if(!(text.isEmpty())){
             System.out.println("Nombre?");
             String longitud = Entrada.readLine();
 
@@ -22,7 +23,7 @@ public class CadenaContinua{
             if(enter){
             int valor= Integer.parseInt(longitud);
             String resultat = UtilString.cadenaContinua(text, valor);
-            System.out.println(resultat);
+            System.out.println(resultat.strip());
             }else{
                 System.out.println("error");
                 }
