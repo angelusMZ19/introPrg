@@ -77,7 +77,7 @@ public class TresEnRatlla {
             
             //comprobar si el jugador activo a abandonado la partida
             if(posicion.equals("a")){
-                System.out.println(jugadorActivo + " abandona la partida");
+                System.out.println(jugadorActivo + " abandona");
                 return;
             }
             //identifica las coordenadas del movimeinto del jugador
