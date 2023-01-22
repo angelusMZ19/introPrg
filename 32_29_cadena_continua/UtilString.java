@@ -34,8 +34,9 @@ public class UtilString{
         char mas ='+';
         char menos='-';
         int longitud = text.length();
+        
         text= text.strip();
-        boolean numero= false;
+        boolean numero= true;
             if (!text.isEmpty()){
                 for(int i =0; i < longitud-1; i++){
                     if (!Character.isDigit(text.charAt(i))){
