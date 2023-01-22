@@ -17,7 +17,7 @@ public class CadenaContinua{
         if(!(text.isEmpty()) && !(text.isBlank())){
             System.out.println("Nombre?");
             String longitud = Entrada.readLine();
-            longitud = longitud.strip();
+            //longitud = longitud.strip();
              
             boolean enter= UtilString.esEnter(longitud);
 
