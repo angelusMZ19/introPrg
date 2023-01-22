@@ -94,7 +94,7 @@ public class TresEnRatlla {
             
             if(jugadorGuanya(taulell, jugadorActivo)){
                 mostraTaulell(taulell);
-                System.out.printf("%c Guanya\n", jugadorActivo);
+                System.out.printf("%c guanya\n", jugadorActivo);
                 break;
             }
             //empate sí
