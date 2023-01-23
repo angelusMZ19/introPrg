@@ -1,5 +1,5 @@
 /*
-    Unit testing methods for exercise 02_37_mostralletres_rec
+    Unit testing methods for exercise 02_38_extreu_nombres
 */
 
 import java.lang.reflect.Method;
@@ -11,10 +11,10 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TestExercise {
 
     @Test
-    @DisplayName("Test hi és mòdul mostraLletres()")
-    public void prgtestX1mostraLletres() {
-        Class classe = MostraLletres.class;
-        String modulObjectiu = "mostraLletres";
+    @DisplayName("Test hi és mòdul extreuNombres()")
+    public void prgtestX1extreuNombres() {
+        Class classe = ExtreuNombres.class;
+        String modulObjectiu = "extreuNombres";
         Method[] methods = classe.getDeclaredMethods();
         boolean foundTarget = false;
         for (Method method: methods) {
@@ -32,7 +32,7 @@ public class TestExercise {
                     "Revisa els paràmetres requerits pel mòdul " + modulObjectiu + "()"
                 );
                 assertEquals(
-                        "void",
+                        "java.lang.String",
                         method.getGenericReturnType().getTypeName(),
                         "S'esperava " + modulObjectiu + "() d'un tipus diferent"
                 );

@@ -1,5 +1,6 @@
-exercise: 32_50_mostralletres_rec
-msg: 'Finalizado 32_50 programa realizado con recursividad, sin for ni while
+exercise: 32_51_extreu_nombres
+msg: 'Finalizado 32_51_ realizado con recursivad y de esta manera extraera los valores
+  numericos del texto que se introduzca
 
   '
 seq: 0
