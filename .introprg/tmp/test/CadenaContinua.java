@@ -25,7 +25,7 @@ public class CadenaContinua{
             if(enter){
             int valor= Integer.parseInt(longitud);
             String resultat = UtilString.cadenaContinua(text, valor);
-            System.out.println(resultat.strip());
+            System.out.print(resultat.strip());
             }else{
                 System.out.println("error");
                 }
