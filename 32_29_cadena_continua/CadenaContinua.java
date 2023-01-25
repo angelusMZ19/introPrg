@@ -10,7 +10,7 @@ en este ejercicio se usara dos funciones que estaran adjuntas dentro de un mismo
 */
 public class CadenaContinua{
     public static void main(String[]args){
-    
+    System.out.println("XXX " + UtilString.cadenaContinua("danburi" , 12));
         System.out.println("Text?");
         String text = Entrada.readLine();
         /*text = text.strip();*/
