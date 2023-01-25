@@ -64,7 +64,3 @@ intentar executar-ho i copia aquí el que et genera: ::
 
 
 
-
-
-
-    
