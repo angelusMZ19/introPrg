@@ -1,3 +1,6 @@
-exercise: 32_29_cadena_continua
-msg: Actualització automàtica de l'informe de resultats
-seq: 1
+exercise: 33_02_vocal_inici_fi
+msg: 'finalizado 33_02es un programa similar al lloro inici fi solo que en lugar de
+  leer datos desde el prompt los lee desde el un archivo que se llama dentro del codigo
+
+  '
+seq: 0
