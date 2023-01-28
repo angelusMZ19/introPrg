@@ -1,6 +1,8 @@
-exercise: 33_02_vocal_inici_fi
-msg: 'finalizado 33_02es un programa similar al lloro inici fi solo que en lugar de
-  leer datos desde el prompt los lee desde el un archivo que se llama dentro del codigo
+exercise: 33_03_csv
+msg: 'finalizado 33_03 programa que consiste en leer las notas que se encuentran dentro
+  de un archivo
+
+  CSV
 
   '
 seq: 0
