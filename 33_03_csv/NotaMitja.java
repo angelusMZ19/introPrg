@@ -33,7 +33,7 @@ public class NotaMitja {
                 }
             }
             double promedio = (suma/6.00);
-            System.out.printf("%s (%.02f)%n",elements[0], promedio);
+            System.out.printf("%s (%.02f)%n",   elements[0], promedio);
         }
         input.close();
     }
