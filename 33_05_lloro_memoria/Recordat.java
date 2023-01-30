@@ -28,41 +28,31 @@ public class Recordat{
         while (!(text.isEmpty()) && !(text.isBlank())) {
         System.out.print("El lloro pregunta paraula: ");
             text = teclado.nextLine();
-            BufferedWriter sortida = new BufferedWriter(new FileWriter(nomFitxer));
+            FileWriter archivo = new FileWriter(text);
+            BufferedWriter sortida = new BufferedWriter(archivo);
+            
             sortida.write(nomFitxer);
-                if(!(nomFitxer.isEmpty()) && !(nomFitxer.isBlank())){
+                if(!(text.isEmpty()) && !(text.isBlank())){
                     System.out.println("El lloro registra: " + text);
+
                     sortida.close();
               
                 }
         
         }
-        System.out.println("Adeu");
+        System.out.println();
     }
      
     public static void mostraRecords(final String nomFitxer) throws IOException {
-    
-        FileReader file= new FileReader(nomFitxer);
+        String alegre = nomFitxer;
+        FileReader file= new FileReader(alegre);
         BufferedReader input= new BufferedReader(file);
+        
         while (true) {
             String palabra = input.readLine();
             if (null == palabra) break;
-            System.out.println("El lloror recorda: "+  nomFitxer);
+            System.out.println("El lloror recorda: "+ palabra);
         }
         input.close();
     }
-}
-
-
-/*
-
-
-        System.out.println("El lloro espera paraula:");
-        paraula= Entrada.readLine();
-
-           if(!(paraula.isEmpty()) && !(paraula.isBlank())){
-            System.out.println("El lloro repeteix: " + paraula);
-            
-           }          
-        }
-     System.out.println ("Adéu");*/
+}   
