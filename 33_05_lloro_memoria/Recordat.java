@@ -31,18 +31,19 @@ public class Recordat{
                     sortida.newLine();
                     contador +=1;
             }
-        
         }
-        if (contador==0) System.out.println("cap palabra");
         sortida.close();
     }
     public static void mostraRecords(final String nomFitxer) throws IOException {
+    int contador = 0;
         FileReader fitxer = new FileReader (nomFitxer);
         BufferedReader input = new BufferedReader(fitxer);
         while (true) {
             String linia = input.readLine();
             if (null == linia) break;
             System.out.printf("El lloro recorda: %s%n",linia);
+        }if(contador==0){
+            System.out.println("el lloro no recorda res");
         }
         input.close();
         System.out.println("Adéu");
