@@ -21,7 +21,7 @@ public class Recordat{
         String text= "hola";
         BufferedWriter sortida = new BufferedWriter(new FileWriter(nomFitxer));
         while(!(text.isEmpty()) && !(text.isBlank())){
-        System.out.println("El lloro pregunta paraula: ");
+        System.out.println("El lloro pregunta paraula:");
             text = Entrada.readLine();
             text = text.strip();
             if(!(text.isEmpty()) && !(text.isBlank())){
