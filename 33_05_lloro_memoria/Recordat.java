@@ -42,7 +42,7 @@ public class Recordat{
         while (true) {
             String linia = input.readLine();
             if (null == linia) break;
-            System.out.printf("El lloro recorda:%s%n",linia);
+            System.out.printf("El lloro recorda: %s%n",linia);
         }
         input.close();
         System.out.println("Adeu");
