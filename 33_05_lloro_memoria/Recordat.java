@@ -45,7 +45,7 @@ public class Recordat{
             System.out.printf("El lloro recorda: %s%n",linia);
         }
         input.close();
-        System.out.println("Adèu");
+        System.out.println("Adéu");
     }
 }
 
