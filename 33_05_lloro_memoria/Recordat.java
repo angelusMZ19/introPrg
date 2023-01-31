@@ -19,6 +19,7 @@ public class Recordat{
 
     public static void processaEntrada(final String nomFitxer) throws IOException {
         String text= "hola";
+        int contador =0;
         BufferedWriter sortida = new BufferedWriter(new FileWriter(nomFitxer));
         while(!(text.isEmpty()) && !(text.isBlank())){
         System.out.println("El lloro pregunta paraula:");
@@ -28,10 +29,11 @@ public class Recordat{
                 System.out.println("El lloro registra: " + text);
                     sortida.write(text);
                     sortida.newLine();
-            }else{
-                System.out.println("cap palabra");
+                    contador +=1;
             }
+        
         }
+        if (contador==0) System.out.println("cap palabra");
         sortida.close();
     }
     public static void mostraRecords(final String nomFitxer) throws IOException {
