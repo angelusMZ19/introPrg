@@ -43,7 +43,7 @@ public class Recordat{
             if (null == linia) break;
             System.out.printf("El lloro recorda: %s%n",linia);
         if(contador==0){
-            System.out.println("el lloro no recorda res");
+            System.out.println("El lloro no recorda res");
         }
         }
         input.close();
