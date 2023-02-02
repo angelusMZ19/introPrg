@@ -1,5 +1,6 @@
-exercise: 33_05_lloro_memoria
-msg: 'prueba de pasar el prgtest
+exercise: 33_06_traduccio
+msg: 'finalizado 33_06, consiste en conjugar los datos de dos archivo y enviarlos
+  a un archivo destino con los valores intercambiados
 
   '
-seq: 12
+seq: 0
