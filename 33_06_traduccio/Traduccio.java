@@ -36,15 +36,14 @@ public class Traduccio{
             while(true){
                 String linea= input.readLine();
                 if(null== linea) break;
-                String nuevaLin= 
-                TraduceLinea(linea, archivoTraduccio);
+                String nuevaLin= tradueixLinia(linea, archivoTraduccio);
                 salida.write(nuevaLin);
                 salida.newLine();
             }
         input.close();
         salida.close();
     }
-    public static String TraduceLinea(String linea, String archivoTraduccio) throws IOException {
+    public static String tradueixLinia(String linea, String archivoTraduccio) throws IOException {
         BufferedReader input = new BufferedReader(new FileReader(archivoTraduccio));
         while (true) {
             String change = input.readLine();
