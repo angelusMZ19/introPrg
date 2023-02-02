@@ -27,10 +27,10 @@ public class Traduccio{
         String origen =args[0];
         String traduccion=args[1];
         String destino=args[2];
-        Traductor(origen, traduccion, destino);
+        tradueix(origen, traduccion, destino);
         
     }
-    public static void Traductor(String archivoOrigen, String archivoTraduccio, String archivoDestino) throws IOException{
+    public static void tradueix(String archivoOrigen, String archivoTraduccio, String archivoDestino) throws IOException{
         BufferedReader input = new BufferedReader(new FileReader(archivoOrigen));
             BufferedWriter salida = new BufferedWriter(new FileWriter (archivoDestino));
             while(true){
