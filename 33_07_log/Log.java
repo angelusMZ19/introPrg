@@ -9,24 +9,24 @@ public class Log{
     private static int n=1;
     private static String archivo = "log.txt";
     
-    public static void printError(String text) throws IOException{
+    public static String printError(String text) throws IOException{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
         String mensaje= "[" + n + "]" +" ERROR: " + text;
         sortida.write(mensaje);
         sortida.newLine();
         sortida.close();
         n += 1;
-    return ;
+    return mensaje;
     }
     
-    public static void printWarning(String text) throws IOException{
+    public static String printWarning(String text) throws IOException{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
         String mensaje= "[" + n + "]" +" WARNING: " + text;
         sortida.write(mensaje);
         sortida.newLine();
         sortida.close(); 
         n += 1;
-    return ;
+    return mensaje;
     }
     
     public static String printInfo(String text) throws IOException{
@@ -39,14 +39,14 @@ public class Log{
     return mensaje;
     }
     
-    public static void printDebug(String text) throws IOException{
+    public static String printDebug(String text) throws IOException{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
         String mensaje= "[" + n + "]" +" DEBUG: " + text;
         sortida.write(mensaje);
         sortida.newLine();
         sortida.close(); 
         n += 1;
-    return;
+    return mensaje;
     }
     
     public static void reset() throws IOException{
