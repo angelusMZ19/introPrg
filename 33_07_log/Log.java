@@ -29,14 +29,14 @@ public class Log{
     return;
     }
     
-    public static void printInfo(String text) throws IOException{
+    public static String printInfo(String text) throws IOException{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
         text= "[" + n + "]" +" INFO: " + text;
         sortida.write(text);
         sortida.newLine();
         sortida.close(); 
         n += 1;
-    return;
+    return text;
     }
     
     public static void printDebug(String text) throws IOException{
