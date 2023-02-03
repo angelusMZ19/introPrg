@@ -8,6 +8,7 @@ import java.io.BufferedWriter;
 public class Log{
     private static int n=1;
     private static String archivo = "log.txt";
+    
     public static void printError(String text) throws IOException{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
         text= "[" + n + "]" +" ERROR: " + text;
