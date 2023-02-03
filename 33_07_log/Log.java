@@ -10,7 +10,7 @@ public class Log{
     private static String archivo = "log.txt";
     public static void printError(String text) throws IOException{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
-        text= "[" + n + "]" +"ERROR: " + text;
+        text= "[" + n + "]" +" ERROR: " + text;
         sortida.write(text);
         sortida.newLine();
         sortida.close();
@@ -20,7 +20,7 @@ public class Log{
     }
     public static void printWarning(String text) throws IOException{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
-        text= "[" + n + "]" +"WARNING: " + text;
+        text= "[" + n + "]" +" WARNING: " + text;
         sortida.write(text);
         sortida.newLine();
         sortida.close(); 
@@ -29,7 +29,7 @@ public class Log{
     }
     public static void printInfo(String text) throws IOException{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
-        text= "[" + n + "]" +"INFO: " + text;
+        text= "[" + n + "]" +" INFO: " + text;
         sortida.write(text);
         sortida.newLine();
         sortida.close(); 
@@ -38,7 +38,7 @@ public class Log{
     }
     public static void printDebug(String text) throws IOException{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
-        text= "[" + n + "]" +"DEBUG: " + text;
+        text= "[" + n + "]" +" DEBUG: " + text;
         sortida.write(text);
         sortida.newLine();
         sortida.close(); 
