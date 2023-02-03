@@ -12,7 +12,8 @@ public class Log{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
         text= "[" + n + "]" +"ERROR: " + text;
         sortida.write(text);
-        sortida.close(); 
+        sortida.newLine();
+        sortida.close();
         n += 1;
     return;
     
@@ -21,6 +22,7 @@ public class Log{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
         text= "[" + n + "]" +"WARNING: " + text;
         sortida.write(text);
+        sortida.newLine();
         sortida.close(); 
         n += 1;
     return;
@@ -29,6 +31,7 @@ public class Log{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
         text= "[" + n + "]" +"INFO: " + text;
         sortida.write(text);
+        sortida.newLine();
         sortida.close(); 
         n += 1;
     return;
@@ -37,6 +40,7 @@ public class Log{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
         text= "[" + n + "]" +"DEBUG: " + text;
         sortida.write(text);
+        sortida.newLine();
         sortida.close(); 
         n += 1;
     return;
