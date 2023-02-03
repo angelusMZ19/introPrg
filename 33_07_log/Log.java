@@ -11,38 +11,38 @@ public class Log{
     
     public static void printError(String text) throws IOException{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
-        String msg= "[" + n + "]" +" ERROR: " + text;
-        sortida.write(msg);
+        String mensaje= "[" + n + "]" +" ERROR: " + text;
+        sortida.write(mensaje);
         sortida.newLine();
         sortida.close();
         n += 1;
-    return;
+    return ;
     }
     
     public static void printWarning(String text) throws IOException{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
-        String msg= "[" + n + "]" +" WARNING: " + text;
-        sortida.write(msg);
+        String mensaje= "[" + n + "]" +" WARNING: " + text;
+        sortida.write(mensaje);
         sortida.newLine();
         sortida.close(); 
         n += 1;
-    return;
+    return ;
     }
     
     public static String printInfo(String text) throws IOException{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
-        String msg= "[" + n + "]" +" INFO: " + text;
-        sortida.write(msg);
+        String mensaje= "[" + n + "]" +" INFO: " + text;
+        sortida.write(mensaje);
         sortida.newLine();
         sortida.close(); 
         n += 1;
-    return text;
+    return mensaje;
     }
     
     public static void printDebug(String text) throws IOException{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
-        String msg= "[" + n + "]" +" DEBUG: " + text;
-        sortida.write(msg);
+        String mensaje= "[" + n + "]" +" DEBUG: " + text;
+        sortida.write(mensaje);
         sortida.newLine();
         sortida.close(); 
         n += 1;
