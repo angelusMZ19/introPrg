@@ -17,8 +17,8 @@ public class Log{
         sortida.close();
         n += 1;
     return;
-    
     }
+    
     public static void printWarning(String text) throws IOException{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
         text= "[" + n + "]" +" WARNING: " + text;
@@ -28,6 +28,7 @@ public class Log{
         n += 1;
     return;
     }
+    
     public static void printInfo(String text) throws IOException{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
         text= "[" + n + "]" +" INFO: " + text;
@@ -37,6 +38,7 @@ public class Log{
         n += 1;
     return;
     }
+    
     public static void printDebug(String text) throws IOException{
     BufferedWriter sortida = new BufferedWriter(new FileWriter(archivo, true));
         text= "[" + n + "]" +" DEBUG: " + text;
@@ -46,6 +48,7 @@ public class Log{
         n += 1;
     return;
     }
+    
     public static void reset() throws IOException{
     System.out.println();
         n= 1;
