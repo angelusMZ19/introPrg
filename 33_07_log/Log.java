@@ -1,5 +1,9 @@
 /*
-Bibliotecas de utilidades de error
+Bibliotecas de utilidades de error, 
+estas osn usadas para poder sobreescribir lso errores que se encunetran el arhivo de 
+UsaLog.java.
+ya no se que mas poner en la capçalera sjjs 
+
 */
 import java.io.IOException;
 import java.io.FileWriter;
