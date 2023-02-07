@@ -29,12 +29,12 @@ public class ClassificaMatricules{
                 if (linia.isEmpty())continue;
                     if(MatriculaItalianaValida(linia) == false){
                         BufferedWriter NoVali= new BufferedWriter( new FileWriter(desconegudes, true));
-                        NoVali.write(archivo);
+                        NoVali.write(desconegudes);
                         NoVali.newLine();
                         NoVali.close();
                     }else if(MatriculaItalianaValida(linia) == true){
                             BufferedWriter Validas= new BufferedWriter(new FileWriter(italianes, true));
-                            Validas.write(archivo);
+                            Validas.write(italianes);
                             Validas.newLine();
                             Validas.close();;
                     }
