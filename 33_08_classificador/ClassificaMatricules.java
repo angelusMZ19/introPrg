@@ -19,7 +19,7 @@ public class ClassificaMatricules{
     String desconegudes="desconegudes.txt";
 
     BufferedReader input= new BufferedReader(new FileReader(archivo));
-    input.close();
+
     
     
         while (true){
@@ -39,6 +39,7 @@ public class ClassificaMatricules{
                             Validas.close();;
                     }
         }
+            input.close();
     }
     public static boolean esLletraValidaPerMatriculaItaliana(char lletra){
         String lletres= "ÑIOQU";
