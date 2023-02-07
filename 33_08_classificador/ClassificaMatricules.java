@@ -15,13 +15,13 @@ import java.io.BufferedReader;
 
 public class ClassificaMatricules{
     public static void main(String[]args)throws IOException {
-    String archivo= "llegides.txt";
+    /*String archivo= "llegides.txt";
     String italianes= "italianes.txt";
-    String desconegudes="desconegudes.txt";
+    String desconegudes="desconegudes.txt";*/
 
-    BufferedReader input= new BufferedReader(new FileReader(archivo));
-    BufferedWriter desconocidas= new BufferedWriter( new FileWriter(desconegudes, true));
-    BufferedWriter conocidas= new BufferedWriter(new FileWriter(italianes, true));
+    BufferedReader input= new BufferedReader(new FileReader("llegides.txt"));
+    BufferedWriter desconocidas= new BufferedWriter( new FileWriter("desconegudes.txt", true));
+    BufferedWriter conocidas= new BufferedWriter(new FileWriter("italianes.txt", true));
 
         while (true){
             String linia = input.readLine();
