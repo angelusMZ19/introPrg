@@ -35,12 +35,12 @@ public class ClassificaMatricules{
                         /*BufferedWriter NoVali= new BufferedWriter( new FileWriter("desconegudes.txt", true));*/
                         desconocidas.write(linia);
                         desconocidas.newLine();
-                        desconocidas.close();
+                        //desconocidas.close();
                     }else if(MatriculaItalianaValida(linia) == true){
                             /*BufferedWriter Validas= new BufferedWriter(new FileWriter("italianes.txt", true));*/
                             conocidas.write(linia);
                             conocidas.newLine();
-                            conocidas.close();;
+                            //conocidas.close();;
                     }
         }
     input.close();
