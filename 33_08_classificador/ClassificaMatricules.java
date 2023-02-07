@@ -64,7 +64,6 @@ public class ClassificaMatricules{
                 return false;
             }else{
                 for(int j=0; j<lletres.length(); j++){
-                    char valido= lletres.charAt(j);
                     if (lletra == lletres.charAt(j));
                 return false;
             }
