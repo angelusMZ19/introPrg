@@ -12,6 +12,7 @@ import java.io.FileWriter;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.BufferedReader;
+
 public class ClassificaMatricules{
     public static void main(String[]args)throws IOException {
     String archivo= "llegides.txt";
@@ -19,13 +20,9 @@ public class ClassificaMatricules{
     String desconegudes="desconegudes.txt";
 
     BufferedReader input= new BufferedReader(new FileReader(archivo));
+    BufferedWriter desconocidas= new BufferedWriter( new FileWriter(desconegudes, true));
+    BufferedWriter conocidas= new BufferedWriter(new FileWriter(italianes, true));
 
-    BufferedWriter desconocidas= new BufferedWriter( new FileWriter(desconegudes));
-    //desconocidas.close();
-    
-    BufferedWriter conocidas= new BufferedWriter(new FileWriter(italianes));
-    //conocidas.close();;
-    
         while (true){
             String linia = input.readLine();
             if (null == linia) break;
