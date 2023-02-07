@@ -45,19 +45,6 @@ public class ClassificaMatricules{
     desconocidas.close();
     conocidas.close();
     }
-    public static boolean esLletraValidaPerMatriculaItaliana(char lletra){
-        String lletres= "ÑIOQU";
-            if(lletra<'A' || lletra>'Z'){
-                return false;
-            }else{
-                for(int j=0; j<lletres.length(); j++){
-                    char valido= lletres.charAt(j);
-                    if (lletra == lletres.charAt(j));
-                return false;
-            }
-        }
-        return true;
-    }
     public static boolean MatriculaItalianaValida(String text){
         if(text.length() !=7) return false;
             for(int i= 0; i<text.length(); i++){
@@ -71,4 +58,18 @@ public class ClassificaMatricules{
             }
             return true;
     }
+    public static boolean esLletraValidaPerMatriculaItaliana(char lletra){
+        String lletres= "ÑIOQU";
+            if(lletra<'A' || lletra>'Z'){
+                return false;
+            }else{
+                for(int j=0; j<lletres.length(); j++){
+                    char valido= lletres.charAt(j);
+                    if (lletra == lletres.charAt(j));
+                return false;
+            }
+        }
+        return true;
+    }
+    
 }
