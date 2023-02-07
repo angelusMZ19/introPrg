@@ -43,7 +43,7 @@ public class ClassificaMatricules{
                             Validas.close();;
                     }
         }
-            input.close();
+    input.close();
     }
     public static boolean esLletraValidaPerMatriculaItaliana(char lletra){
         String lletres= "ÑIOQU";
