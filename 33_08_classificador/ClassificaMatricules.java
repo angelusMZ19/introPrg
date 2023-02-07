@@ -44,7 +44,7 @@ public class ClassificaMatricules{
         if(text.length() !=7) return false;
             for(int i= 0; i<text.length(); i++){
                     if(i==2 || i==3 || i==4){
-                        if(!Character.isDigit(text.charAt(i)));
+                        if(!Character.isDigit(text.charAt(i)))
                          return false;
                     }else{
                     if(esLletraValidaPerMatriculaItaliana(text.charAt(i))== false)
