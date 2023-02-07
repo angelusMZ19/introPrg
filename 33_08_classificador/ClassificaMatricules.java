@@ -28,12 +28,10 @@ public class ClassificaMatricules{
             if (null == linia) break;
             linia = linia.strip();
                     if(MatriculaItalianaValida(linia) == false){
-                        /*BufferedWriter NoVali= new BufferedWriter( new FileWriter("desconegudes.txt", true));*/
                         desconocidas.write(linia);
                         desconocidas.newLine();
 
                     }else if(MatriculaItalianaValida(linia) == true){
-                            /*BufferedWriter Validas= new BufferedWriter(new FileWriter("italianes.txt", true));*/
                             conocidas.write(linia);
                             conocidas.newLine();
                     }
