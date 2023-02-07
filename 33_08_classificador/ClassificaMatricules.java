@@ -20,10 +20,10 @@ public class ClassificaMatricules{
 
     BufferedReader input= new BufferedReader(new FileReader(archivo));
 
-    BufferedWriter desconocidas= new BufferedWriter( new FileWriter(desconegudes, true));
+    BufferedWriter desconocidas= new BufferedWriter( new FileWriter(desconegudes));
     //desconocidas.close();
     
-    BufferedWriter conocidas= new BufferedWriter(new FileWriter(italianes, true));
+    BufferedWriter conocidas= new BufferedWriter(new FileWriter(italianes));
     //conocidas.close();;
     
         while (true){
