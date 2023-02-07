@@ -30,7 +30,6 @@ public class ClassificaMatricules{
             String linia = input.readLine();
             if (null == linia) break;
             linia = linia.strip();
-                if (linia.isEmpty())continue;
                     if(MatriculaItalianaValida(linia) == false){
                         /*BufferedWriter NoVali= new BufferedWriter( new FileWriter("desconegudes.txt", true));*/
                         desconocidas.write(linia);
