@@ -18,14 +18,13 @@ public class ClassificaMatricules{
     /*String archivo= "llegides.txt";
     String italianes= "italianes.txt";
     String desconegudes="desconegudes.txt";*/
-      BufferedWriter desconocidas= new BufferedWriter( new FileWriter("desconegudes.txt"));
-    BufferedWriter conocidas= new BufferedWriter(new FileWriter("italianes.txt"));
     BufferedReader input= new BufferedReader(new FileReader("llegides.txt"));
-  
+    BufferedWriter desconocidas= new BufferedWriter( new FileWriter("desconegudes.txt"));
+    BufferedWriter conocidas= new BufferedWriter(new FileWriter("italianes.txt"));
 
         while (true){
             String linia = input.readLine();
-            if (null == linia) break;
+            if (linia==null) break;
             linia = linia.strip();
                     if(MatriculaItalianaValida(linia) == false){
                         desconocidas.write(linia);
@@ -44,11 +43,9 @@ public class ClassificaMatricules{
         if(text.length() !=7) return false;
             for(int i= 0; i<text.length(); i++){
                     if(i==2 || i==3 || i==4){
-                        if(!Character.isDigit(text.charAt(i)))
-                         return false;
+                        if(!Character.isDigit(text.charAt(i)))return false;
                     }else{
-                    if(esLletraValidaPerMatriculaItaliana(text.charAt(i))== false)
-                        return false;
+                    if(esLletraValidaPerMatriculaItaliana(text.charAt(i))== false)return false;
                     }
             }
             return true;
