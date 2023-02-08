@@ -43,10 +43,14 @@ public class ClassificaMatricules{
         conocidas.close();
     }
     public static boolean MatriculaItalianaValida(String codigo){
-        if(codigo.length() !=7) return false;
+        if(codigo.length() !=7){
+        return false;
+        }
             for(int i= 0; i<codigo.length(); i++){
                     if(i==2 || i==3 || i==4){
-                        if(!Character.isDigit(codigo.charAt(i)))return false;
+                        if(!Character.isDigit(codigo.charAt(i))){
+                        return false;
+                        }
                     }else{
                     if(esLletraValidaPerMatriculaItaliana(codigo.charAt(i))== false)return false;
                     }
