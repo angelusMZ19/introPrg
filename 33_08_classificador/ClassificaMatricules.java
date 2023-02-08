@@ -33,22 +33,22 @@ public class ClassificaMatricules{
                         desconocidas.write(linia);
                         desconocidas.newLine();
 
-                    }else if(MatriculaItalianaValida(linia.trim())){
-                            conocidas.write(linia);
+                    }else {
+                            conocidas.write(linia.trim());
                             conocidas.newLine();
                     }
         }
-    input.close();
-    desconocidas.close();
-    conocidas.close();
+        input.close();
+        desconocidas.close();
+        conocidas.close();
     }
-    public static boolean MatriculaItalianaValida(String text){
-        if(text.length() !=7) return false;
-            for(int i= 0; i<text.length(); i++){
+    public static boolean MatriculaItalianaValida(String codigo){
+        if(codigo.length() !=7) return false;
+            for(int i= 0; i<codigo.length(); i++){
                     if(i==2 || i==3 || i==4){
-                        if(!Character.isDigit(text.charAt(i)))return false;
+                        if(!Character.isDigit(codigo.charAt(i)))return false;
                     }else{
-                    if(esLletraValidaPerMatriculaItaliana(text.charAt(i))== false)return false;
+                    if(esLletraValidaPerMatriculaItaliana(codigo.charAt(i))== false)return false;
                     }
             }
             return true;
