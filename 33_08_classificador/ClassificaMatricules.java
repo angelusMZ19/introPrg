@@ -35,7 +35,6 @@ public class ClassificaMatricules{
                     }else {
                         desconocidas.write(linia.trim());
                         desconocidas.newLine();
-
                     }
         }
         input.close();
@@ -70,7 +69,7 @@ public class ClassificaMatricules{
                 return false;
             }
         }
-        return false;
+        return true;
     }
 }
 
