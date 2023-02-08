@@ -15,59 +15,57 @@ import java.io.BufferedReader;
 
 public class ClassificaMatricules{
     public static void main(String[]args)throws IOException {
-    /*String archivo= "llegides.txt";
+    
+    String desconegudes="desconegudes.txt";
+    BufferedWriter desconocidas= new BufferedWriter( new FileWriter(desconegudes));
+    String archivo= "llegides.txt";
+    BufferedReader input= new BufferedReader(new FileReader(archivo));
     String italianes= "italianes.txt";
-    String desconegudes="desconegudes.txt";*/
-
-    BufferedReader input= new BufferedReader(new FileReader("llegides.txt"));
-    BufferedWriter desconocidas= new BufferedWriter( new FileWriter("desconegudes.txt"));
-    desconocidas.close();
-    BufferedWriter conocidas= new BufferedWriter(new FileWriter("italianes.txt"));
-    conocidas.close();
+    BufferedWriter conocidas= new BufferedWriter(new FileWriter(italianes));
 
         while (true){
             String linia = input.readLine();
-            if (null == linia) break;
-            linia = linia.strip();
-                    if(MatriculaItalianaValida(linia) == false){
-                        if(existe(linia,"desconegudes.txt")==false){
-                        BufferedWriter noVale= new BufferedWriter( new FileWriter("desconegudes.txt", true));
-                            noVale.write(linia);
-                            noVale.newLine();
-                            noVale.close();
-
-                        }else if(MatriculaItalianaValida(linia) == true){
-                                if(existe(linia,"italianes.txt")==false){
-                                BufferedWriter siVale=new BufferedWriter(new FileWriter("italianes.txt", true));
-                                siVale.write(linia);
-                                siVale.newLine();
-                                siVale.close();
-                                }
-                        }
-                }
-        }
-    input.close();
-    }
-    public static boolean MatriculaItalianaValida(String text){
-        if(text.length() !=7) return false;
-            for(int i= 0; i<text.length(); i++){
-                    if(i==2 || i==3 || i==4){
-                        if(!Character.isDigit(text.charAt(i)))
-                         return false;
-                    }else{
-                    if(esLletraValidaPerMatriculaItaliana(text.charAt(i))== false)
-                        return false;
-                    }
+            if (linia==null){
+            break;
             }
-            return true;
+            linia = linia.strip();
+                    if(existe(matriculaItalianaValida(linia))){
+                        conocidas.write(linia.strip());
+                        conocidas.newLine();
+                    }else {
+                        desconocidas.write(linia.strip());
+                        desconocidas.newLine();
+                    }
+        }
+        input.close();
+        desconocidas.close();
+        conocidas.close();
     }
-    public static boolean esLletraValidaPerMatriculaItaliana(char lletra){
-        String lletres= "ÑIOQU";
-            if(lletra<'A' || lletra>'Z'){
+    public static boolean matriculaItalianaValida(String codigo){
+        String lletres= "IOQU";
+        if(codigo.length() !=7){
+        return false;
+        }
+        if(!Character.isUpperCase(codigo.charAt(0)) || !Character.isUpperCase(codigo.charAt(1))){
+        return false;
+        }
+         for(int i=0; i<lletres.length(); i++){
+            if((codigo.charAt(0) == lletres.charAt(i)) || (codigo.charAt(1) == lletres.charAt(i))){
                 return false;
-            }else{
-                for(int j=0; j<lletres.length(); j++){
-                    if (lletra == lletres.charAt(j));
+            }
+        }
+        for(int i=2; i<=4; i++){
+            if(i==2 || i==3 || i==4){
+                if(!Character.isDigit(codigo.charAt(i))){
+                return false;
+                }
+            }
+        }
+        if(!Character.isUpperCase(codigo.charAt(5)) || !Character.isUpperCase(codigo.charAt(6))){
+            return false;
+        }
+        for(int rec=0; rec < lletres.length(); rec++){
+            if((codigo.charAt(5) == lletres.charAt(rec)) || (codigo.charAt(6) == lletres.charAt(rec))){
                 return false;
             }
         }
