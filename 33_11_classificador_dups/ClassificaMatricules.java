@@ -21,7 +21,9 @@ public class ClassificaMatricules{
 
     BufferedReader input= new BufferedReader(new FileReader("llegides.txt"));
     BufferedWriter desconocidas= new BufferedWriter( new FileWriter("desconegudes.txt"));
+    desconocidas.close();
     BufferedWriter conocidas= new BufferedWriter(new FileWriter("italianes.txt"));
+    conocidas.close();
 
         while (true){
             String linia = input.readLine();
