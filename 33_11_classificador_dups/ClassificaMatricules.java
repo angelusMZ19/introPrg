@@ -32,7 +32,7 @@ public class ClassificaMatricules{
             }
             linia = linia.strip();
                     if(matriculaItalianaValida(linia)){
-                        if(existe(linia, italianes)==true){
+                        if(existe(linia, italianes)){
                         /*BufferedWriter validas= new BufferedWriter(new FileWriter("italianes.txt", true));*/
                         conocidas.write(linia.strip());
                         conocidas.newLine();
@@ -40,7 +40,7 @@ public class ClassificaMatricules{
                         }
                     }else {
                     if(matriculaItalianaValida(linia)){
-                        if(existe(linia, desconegudes)==false){
+                        if(existe(linia, desconegudes)){
                         //BufferedWriter invalid= new BufferedWriter(new FileWriter("desconegudes.txt", true));
                             desconocidas.write(linia.strip());
                             desconocidas.newLine();
