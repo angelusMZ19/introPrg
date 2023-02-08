@@ -105,7 +105,7 @@ public class CercaAlumnes {
             linia=input.readLine();
             if(linia==null){
                 if(cont == 0){
-                    System.out.println("Cap alumen");
+                    System.out.println("Cap alumne");
                 }
                 break;
             }
