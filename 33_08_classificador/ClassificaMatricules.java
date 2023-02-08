@@ -1,66 +1,67 @@
-/*
-Desarrolla un programa que lea llegides.txty genere dos nuevos archivos llamados italianes.txty desconegudes.txttales que:
-italianes.txtcontenga todas las matrículas halladas a llegides.txtque correspondan a matrículas válidas italianas. Recuerda, por ejemplo, este ejercicio
-desconegudes.txtque corresponda a todas las matrículas halladas no válidas como matrículas italianas.
-El contenido de los archivos italianes.txty desconegudes.txttendrá las siguientes características:
-Las entradas aparecerán en el mismo orden que enllegides.txt
-Las entradas aparecerán limpias . Es decir, no tendrán espacios en blanco ni al inicio ni al final y ninguna será una línea vacía.
-El programa no se preocupará si ya existían o no los archivos de salida. Siempre les sobreescribirá incluso si no hay ningún dato que escribir a alguno de ellos.
-*/
+/*Programa que revisa les matricules i diu si son italianes o no segons el fitxer on les escriu*/
 import java.io.IOException;
-import java.io.FileWriter;
-import java.io.BufferedWriter;
-import java.io.FileReader;
 import java.io.BufferedReader;
-
-public class ClassificaMatricules{
-    public static void main(String[]args)throws IOException {
-    /*String archivo= "llegides.txt";
-    String italianes= "italianes.txt";
-    String desconegudes="desconegudes.txt";*/
-    BufferedReader input= new BufferedReader(new FileReader("llegides.txt"));
-    BufferedWriter desconocidas= new BufferedWriter( new FileWriter("desconegudes.txt"));
-    BufferedWriter conocidas= new BufferedWriter(new FileWriter("italianes.txt"));
-
-        while (true){
-            String linia = input.readLine();
-            if (linia==null) break;
-            linia = linia.strip();
-                    if(MatriculaItalianaValida(linia) == false){
-                        desconocidas.write(linia);
-                        desconocidas.newLine();
-
-                    }else if(MatriculaItalianaValida(linia) == true){
-                            conocidas.write(linia);
-                            conocidas.newLine();
-                    }
-        }
-    input.close();
-    desconocidas.close();
-    conocidas.close();
-    }
-    public static boolean MatriculaItalianaValida(String text){
-        if(text.length() !=7) return false;
-            for(int i= 0; i<text.length(); i++){
-                    if(i==2 || i==3 || i==4){
-                        if(!Character.isDigit(text.charAt(i)))return false;
-                    }else{
-                    if(esLletraValidaPerMatriculaItaliana(text.charAt(i))== false)return false;
-                    }
+import java.io.FileReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+public class ClassificaMatricules{ 
+    public static void main (String[] args) throws IOException{
+        String desconegudes = "desconegudes.txt";
+        BufferedWriter eDesconegudes = new BufferedWriter(new FileWriter(desconegudes));
+        String cami = "llegides.txt";
+        BufferedReader lectura = new BufferedReader(new FileReader(cami));
+        String italianes = "italianes.txt";
+        BufferedWriter eItalianes = new BufferedWriter(new FileWriter(italianes));
+        while (true) {
+            String leido = lectura.readLine();
+            if (leido == null) {
+                break;
             }
-            return true;
-    }
-    public static boolean esLletraValidaPerMatriculaItaliana(char lletra){
-        String lletres= "IOQU";
-            if(lletra<'A' || lletra>'Z'){
-                return false;
-            }else{
-                for(int j=0; j<lletres.length(); j++){
-                    if (lletra == lletres.charAt(j));
-                return false;
+            leido = leido.trim();
+            if (matriculaItalianaValida(leido)) {
+                eItalianes.write(leido.trim());
+                eItalianes.newLine();
+            } else {
+                eDesconegudes.write(leido.trim());
+                eDesconegudes.newLine();
             }
         }
-        return true;
+        lectura.close();
+        eDesconegudes.close();
+        eItalianes.close();
     }
-    
+    public static boolean matriculaItalianaValida(String matricula) {
+        boolean esItaliana = false;
+        String confusas = "IOQU";
+        if (matricula.length() != 7) {
+            return esItaliana;
+        }
+        // Verificar los primeros dos caracteres
+        if(!Character.isUpperCase(matricula.charAt(0))||!Character.isUpperCase(matricula.charAt(1))){
+            return esItaliana;
+        }
+        // Verificar si los caracteres 0 y 1 son confusos
+        for(int i = 0; i < confusas.length(); i++) {
+            if(matricula.charAt(0)==confusas.charAt(i)||matricula.charAt(1)==confusas.charAt(i)){
+                return esItaliana;
+            }
+        }
+        // Verificar los caracteres 2 a 4
+        for (int i = 2; i <= 4; i++) {
+            if (!Character.isDigit(matricula.charAt(i))) {
+                return esItaliana;
+            }
+        }
+        // Verificar los últimos dos caracteres
+        if(!Character.isUpperCase(matricula.charAt(5))||!Character.isUpperCase(matricula.charAt(6))){
+            return esItaliana;
+        }
+        for (int i = 0; i < confusas.length(); i++) {
+            if(matricula.charAt(5)==confusas.charAt(i)||matricula.charAt(6)==confusas.charAt(i)){
+                return esItaliana;
+            }
+        }
+        esItaliana = true;
+        return esItaliana;
+    }
 }
