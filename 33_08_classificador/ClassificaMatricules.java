@@ -51,26 +51,29 @@ public class ClassificaMatricules{
                         if(!Character.isDigit(codigo.charAt(i))){
                         return false;
                         }
-                    }else{
-                        if(!esLletraValidaPerMatriculaItaliana(codigo.charAt(i))){
-                        return false;
-                        }
                     }
             }
             return true;
     }
-    public static boolean esLletraValidaPerMatriculaItaliana(char lletra){
+    public static boolean esLletraValidaPerMatriculaItaliana(String lletra ){
+        if(!Character.isUpperCase(lletra.charAt(0)) || !Character.isUpperCase(lletra.charAt(1))){
+        return false;
+        }
         String lletres= "IOQU";
-            if(lletra>'A' || lletra<'Z'){
+        for(int i=0; i<lletres.length(); i++){
+            if((lletra.charAt(0) == lletres.charAt(i)) || (lletra.charAt(1) == lletres.charAt(i))){
                 return false;
-            }else{
-                for(int j=0; j<lletres.length(); j++){
-                    if (lletra == lletres.charAt(j));
+            }
+        }
+        if(!Character.isUpperCase(lletra.charAt(5)) || !Character.isUpperCase(lletra.charAt(6))){
+            return false;
+        }
+        for(int rec=0; rec < lletres.length(); rec++){
+            if((lletra.charAt(0) == lletres.charAt(rec)) || (lletra.charAt(1) == lletres.charAt(rec))){
                 return false;
             }
         }
         return true;
     }
-    
 }
 
