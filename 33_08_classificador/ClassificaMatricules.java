@@ -15,10 +15,11 @@ import java.io.BufferedReader;
 
 public class ClassificaMatricules{
     public static void main(String[]args)throws IOException {
-    String archivo= "llegides.txt";
-    BufferedReader input= new BufferedReader(new FileReader(archivo));
+    
     String desconegudes="desconegudes.txt";
     BufferedWriter desconocidas= new BufferedWriter( new FileWriter(desconegudes));
+    String archivo= "llegides.txt";
+    BufferedReader input= new BufferedReader(new FileReader(archivo));
     String italianes= "italianes.txt";
     BufferedWriter conocidas= new BufferedWriter(new FileWriter(italianes));
 
@@ -28,7 +29,7 @@ public class ClassificaMatricules{
             break;
             }
             linia = linia.trim();
-                    if(MatriculaItalianaValida(linia) != true){
+                    if(MatriculaItalianaValida(linia)== false){
                         desconocidas.write(linia);
                         desconocidas.newLine();
 
