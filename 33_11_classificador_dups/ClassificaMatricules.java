@@ -94,6 +94,6 @@ public class ClassificaMatricules{
             }
         }
         input.close();
-        return false;
+        return true;
     }
 }
