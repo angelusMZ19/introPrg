@@ -52,7 +52,7 @@ public class ClassificaMatricules{
                         return false;
                         }
                     }else{
-                        if(esLletraValidaPerMatriculaItaliana(codigo.charAt(i))== false){
+                        if(!esLletraValidaPerMatriculaItaliana(codigo.charAt(i))){
                         return false;
                         }
                     }
