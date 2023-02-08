@@ -24,10 +24,11 @@ public class ClassificaMatricules{
 
         while (true){
             String linia = input.readLine();
-            if (linia==null) break;
-            linia = linia.strip();
-            if(linia.isEmpty()){
-                    if(MatriculaItalianaValida(linia) == false){
+            if (linia==null){
+            break;
+            }
+            linia = linia.trim();
+                    if(MatriculaItalianaValida(linia) != true){
                         desconocidas.write(linia);
                         desconocidas.newLine();
 
@@ -35,7 +36,6 @@ public class ClassificaMatricules{
                             conocidas.write(linia);
                             conocidas.newLine();
                     }
-                }
         }
     input.close();
     desconocidas.close();
