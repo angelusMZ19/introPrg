@@ -55,7 +55,7 @@ public class ClassificaMatricules{
                 return false;
             }
         }
-        for(int i= 0; i<codigo.length(); i++){
+        for(int i=2; i<codigo.length(); i++){
             if(i==2 || i==3 || i==4){
                 if(!Character.isDigit(codigo.charAt(i))){
                 return false;
