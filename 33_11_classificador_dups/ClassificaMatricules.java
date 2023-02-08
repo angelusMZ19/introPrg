@@ -31,14 +31,16 @@ public class ClassificaMatricules{
             linia = linia.strip();
                     if(matriculaItalianaValida(linia)){
                         if(existe(linia, italianes)==true){
-                        conocidas.write(linia.strip());
-                        conocidas.newLine();
+                        BufferedWriter validas= new BufferedWriter(new FileWriter(italianes, true));
+                        validas.write(linia.strip());
+                        validas.newLine();
                         }
                     }else {
                     if(matriculaItalianaValida(linia)){
                         if(existe(linia, desconegudes)==false){
-                            desconocidas.write(linia.strip());
-                            desconocidas.newLine();
+                        BufferedWriter invalid= new BufferedWriter(new FileWriter(italianes));
+                            invalid.write(linia.strip());
+                            invalid.newLine();
                         }
                     }
                 }
