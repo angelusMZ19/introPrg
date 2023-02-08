@@ -47,20 +47,19 @@ public class ClassificaMatricules{
         if(codigo.length() !=7){
         return false;
         }
-            for(int i= 0; i<codigo.length(); i++){
-                    if(i==2 || i==3 || i==4){
-                        if(!Character.isDigit(codigo.charAt(i))){
-                        return false;
-                        }
-                    }
-            }
         if(!Character.isUpperCase(codigo.charAt(0)) || !Character.isUpperCase(codigo.charAt(1))){
         return false;
         }
-
-        for(int i=0; i<lletres.length(); i++){
+         for(int i=0; i<lletres.length(); i++){
             if((codigo.charAt(0) == lletres.charAt(i)) || (codigo.charAt(1) == lletres.charAt(i))){
                 return false;
+            }
+        }
+        for(int i= 0; i<codigo.length(); i++){
+            if(i==2 || i==3 || i==4){
+                if(!Character.isDigit(codigo.charAt(i))){
+                return false;
+                }
             }
         }
         if(!Character.isUpperCase(codigo.charAt(5)) || !Character.isUpperCase(codigo.charAt(6))){
