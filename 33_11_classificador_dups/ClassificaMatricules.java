@@ -40,7 +40,7 @@ public class ClassificaMatricules{
                         }
                     }else {
                     if(matriculaItalianaValida(linia)==false){
-                        if(existe(linia, "desconegudes.txt")==true){
+                        if(existe(linia, "desconegudes.txt")==false){
                         //BufferedWriter invalid= new BufferedWriter(new FileWriter("desconegudes.txt", true));
                             desconocidas.write(linia.strip());
                             desconocidas.newLine();
