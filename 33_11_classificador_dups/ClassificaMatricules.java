@@ -18,10 +18,12 @@ public class ClassificaMatricules{
     
     String desconegudes="desconegudes.txt";
     BufferedWriter desconocidas= new BufferedWriter( new FileWriter(desconegudes));
+            desconocidas.close();
     String archivo= "llegides.txt";
     BufferedReader input= new BufferedReader(new FileReader(archivo));
     String italianes= "italianes.txt";
     BufferedWriter conocidas= new BufferedWriter(new FileWriter(italianes));
+            conocidas.close();
 
         while (true){
             String linia = input.readLine();
@@ -34,6 +36,7 @@ public class ClassificaMatricules{
                         BufferedWriter validas= new BufferedWriter(new FileWriter(italianes, true));
                         validas.write(linia.strip());
                         validas.newLine();
+                        validas.close();
                         }
                     }else {
                     if(matriculaItalianaValida(linia)){
@@ -41,13 +44,13 @@ public class ClassificaMatricules{
                         BufferedWriter invalid= new BufferedWriter(new FileWriter(desconegudes, true));
                             invalid.write(linia.strip());
                             invalid.newLine();
+                            invalid.close();
                         }
                     }
                 }
         }
         input.close();
-        desconocidas.close();
-        conocidas.close();
+
     }
     public static boolean matriculaItalianaValida(String codigo){
         String lletres= "IOQU";
