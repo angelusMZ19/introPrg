@@ -31,16 +31,16 @@ public class ClassificaMatricules{
             break;
             }
             linia = linia.strip();
-                    if(matriculaItalianaValida(linia)){
-                        if(existe(linia, "italianes.txt")){
+                    if(matriculaItalianaValida(linia)==true){
+                        if(existe(linia, "italianes.txt")== true){
                         /*BufferedWriter validas= new BufferedWriter(new FileWriter("italianes.txt", true));*/
                         conocidas.write(linia.strip());
                         conocidas.newLine();
                         
                         }
                     }else {
-                    if(matriculaItalianaValida(linia)){
-                        if(existe(linia, "desconegudes.txt")){
+                    if(matriculaItalianaValida(linia)==false){
+                        if(existe(linia, "desconegudes.txt")==true){
                         //BufferedWriter invalid= new BufferedWriter(new FileWriter("desconegudes.txt", true));
                             desconocidas.write(linia.strip());
                             desconocidas.newLine();
