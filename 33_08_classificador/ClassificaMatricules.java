@@ -54,7 +54,7 @@ public class ClassificaMatricules{
             return true;
     }
     public static boolean esLletraValidaPerMatriculaItaliana(char lletra){
-        String lletres= "ÑIOQU";
+        String lletres= "IOQU";
             if(lletra<'A' || lletra>'Z'){
                 return false;
             }else{
