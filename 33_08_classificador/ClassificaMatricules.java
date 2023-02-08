@@ -26,6 +26,7 @@ public class ClassificaMatricules{
             String linia = input.readLine();
             if (linia==null) break;
             linia = linia.strip();
+            if(linia.isEmpty()) continue;
                     if(MatriculaItalianaValida(linia) == false){
                         desconocidas.write(linia);
                         desconocidas.newLine();
