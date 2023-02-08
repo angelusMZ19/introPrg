@@ -17,11 +17,11 @@ public class ClassificaMatricules{
     public static void main(String[]args)throws IOException {
     
     String desconegudes="desconegudes.txt";
-    BufferedWriter desconocidas= new BufferedWriter( new FileWriter(desconegudes, true));
+    BufferedWriter desconocidas= new BufferedWriter( new FileWriter(desconegudes));
     String archivo= "llegides.txt";
     BufferedReader input= new BufferedReader(new FileReader(archivo));
     String italianes= "italianes.txt";
-    BufferedWriter conocidas= new BufferedWriter(new FileWriter(italianes, true));
+    BufferedWriter conocidas= new BufferedWriter(new FileWriter(italianes));
 
         while (true){
             String linia = input.readLine();
