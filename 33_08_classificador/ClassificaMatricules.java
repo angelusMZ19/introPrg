@@ -53,23 +53,20 @@ public class ClassificaMatricules{
                         }
                     }
             }
-            return true;
-    }
-    public static boolean esLletraValidaPerMatriculaItaliana(String lletra ){
-        if(!Character.isUpperCase(lletra.charAt(0)) || !Character.isUpperCase(lletra.charAt(1))){
+        if(!Character.isUpperCase(codigo.charAt(0)) || !Character.isUpperCase(codigo.charAt(1))){
         return false;
         }
         String lletres= "IOQU";
         for(int i=0; i<lletres.length(); i++){
-            if((lletra.charAt(0) == lletres.charAt(i)) || (lletra.charAt(1) == lletres.charAt(i))){
+            if((codigo.charAt(0) == lletres.charAt(i)) || (codigo.charAt(1) == lletres.charAt(i))){
                 return false;
             }
         }
-        if(!Character.isUpperCase(lletra.charAt(5)) || !Character.isUpperCase(lletra.charAt(6))){
+        if(!Character.isUpperCase(codigo.charAt(5)) || !Character.isUpperCase(codigo.charAt(6))){
             return false;
         }
         for(int rec=0; rec < lletres.length(); rec++){
-            if((lletra.charAt(0) == lletres.charAt(rec)) || (lletra.charAt(1) == lletres.charAt(rec))){
+            if((codigo.charAt(0) == lletres.charAt(rec)) || (codigo.charAt(1) == lletres.charAt(rec))){
                 return false;
             }
         }
