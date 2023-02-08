@@ -65,7 +65,7 @@ public class ClassificaMatricules{
             return false;
         }
         for(int rec=0; rec < lletres.length(); rec++){
-            if((codigo.charAt(0) == lletres.charAt(rec)) || (codigo.charAt(1) == lletres.charAt(rec))){
+            if((codigo.charAt(5) == lletres.charAt(rec)) || (codigo.charAt(6) == lletres.charAt(rec))){
                 return false;
             }
         }
