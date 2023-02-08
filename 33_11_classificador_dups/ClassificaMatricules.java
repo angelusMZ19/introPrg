@@ -18,12 +18,12 @@ public class ClassificaMatricules{
     
     String desconegudes="desconegudes.txt";
     BufferedWriter desconocidas= new BufferedWriter( new FileWriter(desconegudes));
-            desconocidas.close();
+            //desconocidas.close();
     String archivo= "llegides.txt";
     BufferedReader input= new BufferedReader(new FileReader(archivo));
     String italianes= "italianes.txt";
     BufferedWriter conocidas= new BufferedWriter(new FileWriter(italianes));
-            conocidas.close();
+            //conocidas.close();
 
         while (true){
             String linia = input.readLine();
@@ -33,24 +33,25 @@ public class ClassificaMatricules{
             linia = linia.strip();
                     if(matriculaItalianaValida(linia)){
                         if(existe(linia, italianes)==true){
-                        BufferedWriter validas= new BufferedWriter(new FileWriter("italianes.txt", true));
-                        validas.write(linia.strip());
-                        validas.newLine();
-                        validas.close();
+                        /*BufferedWriter validas= new BufferedWriter(new FileWriter("italianes.txt", true));*/
+                        conocidas.write(linia.strip());
+                        conocidas.newLine();
+                        
                         }
                     }else {
                     if(matriculaItalianaValida(linia)){
                         if(existe(linia, desconegudes)==false){
                         BufferedWriter invalid= new BufferedWriter(new FileWriter("desconegudes.txt", true));
-                            invalid.write(linia.strip());
-                            invalid.newLine();
-                            invalid.close();
+                            desconocidas.write(linia.strip());
+                            desconocidas.newLine();
+                            
+                            }
                         }
-                    }
                 }
         }
         input.close();
-
+        conocidas.close();
+        desconocidas.close();
     }
     public static boolean matriculaItalianaValida(String codigo){
         String lletres= "IOQU";
