@@ -29,13 +29,19 @@ public class ClassificaMatricules{
             break;
             }
             linia = linia.strip();
-                    if(existe(matriculaItalianaValida(linia))){
+                    if(matriculaItalianaValida(linia)){
+                        if(existe(linia, italianes)==true){
                         conocidas.write(linia.strip());
                         conocidas.newLine();
+                        }
                     }else {
-                        desconocidas.write(linia.strip());
-                        desconocidas.newLine();
+                    if(matriculaItalianaValida(linia)){
+                        if(existe(linia, desconegudes)==false){
+                            desconocidas.write(linia.strip());
+                            desconocidas.newLine();
+                        }
                     }
+                }
         }
         input.close();
         desconocidas.close();
