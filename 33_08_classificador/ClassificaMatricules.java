@@ -29,11 +29,11 @@ public class ClassificaMatricules{
             break;
             }
             linia = linia.trim();
-                    if(MatriculaItalianaValida(linia)== false){
+                    if(MatriculaItalianaValida(linia)){
                         desconocidas.write(linia);
                         desconocidas.newLine();
 
-                    }else if(MatriculaItalianaValida(linia) == true){
+                    }else if(MatriculaItalianaValida(linia.trim())){
                             conocidas.write(linia);
                             conocidas.newLine();
                     }
