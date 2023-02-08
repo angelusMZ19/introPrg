@@ -43,6 +43,7 @@ public class ClassificaMatricules{
         conocidas.close();
     }
     public static boolean MatriculaItalianaValida(String codigo){
+        String lletres= "IOQU";
         if(codigo.length() !=7){
         return false;
         }
@@ -56,7 +57,7 @@ public class ClassificaMatricules{
         if(!Character.isUpperCase(codigo.charAt(0)) || !Character.isUpperCase(codigo.charAt(1))){
         return false;
         }
-        String lletres= "IOQU";
+
         for(int i=0; i<lletres.length(); i++){
             if((codigo.charAt(0) == lletres.charAt(i)) || (codigo.charAt(1) == lletres.charAt(i))){
                 return false;
