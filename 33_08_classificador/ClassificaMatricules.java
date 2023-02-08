@@ -30,12 +30,12 @@ public class ClassificaMatricules{
             }
             linia = linia.trim();
                     if(MatriculaItalianaValida(linia)){
+                        conocidas.write(linia.trim());
+                        conocidas.newLine();
+                    }else {
                         desconocidas.write(linia);
                         desconocidas.newLine();
 
-                    }else {
-                            conocidas.write(linia.trim());
-                            conocidas.newLine();
                     }
         }
         input.close();
