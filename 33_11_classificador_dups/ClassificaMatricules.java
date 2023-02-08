@@ -38,7 +38,7 @@ public class ClassificaMatricules{
                     }else {
                     if(matriculaItalianaValida(linia)){
                         if(existe(linia, desconegudes)==false){
-                        BufferedWriter invalid= new BufferedWriter(new FileWriter(italianes));
+                        BufferedWriter invalid= new BufferedWriter(new FileWriter(desconegudes, true));
                             invalid.write(linia.strip());
                             invalid.newLine();
                         }
