@@ -18,7 +18,7 @@ public class ClassificaMatricules{
     /*String archivo= "llegides.txt";
     String italianes= "italianes.txt";
     String desconegudes="desconegudes.txt";*/
-      BufferedWriter desconocidas= new BufferedWriter( new FileWriter("desconegudes.txt", true));
+      BufferedWriter desconocidas= new BufferedWriter( new FileWriter("desconegudes.txt"));
     BufferedWriter conocidas= new BufferedWriter(new FileWriter("italianes.txt"));
     BufferedReader input= new BufferedReader(new FileReader("llegides.txt"));
   
