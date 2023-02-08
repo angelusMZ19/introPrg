@@ -29,7 +29,7 @@ public class ClassificaMatricules{
             break;
             }
             linia = linia.trim();
-                    if(MatriculaItalianaValida(linia)){
+                    if(matriculaItalianaValida(linia)){
                         conocidas.write(linia.trim());
                         conocidas.newLine();
                     }else {
@@ -41,7 +41,7 @@ public class ClassificaMatricules{
         desconocidas.close();
         conocidas.close();
     }
-    public static boolean MatriculaItalianaValida(String codigo){
+    public static boolean matriculaItalianaValida(String codigo){
         String lletres= "IOQU";
         if(codigo.length() !=7){
         return false;
