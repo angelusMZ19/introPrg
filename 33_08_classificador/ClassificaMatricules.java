@@ -33,7 +33,7 @@ public class ClassificaMatricules{
                         conocidas.write(linia.trim());
                         conocidas.newLine();
                     }else {
-                        desconocidas.write(linia);
+                        desconocidas.write(linia.trim());
                         desconocidas.newLine();
 
                     }
