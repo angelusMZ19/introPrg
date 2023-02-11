@@ -7,6 +7,6 @@ public class Ascensor{
     public static void main(String[]args){
          Ascensor mover;
          mover = new Ascensor();
-         System.out.println(" L'ascensor està a la planta " + mover.pis);
+         System.out.println("L'ascensor està a la planta " + mover.pis);
     }
 }
