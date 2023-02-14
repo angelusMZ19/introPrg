@@ -1,5 +1,7 @@
 /*
+Aquest procediment incrementarà en un el pis en que es troba l'ascensor que rep.
 
+Et passo la plantilla amb el main() perquè el prgtest et deixi passar.
 */
 public class Ascensor {
     public int pis= -1;
