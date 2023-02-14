@@ -16,10 +16,13 @@ public class Ascensor {
         boolean numero= UtilString.esEnter(args[0]);
                 if(numero== true){
                 int quants= Integer.parseInt(args[0]);
-                //if(!Character.isDigit(quants)){
-                    Ascensor[] ascensors = creaAscensors(quants);
-                    for (int i = 0; i < ascensors.length; i++) {
-                        System.out.printf("Ascensor %d al pis %d%n", i, ascensors[i].pis);
+                    if(quants!=0){
+                        Ascensor[] ascensors = creaAscensors(quants);
+                        for (int i = 0; i < ascensors.length; i++) {
+                            System.out.printf("Ascensor %d al pis %d%n", i, ascensors[i].pis);
+                        }
+                    }else{
+                        System.out.println("Cap ascensor");
                     }
                 }else{
                     System.out.println("Cap ascensor");
