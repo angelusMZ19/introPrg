@@ -3,8 +3,8 @@ En este ejercicio, vuelve a añadir la propiedad posicioque incorporaste al ejer
 modulo de uso
 */
 public class GatRenat {
-    public int vides= 7;
-    public String posicio= "estirat";
+    private int vides= 7;
+    private String posicio= "estirat";
     public int getVides(){
         return vides;
     }
