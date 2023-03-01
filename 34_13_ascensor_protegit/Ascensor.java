@@ -14,7 +14,7 @@ public class Ascensor{
     public void setPis(int nouPis){
         if (nouPis >= 0 && nouPis<= 10) {
             pis = nouPis;
-        }
+         }
     }
     public String getMoviment(){
         return moviment;
